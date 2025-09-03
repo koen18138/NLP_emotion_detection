@@ -89,7 +89,7 @@ def transcribe_and_create_excel(audio_file_path, api_key, output_excel_path, out
 # Configuration
 API_KEY = "ae9d26f45c504101be8279aebb10a8f7"
 AUDIO_FILE = r"/Applications/Mp3/Wie is de Mol (The Mole) S16E05 with English subtitles.mp3"
-OUTPUT_EXCEL = "/Users/florislokhorst/Desktop/transcription_sentences.xlsx"
+OUTPUT_EXCEL = "/Users/florislokhorst/Desktop/transcribed_data_assemblyAI.xlsx"
 OUTPUT_TEXT = "/Users/florislokhorst/Desktop/transcription_full.txt"
 
 # Run the pipeline
