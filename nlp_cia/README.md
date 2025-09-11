@@ -7,7 +7,7 @@ cd nlp_cia
 poetry install
 ```
 # **Add video to be transcripted into**
-`data/video`
+`nlp_cia/data/video`
 # **Run pipeline using**
 ```
 poetry run python src/pipeline.py
