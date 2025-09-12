@@ -4,7 +4,7 @@ import json
 from moviepy.editor import VideoFileClip # moviepy==1.0.3
 from transformers import BertTokenizer, BertForSequenceClassification
 from sentiment_analysis_train import text_cleaning, encode_data
-
+import pandas as pd
 
 def convert_video_to_audio(
 	input_path: str,
@@ -165,7 +165,7 @@ def load_model_and_tokenizer(model_dir: str):
     model = BertForSequenceClassification.from_pretrained(model_dir)
     return tokenizer, model
 
-def load_inference_data(tokenizer, file_path: str="data\\transcription\\csv\\transcription.csv") -> list:
+def load_inference_data(tokenizer, inference_data: pd.DataFrame=None, file_path: str="data\\transcription\\csv\\transcription.csv") -> list:
 	"""
 	Loads inference data from a CSV file.
 
@@ -174,12 +174,14 @@ def load_inference_data(tokenizer, file_path: str="data\\transcription\\csv\\tra
 	Returns:
 		list: A list of sentences for inference.
 	"""
-	import pandas as pd
-	df = pd.read_csv(file_path)
+	if inference_data is not None:
+		df = inference_data
+	else:
+		df = pd.read_csv(file_path)
 	sentences = df['sentence'].apply(text_cleaning).tolist()
 	encoded_sentences = encode_data(sentences, tokenizer)
 	return encoded_sentences, df
 
 if __name__ == "__main__":
-	pass
+	split_mp4("data\\video\\")
 
