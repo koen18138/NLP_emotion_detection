@@ -51,37 +51,45 @@ def compute_metrics(p: EvalPrediction):
         'f1': f1_score(p.label_ids, preds, average='weighted'),
     }
 
-def encode_data(texts, tokenizer, labels=None, max_len=128,):
+def encode_data(texts, tokenizer, labels=None, max_len=128):
+    print(f"{texts = }")
     encodings = tokenizer(texts, truncation=True, padding=True, max_length=max_len)
+
     if labels is None:
         return {
             'input_ids': torch.tensor(encodings['input_ids']),
             'attention_mask': torch.tensor(encodings['attention_mask'])
         }
-    if labels:
-        return {
-            'input_ids': torch.tensor(encodings['input_ids']),
-            'attention_mask': torch.tensor(encodings['attention_mask']),
-            'labels': torch.tensor(labels)
-        }
+    
+    # Convert string labels to integers if needed
+    if isinstance(labels[0], str):
+        label_map = {'negative': 0, 'neutral': 1, 'positive': 2}
+        labels = [label_map[label] for label in labels]
+
+    return {
+        'input_ids': torch.tensor(encodings['input_ids']),
+        'attention_mask': torch.tensor(encodings['attention_mask']),
+        'labels': torch.tensor(labels)
+    }
 
 class SentimentDataset(torch.utils.data.Dataset):
     def __init__(self, encodings):
-        # Store only the necessary tensors from the encodings
         self.encodings = {
             'input_ids': encodings['input_ids'],
-            'attention_mask': encodings['attention_mask']
+            'attention_mask': encodings['attention_mask'],
+            'labels': encodings['labels']  # <-- ✅ Add this
         }
 
     def __len__(self):
         return len(self.encodings['input_ids'])
 
     def __getitem__(self, idx):
-        # Return a dictionary containing the tensors for a single item
         return {
             'input_ids': self.encodings['input_ids'][idx],
-            'attention_mask': self.encodings['attention_mask'][idx]
-        }    
+            'attention_mask': self.encodings['attention_mask'][idx],
+            'labels': self.encodings['labels'][idx]
+        }
+
     
 if __name__ == "__main__":
 
@@ -119,11 +127,14 @@ if __name__ == "__main__":
     # train_df.to_csv('data/train_data_aclImdb_v1.csv', index=False)
     # test_df.to_csv('data/test_data_aclImdb_v1.csv', index=False)
 
-    train_df = pd.read_csv(f"data/train_data_Sp1786.csv")
-    test_df = pd.read_csv(f"data/test_data_Sp1786.csv")
+    run_id = str(uuid.uuid4())[:8]
+    save_dir = f'models\\model_{run_id}'
+
+    train_df = pd.read_csv(f"data/train_data_Sp1786.csv").dropna()
+    test_df = pd.read_csv(f"data/test_data_Sp1786.csv").dropna()
     # Shuffle the full dataframes to ensure labels are mixed
-    train_df = train_df.sample(frac=1, random_state=42).reset_index(drop=True).iloc[:100]
-    test_df = test_df.sample(frac=1, random_state=42).reset_index(drop=True).iloc[:40]
+    train_df = train_df.sample(frac=1, random_state=42).reset_index(drop=True)
+    test_df = test_df.sample(frac=1, random_state=42).reset_index(drop=True)
     print(f"Train data shape: {train_df.shape}")
     print(f"Test data shape: {test_df.shape}")
 
@@ -134,15 +145,18 @@ if __name__ == "__main__":
     # Test data
     test_reviews = test_df['sentence'].tolist()
     test_targets = test_df['sentiment'].tolist()
+    unique_types = set(type(x).__name__ for x in Reviews + Target + test_reviews + test_targets)
+    print(unique_types)
 
     x_val, x_test, y_val, y_test = train_test_split(test_reviews, test_targets, test_size=0.5, stratify=test_targets)
 
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
     max_len = 128
 
-    train_dataset = encode_data(Reviews, Target)
-    val_dataset = encode_data(x_val, y_val)
-    test_dataset = encode_data(x_test, y_test)
+    print(f"{Reviews[0] = }\n{Target[0] = }")
+    train_dataset = encode_data(Reviews, tokenizer, Target)
+    val_dataset = encode_data(x_val, tokenizer, y_val)
+    test_dataset = encode_data(x_test, tokenizer, y_test)
 
     train_ds = SentimentDataset(train_dataset)
     val_ds = SentimentDataset(val_dataset)
@@ -152,11 +166,11 @@ if __name__ == "__main__":
     model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=num_labels)
 
     training_args = TrainingArguments(
-        output_dir='./results',
-        num_train_epochs=3,
+        output_dir=f'{save_dir}\\results',
+        num_train_epochs=5,
         per_device_train_batch_size=32,
         per_device_eval_batch_size=32,
-        logging_dir='./logs',
+        logging_dir=f'{save_dir}\\logs',
         logging_steps=10,
     )
 
@@ -173,7 +187,7 @@ if __name__ == "__main__":
     print(f"Test results: {eval_results}")
 
     run_id = str(uuid.uuid4())[:8]
-    save_dir = f'./Model_{run_id}'
+    save_dir = f'models\\model_{run_id}'
     os.makedirs(save_dir, exist_ok=True)
     model.save_pretrained(save_dir)
     tokenizer.save_pretrained(save_dir)
