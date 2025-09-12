@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
 
     print("Starting Sentiment Classification...")
-    tokenizer, model = load_model_and_tokenizer(model_dir="./models/Model_c021d711")
+    tokenizer, model = load_model_and_tokenizer(model_dir="models\\Model_14e03c00")
     sentences, df = load_inference_data(tokenizer)
     preds = get_predictions(model, sentences)
     print(f"Predictions: {preds}")
