@@ -1,0 +1,5 @@
+/nlp_cia/data/audio
+/nlp_cia/data/classification
+/nlp_cia/data/transcription
+/nlp_cia/models
+/nlp_cia/src/__pycache__
