@@ -2,9 +2,7 @@ import os
 import torch
 import pandas as pd
 from sklearn.metrics import classification_report
-from torch.utils.data import DataLoader
-from sentiment_analysis_train import SentimentDataset
-from utils import load_model_and_tokenizer
+from utils import load_model_and_tokenizer, load_inference_data
 from transformers import BertTokenizer, BertForSequenceClassification
 from typing import List, Dict
 
@@ -30,7 +28,7 @@ def get_predictions(model: BertForSequenceClassification, encodings: Dict[str, t
     
     return predictions
 
-def evaluate_model(model, tokenizer, test_df: pd.DataFrame, output_file_path: str = "classification_report.txt"):
+def evaluate_model(model, tokenizer, test_df: pd.DataFrame, output_dir: str):
     """
     Evaluates a loaded model on a test dataset, prints a classification report,
     and saves the report to a file.
@@ -41,15 +39,16 @@ def evaluate_model(model, tokenizer, test_df: pd.DataFrame, output_file_path: st
         test_df (pd.DataFrame): The test dataset containing 'sentence' and 'sentiment' columns.
         output_file_path (str): Path to save the classification report.
     """
-    test_reviews = test_df['sentence'].tolist()
-    test_targets = test_df['sentiment'].tolist()
 
+    df_y = test_df['sentiment'].tolist()
+    x, _ = load_inference_data(tokenizer, test_df)
+    print(f"{x = }")
     # Use the new get_predictions function to get the model's output
-    predictions = get_predictions(model, tokenizer, test_reviews)
+    predictions = get_predictions(model, x)
 
     # Generate and save the classification report
     report_string = classification_report(
-        test_targets,
+        df_y,
         predictions,
         target_names=['negative', 'neutral', 'positive'],
         zero_division=0
@@ -58,23 +57,23 @@ def evaluate_model(model, tokenizer, test_df: pd.DataFrame, output_file_path: st
     print("\n--- Classification Report ---")
     print(report_string)
 
-    with open(output_file_path, "w") as f:
+    with open(os.path.join(output_dir,  "classification_report.txt"), "w") as f:
         f.write(report_string)
 
-    print(f"\nClassification report saved to {output_file_path}")
+    print(f"\nClassification report saved to {output_dir}/classification_report.txt")
 
 if __name__ == "__main__":
     try:
-        test_df = pd.read_csv("data/sentence_sentiment.csv").dropna()
+        test_df = pd.read_csv("data\\wie_is_de_mol_sentiment.csv").dropna()
         test_df = test_df.sample(frac=1, random_state=42).reset_index(drop=True)
     except FileNotFoundError:
         print("Test data file not found. Please ensure 'data/sentence_sentiment.csv' exists.")
         exit()
 
-    save_dir = './models/Model_c021d711'
+    save_dir = 'models\\Model_14e03c00'
     
     # Load the model and tokenizer
     tokenizer, model = load_model_and_tokenizer(model_dir=save_dir)
 
     # Evaluate the loaded model
-    evaluate_model(model=model, tokenizer=tokenizer, test_df=test_df)
+    evaluate_model(model=model, tokenizer=tokenizer, test_df=test_df, output_dir=save_dir)
