@@ -7,7 +7,9 @@ cd nlp_cia
 poetry install
 ```
 # **Download model from:**
-Onedrive, models|_nlp_2526
+Onedrive, models_nlp_2526
+# **Place model in:**
+`nlp_cia/models`
 # **Add video to be transcripted into**
 `nlp_cia/data/video`
 # **Run pipeline using**
