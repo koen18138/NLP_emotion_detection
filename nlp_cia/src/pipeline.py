@@ -1,13 +1,16 @@
 import os
 
-from preprocessing import process_videos_in_directory, transcribe_and_process_audio_directory
-from utils import load_model_and_tokenizer, load_inference_data
+from preprocessing import transcribe_and_process_audio_directory
+from utils import load_model_and_tokenizer, load_inference_data, url_to_mp3
 from sentiment_analysis_eval import get_predictions
 
 
 if __name__ == "__main__":
+    print(os.getcwd())
+    print("Please enter URL to transcribe and classify:")
+    url = input().strip()
     print("Starting video processing...")
-    process_videos_in_directory()
+    url_to_mp3(url)
     transcribe_and_process_audio_directory()
     
 
