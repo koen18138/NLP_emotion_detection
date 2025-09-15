@@ -1,6 +1,6 @@
 import os
 
-from preprocessing import transcribe_and_process_audio_directory
+from assembly import transcribe_and_create_excel, API_KEY
 from utils import load_model_and_tokenizer, load_inference_data, url_to_mp3
 from sentiment_analysis_eval import get_predictions
 
@@ -11,9 +11,12 @@ if __name__ == "__main__":
     url = input().strip()
     print("Starting video processing...")
     url_to_mp3(url)
-    transcribe_and_process_audio_directory()
     
-
+    transcript, df = transcribe_and_create_excel(
+        api_key=API_KEY,
+    )
+    print(transcript)
+    print(df.head())
 
     print("Starting Sentiment Classification...")
     tokenizer, model = load_model_and_tokenizer(model_dir="models\\Model_14e03c00")
