@@ -203,6 +203,8 @@ def transcribe_and_process_audio_directory(audio_directory: str="data\\audio", o
         os.makedirs(output_dir)
     if not os.path.exists(os.path.join(output_dir, "json")):
         os.makedirs(os.path.join(output_dir, "json"))
+    if not os.path.exists(audio_directory):
+        os.makedirs(audio_directory)
 
     for file_name in os.listdir(audio_directory):
         if file_name.endswith("mp3"):
