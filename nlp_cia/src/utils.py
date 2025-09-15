@@ -179,7 +179,7 @@ def load_inference_data(tokenizer, inference_data: pd.DataFrame=None, file_path:
 		df = inference_data
 	else:
 		df = pd.read_csv(file_path)
-	sentences = df['sentence'].apply(text_cleaning).tolist()
+	sentences = df['Sentence'].apply(text_cleaning).tolist()
 	encoded_sentences = encode_data(sentences, tokenizer)
 	return encoded_sentences, df
 
