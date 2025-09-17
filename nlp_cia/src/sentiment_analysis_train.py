@@ -77,7 +77,7 @@ class SentimentDataset(torch.utils.data.Dataset):
         self.encodings = {
             'input_ids': encodings['input_ids'],
             'attention_mask': encodings['attention_mask'],
-            'labels': encodings['labels']  # <-- ✅ Add this
+            'labels': encodings['labels']
         }
 
     def __len__(self):
