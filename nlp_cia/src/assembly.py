@@ -16,7 +16,11 @@ def transcribe_and_create_excel(
     aai.settings.api_key = api_key
     
     print("Starting transcription with speaker detection...")
-    
+
+    # Check if output dir exist
+    if not os.path.exists(os.path.dirname(output_filepath)):
+        os.makedirs(os.path.dirname(output_filepath))
+
     # Check if file exists
     if not os.path.exists(audio_filepath):
         print(f"Error: Audio file not found at {audio_filepath}")
