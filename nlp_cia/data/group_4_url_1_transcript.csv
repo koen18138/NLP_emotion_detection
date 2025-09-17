@@ -1,0 +1,1051 @@
+Start Time,End Time,Sentence,Translation,Emotion_fine,Emotion_core,Intensity
+1900-01-01 00:00:00,1900-01-01 00:00:02,TV GELDERLAND 2021.,TV GELDERLAND 2021.,neutrality,neutral,neutral
+1900-01-01 00:00:30,1900-01-01 00:00:32,Daar boven staat een kist.,There is a chest up there.,observation,neutral,neutral
+1900-01-01 00:00:33,1900-01-01 00:00:35,Ik weet zeker dat ik ze alle vier gehad heb.,I am sure that I have had all four of them.,certainty,neutral,moderate
+1900-01-01 00:00:37,1900-01-01 00:00:39,"O, kwaak!","Oh, quack!",exclamation,surprise,mild
+1900-01-01 00:00:41,1900-01-01 00:00:44,Wat moet een mens zonder Ellie Lust?,What should a person do without Ellie Lust?,longing,sadness,mild
+1900-01-01 00:00:44,1900-01-01 00:00:46,Ellie.,Ellie.,neutrality,neutral,neutral
+1900-01-01 00:00:48,1900-01-01 00:00:50,Kwaak.,Kwaak.,neutrality,neutral,neutral
+1900-01-01 00:00:50,1900-01-01 00:00:52,"Nee, nee, nee.","No, no, no.",rejection,anger,moderate
+1900-01-01 00:00:59,1900-01-01 00:01:03,"Het lijkt wel een uitgebreid gezin, de kandidatengroep van dit jaar.","It seems like an extended family, this year's group of candidates.",warmth,happiness,mild
+1900-01-01 00:01:03,1900-01-01 00:01:06,Lekker huiselijk rollen ze door het spel heen.,They roll through the game in a nice homely way.,contentment,happiness,mild
+1900-01-01 00:01:06,1900-01-01 00:01:08,Schone schijn misschien?,Superficial appearance maybe?,skepticism,neutral,mild
+1900-01-01 00:01:08,1900-01-01 00:01:11,Want de openheid is ingeruild voor mysteries.,Because openness has been exchanged for mysteries.,bewilderment,surprise,moderate
+1900-01-01 00:01:11,1900-01-01 00:01:13,Er borrelt van alles onder het oppervlak...,There is all sorts of things bubbling under the surface...,tension,fear,moderate
+1900-01-01 00:01:13,1900-01-01 00:01:16,dat het verse gezinsgeluk kan verstoren.,that it can disturb the fresh family happiness.,apprehension,fear,mild
+1900-01-01 00:01:16,1900-01-01 00:01:20,"Bij iedere afvaller die vertrekt, valt het afscheid de groepswaarde.","With every dropout who leaves, the farewell affects the group value.",loss,sadness,mild
+1900-01-01 00:01:20,1900-01-01 00:01:22,Al leek Marjolein vooral perplex te staan...,Although Marjolein seemed mostly to be standing there perplexed...,confusion,surprise,moderate
+1900-01-01 00:01:22,1900-01-01 00:01:26,dat juist politievrouw Ellie na een glorieuze klimpartij...,that it is precisely policewoman Ellie after a glorious climb...,admiration,happiness,mild
+1900-01-01 00:01:26,1900-01-01 00:01:28,het spel moest verlaten.,had to leave the game.,resignation,sadness,mild
+1900-01-01 00:01:28,1900-01-01 00:01:30,Weg als haar hoofdverdachte.,Gone as her prime suspect.,relief,happiness,mild
+1900-01-01 00:01:30,1900-01-01 00:01:32,Of speelt de actrice dat?,Or is the actress acting that?,curiosity,neutral,mild
+1900-01-01 00:01:32,1900-01-01 00:01:34,En kiest ze geheel volgens eigen script...,And she chooses entirely according to her own script...,independence,neutral,mild
+1900-01-01 00:01:34,1900-01-01 00:01:37,gewoon weer een nieuwe nepverdachte?,Just another new fake suspect?,skepticism,disgust,moderate
+1900-01-01 00:01:42,1900-01-01 00:01:44,"Ja, ik heb het!","Yes, I have it!",triumph,happiness,intense
+1900-01-01 00:01:46,1900-01-01 00:01:48,Woehoe!,Woehoe!,excitement,happiness,intense
+1900-01-01 00:01:49,1900-01-01 00:01:52,Het spel verandert achter jullie.,The game is changing behind you.,uncertainty,surprise,mild
+1900-01-01 00:02:17,1900-01-01 00:02:19,Oh my God!,Oh my God!,astonishment,surprise,intense
+1900-01-01 00:02:19,1900-01-01 00:02:21,"Achter jou, achter jou.","Behind you, behind you.",alarm,fear,intense
+1900-01-01 00:02:37,1900-01-01 00:02:39,Altijd lekker geslapen met jullie.,Always slept well with you.,nostalgia,happiness,mild
+1900-01-01 00:02:39,1900-01-01 00:02:43,Ik denk dat het komt door de gedachte dat jij zo dik bij me bent.,I think it's because of the thought that you are so close to me.,affection,happiness,mild
+1900-01-01 00:02:44,1900-01-01 00:02:46,"Zo, dit is lang geleden.","Well, it's been a long time.",nostalgia,happiness,mild
+1900-01-01 00:02:46,1900-01-01 00:02:48,Brood met jam.,Bread with jam.,neutrality,neutral,neutral
+1900-01-01 00:02:48,1900-01-01 00:02:50,De groep wordt kleiner.,The group is getting smaller.,resignation,sadness,mild
+1900-01-01 00:02:50,1900-01-01 00:02:52,Dus ze zitten dichter op de mol.,So they are closer to the mole.,curiosity,neutral,mild
+1900-01-01 00:02:52,1900-01-01 00:02:54,Maar de mol zit ook dichter op ons.,But the mole is also closer to us.,apprehension,fear,mild
+1900-01-01 00:02:54,1900-01-01 00:02:56,Het zal allemaal meespelen.,It will all play a part.,resignation,neutral,mild
+1900-01-01 00:02:56,1900-01-01 00:02:59,"Maar het feit is wel, we zijn nu met z'n zevenen.","But the fact is, we are now with the seven of us.",acceptance,neutral,neutral
+1900-01-01 00:02:59,1900-01-01 00:03:02,En we zijn in aflevering vijf.,And we are in episode five.,acknowledgment,neutral,neutral
+1900-01-01 00:03:02,1900-01-01 00:03:05,Dus we doen blijkbaar iets goed.,So apparently we're doing something right.,validation,happiness,mild
+1900-01-01 00:03:06,1900-01-01 00:03:08,Ziet er al iemand?,Is anyone already there?,curiosity,neutral,mild
+1900-01-01 00:03:08,1900-01-01 00:03:10,Nee.,No.,rejection,anger,mild
+1900-01-01 00:03:10,1900-01-01 00:03:12,"Jij hebt al gestreken, of niet?","You have already ironed, haven't you?",curiosity,neutral,mild
+1900-01-01 00:03:12,1900-01-01 00:03:14,"Oh, nu dacht ik het wel.","Oh, now I thought I did.",realization,surprise,mild
+1900-01-01 00:03:14,1900-01-01 00:03:18,Gestand mannen-vrouwen is op dit moment 4-3.,Score men-women is currently 4-3.,report,neutral,neutral
+1900-01-01 00:03:18,1900-01-01 00:03:21,En ik bedacht me opeens dat de vrouwen die over zijn...,And I suddenly realized that the women who are left...,realization,surprise,mild
+1900-01-01 00:03:21,1900-01-01 00:03:23,alle drie moeders zijn.,all three mothers are.,neutrality,neutral,neutral
+1900-01-01 00:03:23,1900-01-01 00:03:27,Misschien zijn wij eigenlijk de sterkste vrouwen van de groep geweest.,Maybe we were actually the strongest women in the group.,pride,happiness,mild
+1900-01-01 00:03:28,1900-01-01 00:03:30,"De thee is hier niet, hè?","The tea isn't here, is it?",disappointment,sadness,mild
+1900-01-01 00:03:30,1900-01-01 00:03:32,Ik blijf gewoon doen wat ik gedaan heb.,I will just keep doing what I have done.,determination,neutral,neutral
+1900-01-01 00:03:32,1900-01-01 00:03:35,Want tot nu toe heeft dat dus blijkbaar gewerkt.,Because up to now that has apparently worked.,satisfaction,happiness,mild
+1900-01-01 00:03:35,1900-01-01 00:03:38,"Ik heb heel goed opgelet, ik heb alles opgeschreven.","I paid very close attention, I wrote everything down.",diligence,neutral,mild
+1900-01-01 00:03:38,1900-01-01 00:03:40,Ik ga kijken of ik het volhoud. Ik ga ervoor.,I'm going to see if I can keep it up. I'm going for it.,determination,happiness,moderate
+1900-01-01 00:03:40,1900-01-01 00:03:44,"Ik wil het volhouden, want ik zou het helemaal te gek vinden.","I want to keep it up, because I would find it totally awesome.",enthusiasm,happiness,moderate
+1900-01-01 00:03:44,1900-01-01 00:03:48,Maar ik probeer nu gewoon in het moment en per minuut te leven.,But I'm just trying to live in the moment and take it minute by minute now.,acceptance,neutral,mild
+1900-01-01 00:03:48,1900-01-01 00:03:50,Ik dacht dat jij de kut was.,I thought you were the bitch.,resentment,anger,moderate
+1900-01-01 00:03:50,1900-01-01 00:03:52,Zit je nog in het spel?,Are you still in the game?,curiosity,neutral,mild
+1900-01-01 00:03:52,1900-01-01 00:03:54,Gadverdamme.,Yuck.,disgust,disgust,moderate
+1900-01-01 00:03:56,1900-01-01 00:03:58,We doen het een beetje.,We do it a little bit.,uncertainty,neutral,mild
+1900-01-01 00:03:58,1900-01-01 00:04:00,Ik ben nog steeds onderdeel van dit spel.,I am still part of this game.,acceptance,neutral,neutral
+1900-01-01 00:04:00,1900-01-01 00:04:03,Ik heb ook het idee dat ik nog wel wat te spelen heb.,I also have the feeling that I still have some playing to do.,hope,happiness,mild
+1900-01-01 00:04:03,1900-01-01 00:04:07,"Dus ja, ik heb zin in de volgende opdracht. Kom maar op.","So yes, I'm looking forward to the next assignment. Bring it on.",anticipation,happiness,moderate
+1900-01-01 00:04:07,1900-01-01 00:04:10,"Ik heb er een beetje zin in, Tim. In wat?","I'm a little excited for it, Tim. For what?",anticipation,happiness,mild
+1900-01-01 00:04:10,1900-01-01 00:04:12,Gewoon vandaag. Ja? Ja.,Just today. Yes? Yes.,acceptance,neutral,neutral
+1900-01-01 00:04:12,1900-01-01 00:04:14,"Nou, jij? Ja hoor.","Well, you? Yes, sure.",acceptance,neutral,neutral
+1900-01-01 00:04:37,1900-01-01 00:04:39,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:04:47,1900-01-01 00:04:50,Wij kwamen aan met ons busje op Rincon Beach.,We arrived with our van at Rincon Beach.,arrival,neutral,neutral
+1900-01-01 00:04:50,1900-01-01 00:04:52,Eén van de mooiste stranden van het eiland.,One of the most beautiful beaches on the island.,admiration,happiness,mild
+1900-01-01 00:04:52,1900-01-01 00:04:55,"Heel mooie kleur, lichtblauw water.","Very beautiful color, light blue water.",admiration,happiness,mild
+1900-01-01 00:04:55,1900-01-01 00:04:57,Het ziet er fantastisch uit.,It looks fantastic.,admiration,happiness,mild
+1900-01-01 00:04:57,1900-01-01 00:05:00,En er liep een pad langs het strand waar je lekker kon wandelen.,And there was a path along the beach where you could take a nice walk.,contentment,happiness,mild
+1900-01-01 00:05:00,1900-01-01 00:05:02,Met palmen ernaast.,With palm trees next to it.,description,neutral,neutral
+1900-01-01 00:05:02,1900-01-01 00:05:05,Maar we zagen ook dat er zeven fietsen stonden.,But we also saw that there were seven bicycles.,curiosity,surprise,mild
+1900-01-01 00:05:05,1900-01-01 00:05:07,Goedemorgen. Goedemorgen.,Good morning. Good morning.,politeness,neutral,neutral
+1900-01-01 00:05:07,1900-01-01 00:05:10,We gaan een lastige quiz spelen vanochtend.,We are going to play a difficult quiz this morning.,anticipation,surprise,mild
+1900-01-01 00:05:10,1900-01-01 00:05:15,"Als jullie het handig spelen, kunnen jullie de antwoorden bij elkaar fietsen.","If you play it smart, you can collect the answers together.",anticipation,neutral,mild
+1900-01-01 00:05:15,1900-01-01 00:05:17,Opnieuw stonden we op een prachtig strand.,Again we stood on a beautiful beach.,contentment,happiness,mild
+1900-01-01 00:05:17,1900-01-01 00:05:21,En opnieuw stond daar Acht in een eveneens strak gestreken outfit.,"And again, there was Acht in an equally sharply ironed outfit.",recognition,neutral,neutral
+1900-01-01 00:05:21,1900-01-01 00:05:24,En die vertelde ons dat we moesten gaan fietsen.,And he told us that we had to go cycling.,resignation,neutral,neutral
+1900-01-01 00:05:24,1900-01-01 00:05:26,Aan dit pad zien we allemaal palmbomen.,Along this path we see all palm trees.,serenity,happiness,mild
+1900-01-01 00:05:26,1900-01-01 00:05:30,En aan sommige hangt het juiste antwoord op een vraag die ik ga stellen.,And on some hangs the correct answer to a question I am going to ask.,anticipation,surprise,mild
+1900-01-01 00:05:31,1900-01-01 00:05:33,Er was een pad met bomen.,There was a path with trees.,serenity,neutral,neutral
+1900-01-01 00:05:33,1900-01-01 00:05:36,En aan die bomen hingen kaartjes met de antwoorden op die vragen.,And on those trees hung cards with the answers to those questions.,curiosity,neutral,mild
+1900-01-01 00:05:36,1900-01-01 00:05:37,Katten in het bakkie.,Cats in the box.,contentment,happiness,mild
+1900-01-01 00:05:37,1900-01-01 00:05:39,Wij mochten naar die antwoorden toefietsen.,We were allowed to cycle towards those answers.,permission,happiness,mild
+1900-01-01 00:05:39,1900-01-01 00:05:41,En ze doorsijden met de portofoon.,And they keep talking through the walkie-talkie.,continuity,neutral,neutral
+1900-01-01 00:05:41,1900-01-01 00:05:43,Ik ga zo dadelijk naar de andere kant van de baai.,I'm going to the other side of the bay in a moment.,anticipation,neutral,mild
+1900-01-01 00:05:43,1900-01-01 00:05:46,En over tien minuten precies stel ik daar de eerste vraag.,And in exactly ten minutes I will ask the first question there.,anticipation,surprise,mild
+1900-01-01 00:05:46,1900-01-01 00:05:50,Het is vrij essentieel dat een van jullie op dat moment tegenover me staat.,It is quite essential that one of you is standing in front of me at that moment.,insistence,neutral,moderate
+1900-01-01 00:05:50,1900-01-01 00:05:52,Om het juiste antwoord te geven.,To give the correct answer.,determination,neutral,neutral
+1900-01-01 00:05:52,1900-01-01 00:05:55,En dat krijg je door van je teamgenoten.,And you get that from your teammates.,acknowledgment,neutral,neutral
+1900-01-01 00:05:55,1900-01-01 00:05:57,Als het goed is.,If all goes well.,hope,happiness,mild
+1900-01-01 00:05:57,1900-01-01 00:06:01,Vanaf dat moment stel ik elke minuut een nieuwe vraag.,"From that moment on, I ask a new question every minute.",anticipation,neutral,mild
+1900-01-01 00:06:01,1900-01-01 00:06:03,We zijn nog met z'n zevenen.,We are still with the seven of us.,togetherness,neutral,neutral
+1900-01-01 00:06:03,1900-01-01 00:06:06,De sprinter moest dus gelijk binnen tien minuten beantwoord zijn.,The sprinter had to be answered within ten minutes immediately.,urgency,fear,moderate
+1900-01-01 00:06:06,1900-01-01 00:06:10,En vervolgens zouden de andere zes eigenlijk twee enveloppen vinden.,And then the other six would actually find two envelopes.,expectation,neutral,neutral
+1900-01-01 00:06:10,1900-01-01 00:06:12,Om de antwoorden te geven.,To give the answers.,readiness,neutral,neutral
+1900-01-01 00:06:12,1900-01-01 00:06:16,De rest mag pas vijf minuten na de eerste fietser vertrekken.,The rest may only leave five minutes after the first cyclist.,expectation,neutral,neutral
+1900-01-01 00:06:16,1900-01-01 00:06:18,Ik ga nu alvast naar de andere kant van de baai.,I'm going to the other side of the bay now.,preparation,neutral,neutral
+1900-01-01 00:06:18,1900-01-01 00:06:22,Dus dan hebben jullie heel even de tijd om tactiek te bepalen.,So then you have a little time to determine your tactics.,preparation,neutral,neutral
+1900-01-01 00:06:23,1900-01-01 00:06:26,Dus wij gingen nadenken over een tactiek.,So we started thinking about a tactic.,contemplation,neutral,neutral
+1900-01-01 00:06:26,1900-01-01 00:06:28,En dat ging eigenlijk best wel soepeltjes.,And that actually went pretty smoothly.,satisfaction,happiness,mild
+1900-01-01 00:06:28,1900-01-01 00:06:30,Wie is de sprinter?,Who is the sprinter?,curiosity,neutral,mild
+1900-01-01 00:06:32,1900-01-01 00:06:36,Taken had bedacht dat hij het snelste dat parcours zou kunnen afleggen.,Taken had thought that he could complete the course the fastest.,confidence,happiness,mild
+1900-01-01 00:06:36,1900-01-01 00:06:38,En bij Art zou kunnen zijn.,And could be with Art.,possibility,neutral,neutral
+1900-01-01 00:06:38,1900-01-01 00:06:41,En ondertussen een beetje verkennen waar die enveloppen hingen.,"And in the meantime, explore a bit where those envelopes were hanging.",curiosity,neutral,mild
+1900-01-01 00:06:41,1900-01-01 00:06:43,Hoe ze eruit zagen.,How they looked.,curiosity,neutral,neutral
+1900-01-01 00:06:43,1900-01-01 00:06:45,Of je duidelijk een cijfer kon zien.,Whether you could clearly see a number.,curiosity,neutral,neutral
+1900-01-01 00:06:45,1900-01-01 00:06:48,Dus ik als sprinter met jullie zes gaan vraag één tot het zes vinden.,"So I, as a sprinter, with you six, am going to find question one to six.",anticipation,happiness,mild
+1900-01-01 00:06:48,1900-01-01 00:06:52,Vervolgens als vraag één geweest is gaat één op zoek naar zeven.,"Then, after question one has been asked, one goes in search of seven.",curiosity,neutral,neutral
+1900-01-01 00:06:52,1900-01-01 00:06:54,Twee gaat op zoek naar acht.,Two goes in search of eight.,curiosity,neutral,mild
+1900-01-01 00:06:54,1900-01-01 00:06:56,Daar wacht je mee.,You wait with that.,hesitation,neutral,mild
+1900-01-01 00:06:56,1900-01-01 00:06:58,Snap je? Pas als je je vraag beantwoord.,Do you understand? Only after you answer your question.,confusion,surprise,mild
+1900-01-01 00:06:58,1900-01-01 00:07:00,En dan heb je gewoon vijf minuten tijd om die te vinden.,And then you just have five minutes to find those.,expectation,neutral,neutral
+1900-01-01 00:07:00,1900-01-01 00:07:03,Wij hadden een hele goede tactiek bedacht door Taken.,We had come up with a really good tactic because of Taken.,pride,happiness,mild
+1900-01-01 00:07:03,1900-01-01 00:07:05,Dat we de snelste voorop zouden laten gaan.,That we would let the fastest go in front.,planning,neutral,neutral
+1900-01-01 00:07:05,1900-01-01 00:07:07,En de langzaamste achter.,And the slowest at the back.,acceptance,neutral,neutral
+1900-01-01 00:07:07,1900-01-01 00:07:10,En die zou dan bij vraag nummer één blijven.,And that one would then remain at question number one.,indifference,neutral,neutral
+1900-01-01 00:07:10,1900-01-01 00:07:13,En als die eerste vraag dan beantwoord was.,And when that first question was answered.,anticipation,neutral,mild
+1900-01-01 00:07:13,1900-01-01 00:07:16,Kon diegene alweer op pad om naar vraag zeven te gaan.,Could that person already be on their way to go to question seven.,expectation,neutral,neutral
+1900-01-01 00:07:16,1900-01-01 00:07:20,En op die manier zouden we zo van antwoord één naar antwoord twaalf.,And in this way we would go from answer one to answer twelve.,expectation,neutral,neutral
+1900-01-01 00:07:20,1900-01-01 00:07:22,Alle antwoorden kunnen geven.,Can give all answers.,confidence,happiness,mild
+1900-01-01 00:07:22,1900-01-01 00:07:24,Goed zo. Succes.,Well done. Good luck.,encouragement,happiness,mild
+1900-01-01 00:07:26,1900-01-01 00:07:28,Doet-ie dat goed hè?,"He does that well, doesn't he?",admiration,happiness,mild
+1900-01-01 00:07:29,1900-01-01 00:07:31,Het fietsen was best pittig.,Cycling was quite tough.,challenge,neutral,mild
+1900-01-01 00:07:31,1900-01-01 00:07:35,Want op sommige stukken was het zand een stuk muller dan op andere plekken.,Because in some places the sand was much softer than in other places.,observation,neutral,neutral
+1900-01-01 00:07:35,1900-01-01 00:07:39,En dan merk je wel dat je wiel een beetje wegschoot en dat het een stukje zwaarder was.,And then you notice that your wheel slipped a bit and that it was a bit heavier.,inconvenience,neutral,mild
+1900-01-01 00:07:39,1900-01-01 00:07:42,Wat ik echt probeerde te doen was harde stukken zand uit te kiezen.,What I was really trying to do was pick out hard pieces of sand.,focus,neutral,neutral
+1900-01-01 00:07:42,1900-01-01 00:07:44,"Ze ging af en toe een beetje links rijden, af en toe een beetje rechts.","She occasionally drove a little to the left, occasionally a little to the right.",uncertainty,neutral,mild
+1900-01-01 00:07:44,1900-01-01 00:07:46,En een beetje gokken waar het goed te doen was.,And a bit of guessing where it was doable.,uncertainty,fear,mild
+1900-01-01 00:07:46,1900-01-01 00:07:49,"Hé wacht even, Taken staat aan het roepen als-ie wat zag.","Hey wait a minute, Taken is shouting whenever he sees something.",alertness,surprise,mild
+1900-01-01 00:07:49,1900-01-01 00:07:52,Hij heeft nog niks gezien dus. Dus het is een eind die kant op.,He hasn't seen anything yet. So it's quite a way in that direction.,expectation,neutral,mild
+1900-01-01 00:07:52,1900-01-01 00:07:56,"Taken zou zeggen, als hij ging fietsen, dat-ie enveloppen zag.","Taken would say, when he went cycling, that he saw envelopes.",confusion,neutral,mild
+1900-01-01 00:07:56,1900-01-01 00:07:58,En dat duurde eigenlijk vrij lang.,And that actually took quite a long time.,resignation,sadness,mild
+1900-01-01 00:07:58,1900-01-01 00:08:00,"Zodat-ie riep van ja, ik heb er één gezien.","So he shouted yes, I saw one.",excitement,happiness,moderate
+1900-01-01 00:08:00,1900-01-01 00:08:02,"Dus wij dachten, nou dat duurt wel even.","So we thought, well, that will take a while.",expectation,neutral,mild
+1900-01-01 00:08:05,1900-01-01 00:08:08,"Ik kan ze niet lezen. Het zijn dichte enveloppen, over.","I can't read them. They are sealed envelopes, over.",frustration,sadness,mild
+1900-01-01 00:08:08,1900-01-01 00:08:11,Ik had afgesproken dat ik op het moment dat ik een envelop zou zien.,I had agreed that at the moment I would see an envelope.,expectation,neutral,neutral
+1900-01-01 00:08:11,1900-01-01 00:08:13,Dat ik het nummer door zou geven via de portofoon.,That I would pass on the number via the walkie-talkie.,expectation,neutral,neutral
+1900-01-01 00:08:13,1900-01-01 00:08:16,Alleen de eerste envelop die ik uiteindelijk zag waar ik het doorgeefde.,Only the first envelope that I eventually saw was the one I passed on.,uncertainty,neutral,mild
+1900-01-01 00:08:16,1900-01-01 00:08:19,Lag vervolgens bijna in het zand met mijn snuffer.,Then almost ended up in the sand with my nose.,embarrassment,sadness,mild
+1900-01-01 00:08:19,1900-01-01 00:08:21,Zie je ze goed hangen?,Do you see them hanging well?,curiosity,neutral,neutral
+1900-01-01 00:08:21,1900-01-01 00:08:23,"Ja, je ziet ze goed hangen.","Yes, you can see them hanging well.",reassurance,neutral,mild
+1900-01-01 00:08:23,1900-01-01 00:08:26,Dus heb ik maar doorgegeven dat ik ze niet meer kon helpen.,So I just let them know that I could no longer help them.,resignation,sadness,mild
+1900-01-01 00:08:26,1900-01-01 00:08:28,Omdat ik gewoon zoveel mogelijk vaart wilde maken.,Because I just wanted to gain as much speed as possible.,determination,neutral,mild
+1900-01-01 00:08:28,1900-01-01 00:08:30,Want het zou toch balen zijn.,Because it would be a bummer.,disappointment,sadness,mild
+1900-01-01 00:08:30,1900-01-01 00:08:33,Als ze tien minuten om zijn en dan staat niemand bij art.,When ten minutes have passed and then no one is at art.,disappointment,sadness,mild
+1900-01-01 00:08:34,1900-01-01 00:08:37,"En toen mochten wij, vijf minuten later.","And then we were allowed, five minutes later.",expectation,neutral,neutral
+1900-01-01 00:08:41,1900-01-01 00:08:43,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:08:45,1900-01-01 00:08:49,Taken en wij ook hadden geen enkele idee van de afstand die we moesten overbruggen.,Tasks and we also had no idea of the distance we had to cover.,uncertainty,fear,mild
+1900-01-01 00:08:49,1900-01-01 00:08:52,Dus we gingen als dollen op pad.,So we set off like madmen.,excitement,happiness,moderate
+1900-01-01 00:08:52,1900-01-01 00:08:54,"Het is best wel heftig pad, man.","It's quite a tough path, man.",strain,sadness,moderate
+1900-01-01 00:08:54,1900-01-01 00:08:57,Ik was klaar voor de start af en wij zijn dus dwazig gaan fietsen.,I was ready for the start and so we went cycling foolishly.,playfulness,happiness,mild
+1900-01-01 00:08:57,1900-01-01 00:09:01,"Tim ging voorop, daarna Annemieke, daarna ik, daarna Klaas.","Tim went first, then Annemieke, then me, then Klaas.",orderliness,neutral,neutral
+1900-01-01 00:09:01,1900-01-01 00:09:04,Daarna Marjolein en daarna Sissi.,After that Marjolein and then Sissi.,expectation,neutral,neutral
+1900-01-01 00:09:04,1900-01-01 00:09:06,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:09:07,1900-01-01 00:09:09,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:09:09,1900-01-01 00:09:12,"Hoewel ik heel goed kan fietsen en stevige kuiten heb,","Although I can cycle very well and have strong calves,",confidence,happiness,mild
+1900-01-01 00:09:12,1900-01-01 00:09:14,sloeg de schrik mij om het hart.,fear struck me to the heart.,alarm,fear,intense
+1900-01-01 00:09:14,1900-01-01 00:09:16,Want van de top drie van angst is 1.,"Because from the top three of fear, number 1 is.",apprehension,fear,mild
+1900-01-01 00:09:16,1900-01-01 00:09:18,Rijden op de snelweg en invoegen.,Driving on the highway and merging.,anticipation,neutral,neutral
+1900-01-01 00:09:18,1900-01-01 00:09:20,2. Aan een rotswand bungelen.,2. Dangling from a rock face.,apprehension,fear,moderate
+1900-01-01 00:09:20,1900-01-01 00:09:22,En 3. Op een fiets.,And 3. On a bicycle.,neutrality,neutral,neutral
+1900-01-01 00:09:21.160000,1900-01-01 00:09:25.160000,"Snelrijden door zand of door kiezers, ik durf dat gewoon niet.","Speeding through sand or through gravel, I just don't dare to do that.",apprehension,fear,moderate
+1900-01-01 00:09:51.160000,1900-01-01 00:09:55.160000,Achteraf gezien denk ik dat ik wellicht iets rustiger had kunnen fietsen.,"In retrospect, I think I could have cycled a bit more calmly.",regret,sadness,mild
+1900-01-01 00:09:55.160000,1900-01-01 00:09:57.160000,En misschien iets meer om me heen had kunnen kijken.,And maybe I could have looked around me a bit more.,regret,sadness,mild
+1900-01-01 00:09:57.160000,1900-01-01 00:09:59.160000,"Want ja, ik was ruim binnen de tijd bij Art.","Because yes, I was well within the time at Art.",satisfaction,happiness,mild
+1900-01-01 00:09:59.160000,1900-01-01 00:10:01.160000,Taken. Goedemiddag.,Taken. Good afternoon.,politeness,neutral,neutral
+1900-01-01 00:10:01.160000,1900-01-01 00:10:03.160000,Het verrast me niet dat jij de eerste bent.,It doesn't surprise me that you are the first.,expectation,neutral,neutral
+1900-01-01 00:10:04.160000,1900-01-01 00:10:06.160000,"Ja, ze denken toch dat ik fietsen leuk vind schijnbaar.","Yes, they apparently think that I like cycling.",resignation,neutral,mild
+1900-01-01 00:10:06.160000,1900-01-01 00:10:09.160000,Dikke vijf minuten overgedaan. Dan mag je melden dat je er bent.,Took a solid five minutes. Then you can report that you are there.,impatience,anger,mild
+1900-01-01 00:10:09.160000,1900-01-01 00:10:11.160000,"Ik ben bij het eindpunt, over.","I am at the endpoint, over.",completion,neutral,neutral
+1900-01-01 00:10:14.160000,1900-01-01 00:10:16.160000,"Heel goed, succes. Zet hem op.","Very good, good luck. Go for it.",encouragement,happiness,mild
+1900-01-01 00:10:16.160000,1900-01-01 00:10:18.160000,Taken was ruim op tijd bij Art.,Tasks were well on time at Art.,satisfaction,happiness,mild
+1900-01-01 00:10:18.160000,1900-01-01 00:10:21.160000,Maar die heeft ons heel weinig informatie gegeven.,But that one gave us very little information.,disappointment,sadness,mild
+1900-01-01 00:10:22.160000,1900-01-01 00:10:25.160000,Ik heb een porto gevonden. Wie heeft hem wel?,I found a walkie-talkie. Who is missing one?,curiosity,neutral,mild
+1900-01-01 00:10:26.160000,1900-01-01 00:10:29.160000,Wat ik opvallend vond is dat ik een portofoon aantrof.,What I found remarkable is that I found a walkie-talkie.,curiosity,surprise,mild
+1900-01-01 00:10:29.160000,1900-01-01 00:10:31.160000,Echt midden op het pad. Heel opvallend.,Really in the middle of the path. Very conspicuous.,alertness,surprise,moderate
+1900-01-01 00:10:32.160000,1900-01-01 00:10:34.160000,"Dames, heeft u hem?","Ladies, do you have him?",curiosity,neutral,mild
+1900-01-01 00:10:34.160000,1900-01-01 00:10:36.160000,Ik heb hem ook.,I have it too.,inclusion,happiness,mild
+1900-01-01 00:10:37.160000,1900-01-01 00:10:40.160000,Ik kan geen twee dingen tegelijk. En porto en fietsen.,I can't do two things at the same time. Both using the walkie-talkie and cycling.,frustration,sadness,mild
+1900-01-01 00:10:41.160000,1900-01-01 00:10:43.160000,Mijn paar ogen was best relevant.,My pair of eyes was quite relevant.,reflection,neutral,mild
+1900-01-01 00:10:43.160000,1900-01-01 00:10:45.160000,Want ik reed vooraan en ik moest coördineren.,Because I was driving in front and I had to coordinate.,responsibility,neutral,mild
+1900-01-01 00:10:45.160000,1900-01-01 00:10:48.160000,"Jongens, hier is envelop 1, want ik kwam ze eerst tegen.","Guys, here is envelope 1, because I came across them first.",assertiveness,neutral,neutral
+1900-01-01 00:10:48.160000,1900-01-01 00:10:51.160000,"En hier twee, en hier drie, vier, vijf, zes, etcetera.","And here two, and here three, four, five, six, etcetera.",indifference,neutral,neutral
+1900-01-01 00:10:51.160000,1900-01-01 00:10:54.160000,"Ik dacht, ik fiets achter Annemieke en Tim aan.","I thought, I'll cycle after Annemieke and Tim.",planning,neutral,neutral
+1900-01-01 00:10:54.160000,1900-01-01 00:10:57.160000,En ik merk wel wanneer de eerste envelop komt.,And I'll notice when the first envelope arrives.,expectation,neutral,mild
+1900-01-01 00:10:57.160000,1900-01-01 00:10:59.160000,"Ik heb iets gevonden, Tim.","I found something, Tim.",curiosity,surprise,mild
+1900-01-01 00:10:59.160000,1900-01-01 00:11:02.160000,"Is dit de eerste? Ja, hier hangt een envelop.","Is this the first one? Yes, there is an envelope hanging here.",curiosity,neutral,mild
+1900-01-01 00:11:02.160000,1900-01-01 00:11:04.160000,"Oké, succes. Hier zit er één.","Okay, good luck. Here is one.",encouragement,happiness,mild
+1900-01-01 00:11:04.160000,1900-01-01 00:11:07.160000,Maar ik geloof dat dat envelop 7 was.,But I believe that was envelope 7.,uncertainty,neutral,mild
+1900-01-01 00:11:07.160000,1900-01-01 00:11:10.160000,Dus we hadden er al best wel wat gemist.,So we had already missed quite a few.,regret,sadness,mild
+1900-01-01 00:11:10.160000,1900-01-01 00:11:12.160000,Dat is die voor Cecilia.,That is the one for Cecilia.,anticipation,neutral,neutral
+1900-01-01 00:11:12.160000,1900-01-01 00:11:14.160000,"De eerste, ja.","The first one, yes.",agreement,neutral,neutral
+1900-01-01 00:11:14.160000,1900-01-01 00:11:17.160000,"Maar wacht even, waar is 1 tot en met 6 aan gebleven?","But wait a minute, what happened to 1 through 6?",confusion,surprise,mild
+1900-01-01 00:11:17.160000,1900-01-01 00:11:19.160000,Die hadden we niet gezien.,We hadn't seen those.,surprise,surprise,mild
+1900-01-01 00:11:20.160000,1900-01-01 00:11:22.160000,Nummer 8.,Number 8.,neutrality,neutral,neutral
+1900-01-01 00:11:22.160000,1900-01-01 00:11:25.160000,We hebben nog één minuut voor de eerste vraag.,We have one minute left before the first question.,anticipation,surprise,mild
+1900-01-01 00:11:25.160000,1900-01-01 00:11:27.160000,"Nog één minuut, over.","One more minute, over.",anticipation,neutral,mild
+1900-01-01 00:11:27.160000,1900-01-01 00:11:30.160000,"Annemieke, mijn porto is verdwenen.","Annemieke, my walkie-talkie is gone.",worry,fear,moderate
+1900-01-01 00:11:30.160000,1900-01-01 00:11:32.160000,Serieus.,Serious.,seriousness,neutral,neutral
+1900-01-01 00:11:32.160000,1900-01-01 00:11:35.160000,Verdacht is bij elke opdracht Marjolein.,Suspicion is on Marjolein in every task.,suspicion,fear,moderate
+1900-01-01 00:11:35.160000,1900-01-01 00:11:40.160000,"Als ik mijn porto verlies, ga ik terug om mijn porto te pakken.","If I lose my walkie-talkie, I go back to get my walkie-talkie.",determination,neutral,mild
+1900-01-01 00:11:40.160000,1900-01-01 00:11:43.160000,Marjolein fietst door om aan mij te vertellen...,Marjolein cycles on to tell me...,expectation,neutral,mild
+1900-01-01 00:11:43.160000,1900-01-01 00:11:45.160000,dat ze geen porto meer heeft.,that she has no more port.,disappointment,sadness,mild
+1900-01-01 00:11:47.160000,1900-01-01 00:11:49.160000,"Hier komt de eerste vraag, Taken.","Here comes the first question, Tasks.",anticipation,surprise,mild
+1900-01-01 00:11:49.160000,1900-01-01 00:11:54.160000,Vraag 1. Wat is de lokale lekkernij van de Dominikaanse Republiek?,Question 1. What is the local delicacy of the Dominican Republic?,curiosity,neutral,neutral
+1900-01-01 00:11:54.160000,1900-01-01 00:11:58.160000,"Vraag 1 is, wat is de lokale lekkernij van de Dominikaanse Republiek?","Question 1 is, what is the local delicacy of the Dominican Republic?",curiosity,neutral,neutral
+1900-01-01 00:11:58.160000,1900-01-01 00:12:00.160000,"Envelop 1. Vraag 1, over.","Envelope 1. Question 1, over.",anticipation,neutral,neutral
+1900-01-01 00:12:00.160000,1900-01-01 00:12:02.160000,"Ik heb geen antwoord, over.","I have no answer, over.",resignation,sadness,mild
+1900-01-01 00:12:02.160000,1900-01-01 00:12:05.160000,"Ik heb geen antwoord, over. Niemand?","I have no answer, over. No one?",uncertainty,sadness,mild
+1900-01-01 00:12:05.160000,1900-01-01 00:12:07.160000,Ik heb ook geen antwoord.,I also have no answer.,resignation,sadness,mild
+1900-01-01 00:12:07.160000,1900-01-01 00:12:09.160000,"Nou, niemand.","Well, nobody.",resignation,sadness,mild
+1900-01-01 00:12:09.160000,1900-01-01 00:12:11.160000,"Tijd is om, Taken, helaas.","Time is up, Tasks, unfortunately.",regret,sadness,mild
+1900-01-01 00:12:11.160000,1900-01-01 00:12:14.160000,Envelop 1 hoeft niet meer gevonden te worden.,Envelope 1 no longer needs to be found.,relief,happiness,mild
+1900-01-01 00:12:14.160000,1900-01-01 00:12:16.160000,"We gaan door naar Envelop 2, over.","We are moving on to Envelope 2, over.",progression,neutral,neutral
+1900-01-01 00:12:16.160000,1900-01-01 00:12:18.160000,Envelop 1 was dus niet gevonden.,Envelope 1 was therefore not found.,disappointment,sadness,mild
+1900-01-01 00:12:18.160000,1900-01-01 00:12:21.160000,En eigenlijk hetzelfde geldt voor Envelop 2.,And actually the same applies to Envelope 2.,indifference,neutral,neutral
+1900-01-01 00:12:21.160000,1900-01-01 00:12:23.160000,Staat er iemand bij Envelop 2?,Is there someone at Envelope 2?,curiosity,neutral,neutral
+1900-01-01 00:12:23.160000,1900-01-01 00:12:25.160000,Niemand.,Nobody.,isolation,sadness,mild
+1900-01-01 00:12:25.160000,1900-01-01 00:12:27.160000,"Ik zie geen envelop, hoor.","I don't see any envelope, you know.",confusion,surprise,mild
+1900-01-01 00:12:27.160000,1900-01-01 00:12:30.160000,Ik neem aan dat dat die stilte betekent.,I assume that means that silence.,resignation,sadness,mild
+1900-01-01 00:12:30.160000,1900-01-01 00:12:32.160000,"Nee, niemand is bij Envelop 2, over.","No, nobody is at Envelope 2, over.",detachment,neutral,neutral
+1900-01-01 00:12:32.160000,1900-01-01 00:12:35.160000,"Ik denk dat dat een goede conclusie is, Maarten.","I think that's a good conclusion, Maarten.",agreement,happiness,mild
+1900-01-01 00:12:35.160000,1900-01-01 00:12:37.160000,"Geen antwoord? Nee, wederom niks.","No answer? No, again nothing.",frustration,anger,moderate
+1900-01-01 00:12:37.160000,1900-01-01 00:12:39.160000,"Jammer, tweede vraag ook niet.","Too bad, second question also not.",disappointment,sadness,mild
+1900-01-01 00:12:39.160000,1900-01-01 00:12:42.160000,We waren al veel te ver voor die eerste paar enveloppen.,We were already way too far ahead for those first few envelopes.,regret,sadness,mild
+1900-01-01 00:12:42.160000,1900-01-01 00:12:45.160000,"Envelop 3. Is iemand bij Envelop 3, over?","Envelope 3. Is anyone at Envelope 3, over?",curiosity,neutral,neutral
+1900-01-01 00:12:45.160000,1900-01-01 00:12:46.160000,"Nee, over.","No, over.",dismissal,neutral,neutral
+1900-01-01 00:12:46.160000,1900-01-01 00:12:50.160000,"Tim, die vooraan fietste, weet ik veel waar hij op gelet heeft.","Tim, who was cycling in front, I have no idea what he was paying attention to.",bewilderment,surprise,mild
+1900-01-01 00:12:50.160000,1900-01-01 00:12:53.160000,Maar in ieder geval niet op de eerste antwoorden.,But in any case not to the first answers.,reservation,neutral,mild
+1900-01-01 00:12:53.160000,1900-01-01 00:12:55.160000,Is dit de eerste envelop? Nee.,Is this the first envelope? No.,curiosity,neutral,neutral
+1900-01-01 00:12:55.160000,1900-01-01 00:12:57.160000,Ik heb helemaal geen envelop gezien.,I haven't seen any envelope at all.,confusion,surprise,moderate
+1900-01-01 00:12:57.160000,1900-01-01 00:13:00.160000,We zijn er wel geweest. Je bent voorbij de eerste.,We have been there. You passed the first one.,recollection,neutral,neutral
+1900-01-01 00:13:00.160000,1900-01-01 00:13:02.160000,Ik kijk naar de grond en die val.,I look at the ground and that fall.,apprehension,fear,mild
+1900-01-01 00:13:02.160000,1900-01-01 00:13:04.160000,Ik kwam Cécile op een gegeven moment tegen.,I ran into Cécile at a certain point.,recollection,neutral,neutral
+1900-01-01 00:13:04.160000,1900-01-01 00:13:08.160000,"Ik zeg, heb jij nog wat gezien? Ja, het pad, want ik wil niet vallen.","I say, have you seen anything? Yes, the path, because I don't want to fall.",caution,fear,mild
+1900-01-01 00:13:08.160000,1900-01-01 00:13:10.160000,Is er iemand bij Envelop 4?,Is there someone at Envelope 4?,curiosity,neutral,mild
+1900-01-01 00:13:10.160000,1900-01-01 00:13:13.160000,"Ik sta naast kluis 9, ik loop even verder.","I am standing next to locker 9, I walk a bit further.",calm,neutral,neutral
+1900-01-01 00:13:13.160000,1900-01-01 00:13:14.160000,Nee.,No.,rejection,anger,mild
+1900-01-01 00:13:14.160000,1900-01-01 00:13:17.160000,"Ik ga naar 8 fietsen, want die komt eerst.","I'm going to 8 bikes, because that one comes first.",determination,neutral,neutral
+1900-01-01 00:13:17.160000,1900-01-01 00:13:21.160000,"Dan trek ik op de conclusie dat niemand bij de envelop is, over.","Then I conclude that no one is at the envelope, over.",resignation,neutral,neutral
+1900-01-01 00:13:21.160000,1900-01-01 00:13:23.160000,Niemand vond eigenlijk wat.,No one actually found anything.,disappointment,sadness,mild
+1900-01-01 00:13:23.160000,1900-01-01 00:13:26.160000,Het kwam omdat de tijd ons inhaalde.,It happened because time caught up with us.,resignation,sadness,mild
+1900-01-01 00:13:27.160000,1900-01-01 00:13:30.160000,Ondertussen was Cécile bij mij gekomen.,"Meanwhile, Cécile had come to me.",companionship,happiness,mild
+1900-01-01 00:13:30.160000,1900-01-01 00:13:33.160000,Dus ik was weer een beetje communicabel.,So I was a bit communicative again.,relief,happiness,mild
+1900-01-01 00:13:33.160000,1900-01-01 00:13:36.160000,Vraag 5. Staat iemand bij Envelop 5?,Question 5. Is someone at Envelope 5?,curiosity,neutral,neutral
+1900-01-01 00:13:36.160000,1900-01-01 00:13:39.160000,"Ja, ik, Marjolein. Wat is het antwoord op vraag 5?","Yes, me, Marjolein. What is the answer to question 5?",curiosity,neutral,mild
+1900-01-01 00:13:39.160000,1900-01-01 00:13:43.160000,"Ik sta bij boom nummer 5, maar ik zie nog geen envelop.","I am at tree number 5, but I don't see an envelope yet.",uncertainty,surprise,mild
+1900-01-01 00:13:43.160000,1900-01-01 00:13:46.160000,"Je hebt nog 10 seconden, dus snel zoeken, over.","You have 10 seconds left, so search quickly, over.",urgency,fear,moderate
+1900-01-01 00:13:46.160000,1900-01-01 00:13:49.160000,Er is een boom genummerd nummer 5.,There is a tree numbered number 5.,curiosity,neutral,neutral
+1900-01-01 00:13:49.160000,1900-01-01 00:13:51.160000,Maar er is geen envelop in de buurt.,But there is no envelope nearby.,frustration,sadness,mild
+1900-01-01 00:13:51.160000,1900-01-01 00:13:54.160000,De nummers van de bomen hebben er niks mee te maken.,The numbers of the trees have nothing to do with it.,dismissal,neutral,neutral
+1900-01-01 00:13:54.160000,1900-01-01 00:13:56.160000,"Dus ik heb hem niet, over.","So I don't have it, over.",resignation,sadness,mild
+1900-01-01 00:13:56.160000,1900-01-01 00:13:58.160000,"Dat is heel jammer, over.","That is a real pity, over.",disappointment,sadness,moderate
+1900-01-01 00:13:58.160000,1900-01-01 00:14:00.160000,Ik bel weer mijn porto terug.,I'm calling my walkie-talkie back again.,routine,neutral,neutral
+1900-01-01 00:14:00.160000,1900-01-01 00:14:03.160000,Moet ik daarmee als we geen antwoorden doorkrijgen?,Should I do that if we don't get any answers?,uncertainty,fear,mild
+1900-01-01 00:14:03.160000,1900-01-01 00:14:05.160000,Dan heb je de hele porto niet nodig.,Then you don't need the whole walkie-talkie.,indifference,neutral,neutral
+1900-01-01 00:14:05.160000,1900-01-01 00:14:08.160000,"Vijf vragen gesteld, nog geen enkel antwoord binnen.","Asked five questions, still haven't received a single answer.",frustration,anger,moderate
+1900-01-01 00:14:08.160000,1900-01-01 00:14:12.160000,Tot nu toe gaan we 0 voor 5. Dat is niet waar we voor zijn.,So far we are 0 for 5. That's not what we're about.,disappointment,sadness,moderate
+1900-01-01 00:14:12.160000,1900-01-01 00:14:14.160000,"Kom op, even doorfietsen, over.","Come on, keep cycling for a bit, over.",encouragement,happiness,mild
+1900-01-01 00:14:14.160000,1900-01-01 00:14:17.160000,Weet je nog waar 8 en 9 hangen? 9 ben je voorbijgekomen.,Do you remember where 8 and 9 are hanging? You already passed 9.,curiosity,neutral,mild
+1900-01-01 00:14:17.160000,1900-01-01 00:14:19.160000,Ik ga nu naar 8. Hartstikke.,I'm going to 8 now. Great.,enthusiasm,happiness,mild
+1900-01-01 00:14:19.160000,1900-01-01 00:14:21.160000,Moet er niet iemand bij 9 blijven?,Shouldn't someone stay at 9?,concern,fear,mild
+1900-01-01 00:14:21.160000,1900-01-01 00:14:24.160000,"Iemand moet bij envelop 9 blijven, jongens.","Someone has to stay with envelope 9, guys.",responsibility,neutral,neutral
+1900-01-01 00:14:24.160000,1900-01-01 00:14:26.160000,Is die hier bij jou?,Is that one here with you?,curiosity,neutral,mild
+1900-01-01 00:14:26.160000,1900-01-01 00:14:29.160000,Het was een totale blamage.,It was a total disgrace.,shame,sadness,intense
+1900-01-01 00:14:29.160000,1900-01-01 00:14:31.160000,Ik heb envelop 6 nodig.,I need envelope 6.,need,neutral,neutral
+1900-01-01 00:14:31.160000,1900-01-01 00:14:33.160000,Heb je 6 gezien? Nee.,Have you seen 6? No.,disinterest,neutral,neutral
+1900-01-01 00:14:33.160000,1900-01-01 00:14:35.160000,Ik heb voor 8 niks gezien.,I didn't see anything before 8.,indifference,neutral,neutral
+1900-01-01 00:14:35.160000,1900-01-01 00:14:39.160000,"Ik sta bij 8 en blijf bij 8. 9 is achter mij, dus ik wacht hier.","I am at 8 and stay at 8. 9 is behind me, so I wait here.",patience,neutral,mild
+1900-01-01 00:14:39.160000,1900-01-01 00:14:41.160000,We hebben de helft van de wagen gehad.,We have had half of the car.,progress,neutral,neutral
+1900-01-01 00:14:41.160000,1900-01-01 00:14:43.160000,En nog nul antwoorden kunnen geven.,And still not being able to give any answers.,frustration,sadness,moderate
+1900-01-01 00:14:43.160000,1900-01-01 00:14:45.160000,Dus we zijn nu bij nummer 7.,So we are now at number 7.,progression,neutral,neutral
+1900-01-01 00:14:45.160000,1900-01-01 00:14:47.160000,"7, over.","7, over.",neutrality,neutral,neutral
+1900-01-01 00:14:47.160000,1900-01-01 00:14:49.160000,"Klaas hier, ik heb 7.","Klaas here, I have 7.",reporting,neutral,neutral
+1900-01-01 00:14:49.160000,1900-01-01 00:14:54.160000,Bij envelop 7 hadden we eindelijk dat iemand stond bij de juiste envelop,At envelope 7 we finally had someone standing at the correct envelope,relief,happiness,moderate
+1900-01-01 00:14:54.160000,1900-01-01 00:14:56.160000,en antwoord kon geven.,and could give an answer.,uncertainty,neutral,neutral
+1900-01-01 00:14:56.160000,1900-01-01 00:14:59.160000,Wie werd door de Dominicanen jarenlang beschouwd,Who was considered by the Dominicans for years,curiosity,neutral,neutral
+1900-01-01 00:14:59.160000,1900-01-01 00:15:01.160000,als de Robin Hood van de Kariben?,as the Robin Hood of the Caribbean?,curiosity,neutral,mild
+1900-01-01 00:15:01.160000,1900-01-01 00:15:04.160000,Roberto Cofresi.,Roberto Cofresi.,neutrality,neutral,neutral
+1900-01-01 00:15:04.160000,1900-01-01 00:15:06.160000,Antwoord Roberto Cofresi.,Answer Roberto Cofresi.,expectation,neutral,neutral
+1900-01-01 00:15:06.160000,1900-01-01 00:15:09.160000,Dat antwoord is binnen de tijd binnen.,That answer came in on time.,satisfaction,happiness,mild
+1900-01-01 00:15:09.160000,1900-01-01 00:15:11.160000,"De eerste punten zijn binnen, jongens.","The first points are in, guys.",satisfaction,happiness,mild
+1900-01-01 00:15:11.160000,1900-01-01 00:15:13.160000,Dus Tim staat bij 8 en 9.,So Tim is at 8 and 9.,observation,neutral,neutral
+1900-01-01 00:15:13.160000,1900-01-01 00:15:16.160000,"Dus nu moeten er 10, 11 en 12 nog zitten.","So now 10, 11, and 12 still need to be there.",expectation,neutral,neutral
+1900-01-01 00:15:17.160000,1900-01-01 00:15:20.160000,"Zit tot nu toe alle enveloppen, hier is Marjolein,","So far, sit all the envelopes, here is Marjolein,",anticipation,neutral,mild
+1900-01-01 00:15:20.160000,1900-01-01 00:15:24.160000,zitten ze aan de bomen die pal aan de weg zitten of verder weg?,Are they on the trees that are right next to the road or further away?,curiosity,neutral,neutral
+1900-01-01 00:15:24.160000,1900-01-01 00:15:26.160000,"Pal aan de weg, bij mij in ieder geval.","Right by the road, at least for me.",certainty,neutral,neutral
+1900-01-01 00:15:26.160000,1900-01-01 00:15:28.160000,Nog een keertje alsjeblieft.,One more time please.,request,neutral,mild
+1900-01-01 00:15:28.160000,1900-01-01 00:15:29.160000,Weg bij mij.,Away from me.,rejection,anger,moderate
+1900-01-01 00:15:29.160000,1900-01-01 00:15:32.160000,"Even wachten, het begin valt weg van je tekst.","Wait a moment, the beginning of your text is missing.",concern,fear,mild
+1900-01-01 00:15:32.160000,1900-01-01 00:15:34.160000,"Hier, Ellie.","Here, Ellie.",neutrality,neutral,neutral
+1900-01-01 00:15:34.160000,1900-01-01 00:15:36.160000,Pal aan de weg.,Right next to the road.,neutrality,neutral,neutral
+1900-01-01 00:15:36.160000,1900-01-01 00:15:38.160000,"Marjolein, dank je wel.","Marjolein, thank you.",gratitude,happiness,mild
+1900-01-01 00:15:38.160000,1900-01-01 00:15:41.160000,Vraag nummer 8. Wat bedoelen de Dominicanen als ze tegen je zeggen Platano?,Question number 8. What do Dominicans mean when they say Platano to you?,curiosity,neutral,neutral
+1900-01-01 00:15:41.160000,1900-01-01 00:15:43.160000,De tijd loopt nu.,Time is running now.,urgency,fear,moderate
+1900-01-01 00:15:43.160000,1900-01-01 00:15:46.160000,"Tim, ik heb het antwoord op vraag 8 nodig.","Tim, I need the answer to question 8.",urgency,neutral,mild
+1900-01-01 00:15:46.160000,1900-01-01 00:15:48.160000,Op het envelopje staat...,On the envelope it says...,curiosity,surprise,mild
+1900-01-01 00:15:48.160000,1900-01-01 00:15:51.160000,Dat het lijkt alsof je een Dominicaan bent.,That it seems as if you are a Dominican.,perception,neutral,neutral
+1900-01-01 00:15:51.160000,1900-01-01 00:15:53.160000,Dat het lijkt alsof je een Dominicaan bent.,That it seems like you are a Dominican.,perception,neutral,neutral
+1900-01-01 00:15:53.160000,1900-01-01 00:15:55.160000,Ik hoorde het. Dat antwoord is binnen de tijd binnen.,I heard it. That answer came in on time.,satisfaction,happiness,mild
+1900-01-01 00:15:55.160000,1900-01-01 00:15:57.160000,"Heel goed Tim, dat is binnen de tijd binnen.","Very good Tim, that's within the time limit.",approval,happiness,mild
+1900-01-01 00:15:57.160000,1900-01-01 00:15:59.160000,Door naar 9 als de brandweer.,On to 9 like the fire brigade.,determination,happiness,moderate
+1900-01-01 00:15:59.160000,1900-01-01 00:16:01.160000,Zullen we nog even daarheen gaan?,Shall we go there for a bit?,curiosity,neutral,mild
+1900-01-01 00:16:01.160000,1900-01-01 00:16:03.160000,Het laatste stuk heeft meer zin dan weer terug.,The last part makes more sense than going back again.,preference,neutral,neutral
+1900-01-01 00:16:03.160000,1900-01-01 00:16:07.160000,"Klaver, Hoppenon en Miek weten jullie zeker dat hier verder terug niks is?","Klaver, Hoppenon and Miek, are you sure there is nothing further back here?",doubt,fear,mild
+1900-01-01 00:16:07.160000,1900-01-01 00:16:10.160000,We zijn hier ook al langs gefietst.,We have already cycled past here as well.,reminiscence,neutral,neutral
+1900-01-01 00:16:10.160000,1900-01-01 00:16:12.160000,We hebben echt niks gezien.,We really didn't see anything.,disappointment,sadness,moderate
+1900-01-01 00:16:12.160000,1900-01-01 00:16:15.160000,Waar hing 9 nou? Ik ben bij 8 en ik zie 9 niet.,Where was 9 hanging? I'm at 8 and I don't see 9.,confusion,surprise,moderate
+1900-01-01 00:16:15.160000,1900-01-01 00:16:18.160000,Welk strand wordt naast Playa Rincon aangewezen als het strand...,Which beach is designated as the beach next to Playa Rincon...,curiosity,neutral,mild
+1900-01-01 00:16:18.160000,1900-01-01 00:16:22.160000,waar Columbus voor het eerst voet aan bal zette op Hispaniola?,where Columbus first set foot on Hispaniola?,curiosity,neutral,neutral
+1900-01-01 00:16:22.160000,1900-01-01 00:16:24.160000,Vraag nummer 9.,Question number 9.,neutrality,neutral,neutral
+1900-01-01 00:16:24.160000,1900-01-01 00:16:27.160000,"Tim, mag ik het antwoord op vraag nummer 9 alsjeblieft?","Tim, may I have the answer to question number 9 please?",politeness,neutral,mild
+1900-01-01 00:16:27.160000,1900-01-01 00:16:29.160000,"9 niet, jongens.","9 not, guys.",rejection,anger,mild
+1900-01-01 00:16:29.160000,1900-01-01 00:16:31.160000,Daar hebben we nog weinig aan.,We don't have much use for that yet.,disappointment,sadness,mild
+1900-01-01 00:16:31.160000,1900-01-01 00:16:33.160000,"Wacht, we hebben ze.","Wait, we have them.",realization,surprise,moderate
+1900-01-01 00:16:35.160000,1900-01-01 00:16:37.160000,Playa Las Flechas.,Playa Las Flechas.,neutrality,neutral,neutral
+1900-01-01 00:16:38.160000,1900-01-01 00:16:40.160000,"Nog 10 seconden, Taak.","10 seconds left, Task.",urgency,fear,moderate
+1900-01-01 00:16:40.160000,1900-01-01 00:16:42.160000,Nog 10 seconden.,10 seconds left.,anticipation,fear,moderate
+1900-01-01 00:16:42.160000,1900-01-01 00:16:44.160000,Ik heb het al gegeven.,I have already given it.,impatience,anger,mild
+1900-01-01 00:16:44.160000,1900-01-01 00:16:46.160000,Playa Las Flechas.,Playa Las Flechas.,neutrality,neutral,neutral
+1900-01-01 00:16:46.160000,1900-01-01 00:16:48.160000,Nog eenmaal graag.,"Once more, please.",request,neutral,neutral
+1900-01-01 00:16:48.160000,1900-01-01 00:16:50.160000,Playa Las Flechas.,Playa Las Flechas.,neutrality,neutral,neutral
+1900-01-01 00:16:50.160000,1900-01-01 00:16:52.160000,Playa Las Flechas.,Playa Las Flechas.,neutrality,neutral,neutral
+1900-01-01 00:16:52.160000,1900-01-01 00:16:54.160000,Net binnen de tijd.,Just in time.,relief,happiness,mild
+1900-01-01 00:16:54.160000,1900-01-01 00:16:57.160000,"Heel goed Tim, net binnen de tijd. Over.","Very good Tim, just in time. Over.",approval,happiness,mild
+1900-01-01 00:16:57.160000,1900-01-01 00:16:59.160000,Wij zaten veel te moeilijk te denken.,We were overthinking things too much.,frustration,sadness,mild
+1900-01-01 00:16:59.160000,1900-01-01 00:17:01.160000,Ik ben nog teruggefietst met Rob.,I cycled back with Rob.,contentment,happiness,mild
+1900-01-01 00:17:01.160000,1900-01-01 00:17:03.160000,"We zijn bij nummer 10, over.","We are at number 10, over.",progression,neutral,neutral
+1900-01-01 00:17:03.160000,1900-01-01 00:17:05.160000,Maar ook toen heb ik ze niet gezien.,But even then I did not see them.,regret,sadness,mild
+1900-01-01 00:17:05.160000,1900-01-01 00:17:09.160000,"Taak, je bent toch niet de mol dat je alle enveloppen hebt meegenomen?","Taak, you're not the mole who took all the envelopes, are you?",suspicion,fear,moderate
+1900-01-01 00:17:09.160000,1900-01-01 00:17:12.160000,"Waarschijnlijk niet, Marjolein. Over.","Probably not, Marjolein. Over.",resignation,sadness,mild
+1900-01-01 00:17:12.160000,1900-01-01 00:17:15.160000,Ik snap er niks van dat we ze niet gezien hebben.,I don't understand at all that we didn't see them.,confusion,surprise,moderate
+1900-01-01 00:17:15.160000,1900-01-01 00:17:18.160000,"Rob van Taak, we hebben ook enveloppe 5 gevonden.","Rob van Taak, we have also found envelope 5.",satisfaction,happiness,mild
+1900-01-01 00:17:18.160000,1900-01-01 00:17:21.160000,"Heel goed Rob, mosterd na de maaltijd, over.","Very good Rob, too little too late, over.",sarcasm,disgust,mild
+1900-01-01 00:17:21.160000,1900-01-01 00:17:23.160000,Sorry.,Sorry.,regret,sadness,mild
+1900-01-01 00:17:23.160000,1900-01-01 00:17:25.160000,Vraag 11 zijn we.,We are at question 11.,orientation,neutral,neutral
+1900-01-01 00:17:25.160000,1900-01-01 00:17:28.160000,"Cecile, ik denk dat je iets wat ver bent, over.","Cecile, I think you are a bit too far, over.",concern,fear,mild
+1900-01-01 00:17:30.160000,1900-01-01 00:17:32.160000,Maar ik ben wel goed aan het kijken.,But I am paying close attention.,attentiveness,neutral,mild
+1900-01-01 00:17:32.160000,1900-01-01 00:17:36.160000,Tijd is om. Dan zijn we alleen nog op zoek naar enveloppe nummer 12.,Time is up. Then we are only still looking for envelope number 12.,resignation,sadness,mild
+1900-01-01 00:17:37.160000,1900-01-01 00:17:40.160000,"Vraag 12 moeten we gewoon bij jou in de buurt halen, Taak. Over.","We just need to get question 12 near you, Task. Over.",determination,neutral,neutral
+1900-01-01 00:17:40.160000,1900-01-01 00:17:42.160000,Nog 5.,Still 5.,anticipation,surprise,mild
+1900-01-01 00:17:44.160000,1900-01-01 00:17:46.160000,"3, 2, 1.","3, 2, 1.",anticipation,surprise,mild
+1900-01-01 00:17:46.160000,1900-01-01 00:17:48.160000,Klaar.,Ready.,readiness,neutral,neutral
+1900-01-01 00:17:49.160000,1900-01-01 00:17:52.160000,"Nou, helaas. Ik snap er helemaal niks van.","Well, unfortunately. I don't understand any of it at all.",confusion,sadness,moderate
+1900-01-01 00:17:52.160000,1900-01-01 00:17:55.160000,"Hoe kan het dat we 7, 8 en 9 wel hebben?","How is it that we do have 7, 8, and 9?",confusion,surprise,mild
+1900-01-01 00:17:55.160000,1900-01-01 00:17:57.160000,Het is toch een duidelijke volgorde.,"It is a clear order, isn't it?",certainty,neutral,mild
+1900-01-01 00:17:57.160000,1900-01-01 00:17:59.160000,"Maar 10, 11 en 12 niet.","But not 10, 11 and 12.",exclusion,neutral,neutral
+1900-01-01 00:17:59.160000,1900-01-01 00:18:02.160000,"Nou, fietsen kunnen jullie wel.","Well, you sure can ride bikes.",admiration,happiness,mild
+1900-01-01 00:18:02.160000,1900-01-01 00:18:04.160000,Maar vragen beantwoorden?,But answering questions?,curiosity,neutral,mild
+1900-01-01 00:18:04.160000,1900-01-01 00:18:07.160000,Ze hingen gewoon langs het pad in volgorde.,They were just hanging along the path in order.,calm,neutral,neutral
+1900-01-01 00:18:07.160000,1900-01-01 00:18:09.160000,"1, 2, 3, 4, tot en met 12.","1, 2, 3, 4, up to 12.",calm,neutral,neutral
+1900-01-01 00:18:09.160000,1900-01-01 00:18:12.160000,Zeg dat dan. Hoe moeilijk kan het zijn?,Just say that then. How hard can it be?,frustration,anger,moderate
+1900-01-01 00:18:12.160000,1900-01-01 00:18:14.160000,Het leek een simpele opdracht.,It seemed like a simple task.,expectation,neutral,neutral
+1900-01-01 00:18:14.160000,1900-01-01 00:18:17.160000,Toen bleek dat de nummers ook nog volgorde hingen...,Then it turned out that the numbers also depended on the order...,realization,surprise,mild
+1900-01-01 00:18:17.160000,1900-01-01 00:18:21.160000,was het een koud kunstje geweest als we die dingen maar hadden zien hangen.,it would have been a piece of cake if only we had seen those things hanging.,regret,sadness,mild
+1900-01-01 00:18:21.160000,1900-01-01 00:18:24.160000,Drie vragen heeft Taak beantwoord binnen de tijd.,Taak answered three questions within the time.,satisfaction,happiness,mild
+1900-01-01 00:18:24.160000,1900-01-01 00:18:26.160000,Die waren alle drie goed.,They were all three good.,satisfaction,happiness,mild
+1900-01-01 00:18:26.160000,1900-01-01 00:18:30.160000,200 euro per vraag is 600 euro voor de pot.,200 euros per question is 600 euros for the pot.,calculation,neutral,neutral
+1900-01-01 00:18:30.160000,1900-01-01 00:18:32.160000,Maar voor alle duidelijkheid...,But for the sake of clarity...,clarification,neutral,neutral
+1900-01-01 00:18:32.160000,1900-01-01 00:18:36.160000,dat had dus 2400 euro voor de pot kunnen zijn.,that could have been 2400 euros for the pot.,regret,sadness,moderate
+1900-01-01 00:18:39.160000,1900-01-01 00:18:41.160000,Alsjeblieft.,Here you go.,politeness,neutral,neutral
+1900-01-01 00:18:42.320000,1900-01-01 00:18:43.340000,Yo.,Yo.,greeting,neutral,neutral
+1900-01-01 00:18:44.320000,1900-01-01 00:18:47.340000,Ik heb ze niet gezien. Ik heb die eerste ook niet gezien.,I haven't seen them. I haven't seen the first one either.,indifference,neutral,neutral
+1900-01-01 00:18:48.320000,1900-01-01 00:18:50.340000,We hebben in een treintje achter Tim gefietst.,We cycled in a little train behind Tim.,camaraderie,happiness,mild
+1900-01-01 00:18:51.320000,1900-01-01 00:18:54.340000,"Iedereen kan zeggen, Tim, jij zat voorop, je had het moeten zien.","Everyone can say, Tim, you were in front, you should have seen it.",blame,anger,moderate
+1900-01-01 00:18:55.320000,1900-01-01 00:18:57.320000,Maar vier meter achter mij zat Annemiek.,But Annemiek was sitting just four meters behind me.,awareness,neutral,neutral
+1900-01-01 00:18:57.340000,1900-01-01 00:19:00.340000,"En Rob zat daarachter ook, buiten, goed te fietsen.","And Rob was also sitting back there, outside, cycling well.",contentment,happiness,mild
+1900-01-01 00:19:00.340000,1900-01-01 00:19:01.340000,Jammer. Ja.,Too bad. Yes.,disappointment,sadness,mild
+1900-01-01 00:19:02.320000,1900-01-01 00:19:04.320000,Hoeveel is het grand total nu?,How much is the grand total now?,curiosity,neutral,neutral
+1900-01-01 00:19:04.320000,1900-01-01 00:19:07.320000,"41-0, wat met dit is... 47-10.","41-0, what about this is... 47-10.",confusion,surprise,mild
+1900-01-01 00:19:07.340000,1900-01-01 00:19:09.320000,"47-10, volgens mij.","47-10, I think.",uncertainty,neutral,mild
+1900-01-01 00:19:12.320000,1900-01-01 00:19:16.320000,MUZIEK,MUSIC,neutrality,neutral,neutral
+1900-01-01 00:19:18.320000,1900-01-01 00:19:22.320000,"Ik moet iets bekennen, want ik heb eigenlijk...","I have to confess something, because I actually...",confession,fear,mild
+1900-01-01 00:19:22.340000,1900-01-01 00:19:26.320000,de afgelopen twee tests...,the last two tests...,anticipation,neutral,neutral
+1900-01-01 00:19:26.340000,1900-01-01 00:19:29.340000,jou ook ingevuld.,you also filled in.,acknowledgment,neutral,neutral
+1900-01-01 00:19:30.320000,1900-01-01 00:19:32.320000,Omdat ik je niet vertrouwde van...,Because I didn't trust you from...,distrust,fear,moderate
+1900-01-01 00:19:32.340000,1900-01-01 00:19:34.340000,"Ja, sorry. Dat is heel erg.","Yes, sorry. That is very bad.",remorse,sadness,moderate
+1900-01-01 00:19:35.320000,1900-01-01 00:19:38.340000,Dat bondje wat ik in het begin met Annemieke heb gesloten...,That alliance I made with Annemieke at the beginning...,nostalgia,neutral,mild
+1900-01-01 00:19:38.340000,1900-01-01 00:19:41.360000,daar moeten de banden weer een beetje van aangetrokken worden.,the bolts need to be tightened a bit again.,resignation,neutral,neutral
+1900-01-01 00:19:42.340000,1900-01-01 00:19:45.360000,Omdat ik ook zie dat zij heel erg het spel speelt...,Because I also see that she really plays the game...,suspicion,surprise,mild
+1900-01-01 00:19:46.339000,1900-01-01 00:19:47.360000,en heel erg fanatiek is.,and is very fanatic.,zeal,happiness,intense
+1900-01-01 00:19:48.339000,1900-01-01 00:19:52.339000,"Ik dacht, in deze fase van het spel heb ik een goede bondgenoot nodig.","I thought, at this stage of the game I need a good ally.",calculation,neutral,mild
+1900-01-01 00:19:52.360000,1900-01-01 00:19:55.360000,"Ik denk eigenlijk, omdat we nu zo halverwege zitten...","I actually think, because we're now about halfway...",contemplation,neutral,mild
+1900-01-01 00:19:56.339000,1900-01-01 00:20:00.360000,dat we ons afspraak iets moeten aderscherpen.,that we need to clarify our appointment a bit.,uncertainty,neutral,mild
+1900-01-01 00:20:01.339000,1900-01-01 00:20:02.360000,Is het weer aan?,Is it on again?,curiosity,neutral,neutral
+1900-01-01 00:20:03.339000,1900-01-01 00:20:04.360000,"Nou ja, eigenlijk wel.","Well, actually yes.",resignation,neutral,mild
+1900-01-01 00:20:05.339000,1900-01-01 00:20:07.360000,Ik weet niet of ik het in mijn eentje red.,I don't know if I can manage on my own.,insecurity,fear,moderate
+1900-01-01 00:20:08.339000,1900-01-01 00:20:12.360000,Rob was tot de conclusie gekomen dat ik toch te vertrouwen was.,Rob had come to the conclusion that I could be trusted after all.,acceptance,happiness,mild
+1900-01-01 00:20:13.339000,1900-01-01 00:20:16.360000,Dus die heeft eigenlijk ons verbondje weer aangemaakt.,So he actually recreated our little alliance.,reconciliation,happiness,mild
+1900-01-01 00:20:17.339000,1900-01-01 00:20:19.339000,En daar ben ik wel blij mee.,And I am quite happy about that.,contentment,happiness,mild
+1900-01-01 00:20:19.360000,1900-01-01 00:20:21.360000,Want ik verdenk Rob niet echt.,Because I don't really suspect Rob.,doubt,neutral,mild
+1900-01-01 00:20:22.339000,1900-01-01 00:20:24.339000,Hoewel dat heel eng is.,Although that is very scary.,apprehension,fear,moderate
+1900-01-01 00:20:24.360000,1900-01-01 00:20:29.339000,Want je zal toch die sukkel zijn die je pakt met de duivelsluiter.,Because you'll end up being that fool who gets caught with the devil's lock.,contempt,disgust,moderate
+1900-01-01 00:20:29.360000,1900-01-01 00:20:31.360000,Is het slim om weer een kamer te delen?,Is it smart to share a room again?,uncertainty,fear,mild
+1900-01-01 00:20:32.339000,1900-01-01 00:20:33.360000,"Dat wil ik wel voorstellen, ja.","I would like to suggest that, yes.",willingness,neutral,mild
+1900-01-01 00:20:33.360000,1900-01-01 00:20:38.360000,Want op zich is het erg handig om bij je verdachte persoon te gaan hokken.,Because in itself it is very convenient to shack up with your suspect person.,pragmatism,neutral,neutral
+1900-01-01 00:20:38.379000,1900-01-01 00:20:41.360000,Maar aan de andere kant zit je blind te staan.,"But on the other hand, you're standing there blindly.",confusion,sadness,moderate
+1900-01-01 00:20:41.379000,1900-01-01 00:20:43.379000,Ik heb liever dat wij ons uitspreiden...,I would prefer that we spread out...,preference,neutral,mild
+1900-01-01 00:20:44.360000,1900-01-01 00:20:47.379000,en overal een beetje vriendelijk en gezellig gaan lopen.,and walk around everywhere a bit friendly and cozy.,warmth,happiness,mild
+1900-01-01 00:20:48.360000,1900-01-01 00:20:50.359000,En s'avonds gewoon alles bij elkaar optellen.,And in the evening just add everything together.,routine,neutral,neutral
+1900-01-01 00:20:50.379000,1900-01-01 00:20:52.359000,"Oké. Maar je bent het niet, hè?","Okay. But you are not, right?",doubt,fear,mild
+1900-01-01 00:20:52.379000,1900-01-01 00:20:54.379000,"Ik ben het echt, echt, echt niet.","I am really, really, really not it.",denial,sadness,intense
+1900-01-01 00:20:55.359000,1900-01-01 00:20:56.379000,Echt niet.,Really not.,denial,anger,mild
+1900-01-01 00:20:57.359000,1900-01-01 00:20:58.379000,Oké.,Oké.,acceptance,neutral,neutral
+1900-01-01 00:21:00.359000,1900-01-01 00:21:01.379000,Tiel.,Tiel.,neutrality,neutral,neutral
+1900-01-01 00:21:03.359000,1900-01-01 00:21:05.359000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:21:23.359000,1900-01-01 00:21:26.359000,Goedemiddag. Goedemiddag.,Good afternoon. Good afternoon.,politeness,neutral,neutral
+1900-01-01 00:21:26.379000,1900-01-01 00:21:29.379000,In de eeuwen voordat Columbus je voet aan wal zette...,In the centuries before Columbus set foot ashore...,nostalgia,neutral,mild
+1900-01-01 00:21:30.359000,1900-01-01 00:21:32.379000,werd dit eiland bevolkt door de Taino-Indianen.,this island was inhabited by the Taino Indians.,factuality,neutral,neutral
+1900-01-01 00:21:33.359000,1900-01-01 00:21:35.359000,Letterlijk vertaald het vriendelijke volk.,Literally translated the friendly people.,curiosity,neutral,neutral
+1900-01-01 00:21:35.379000,1900-01-01 00:21:39.359000,"De komst van de Europeanen betekende, door ziekte en uitbuiting...","The arrival of the Europeans meant, due to disease and exploitation...",foreboding,fear,moderate
+1900-01-01 00:21:39.379000,1900-01-01 00:21:42.359000,zo goed als het einde van hun cultuur.,as good as the end of their culture.,resignation,sadness,moderate
+1900-01-01 00:21:42.379000,1900-01-01 00:21:45.379000,Deze negen symbolen stammen uit de Taino-tijd.,These nine symbols date back to the Taino era.,interest,neutral,neutral
+1900-01-01 00:21:46.359000,1900-01-01 00:21:48.379000,En die gaan jullie naar het geld leiden.,And those will lead you to the money.,expectation,neutral,neutral
+1900-01-01 00:21:49.359000,1900-01-01 00:21:50.379000,Hopelijk.,Hopefully.,hope,happiness,mild
+1900-01-01 00:21:51.359000,1900-01-01 00:21:55.359000,Jullie gaan straks per boot op zoek naar deze negen tekens.,You will soon go by boat to search for these nine signs.,anticipation,surprise,mild
+1900-01-01 00:21:56.379000,1900-01-01 00:21:58.379000,Als jullie de juiste symbolen vinden...,If you find the right symbols...,anticipation,surprise,mild
+1900-01-01 00:21:59.359000,1900-01-01 00:22:02.379000,dan kunnen jullie met de achterkant een kaart van het gebied vormen.,then you can use the back to form a map of the area.,expectation,neutral,neutral
+1900-01-01 00:22:03.359000,1900-01-01 00:22:06.379000,Om zo de exacte locatie van het geld vast te stellen.,To determine the exact location of the money.,focus,neutral,neutral
+1900-01-01 00:22:07.379000,1900-01-01 00:22:10.359000,Jullie mogen ook meer dan negen tekens meenemen.,You may also bring more than nine characters.,permission,neutral,neutral
+1900-01-01 00:22:10.379000,1900-01-01 00:22:13.379000,"Maakt niet zoveel uit, behalve dat het wel geld kost.","It doesn't really matter, except that it does cost money.",resignation,neutral,mild
+1900-01-01 00:22:14.359000,1900-01-01 00:22:16.379000,200 euro per extra symbool.,200 euros per extra symbol.,indifference,neutral,neutral
+1900-01-01 00:22:18.359000,1900-01-01 00:22:21.359000,Dus neem de tekens goed in je op.,So take in the signs carefully.,caution,fear,mild
+1900-01-01 00:22:21.379000,1900-01-01 00:22:24.379000,Bekijk ze goed en ik geef jullie heel even de tijd om te studeren.,Look at them carefully and I will give you a little time to study.,encouragement,neutral,mild
+1900-01-01 00:22:26.359000,1900-01-01 00:22:27.359000,Allemaal eentje en negen.,All of them one and nine.,confusion,surprise,mild
+1900-01-01 00:22:27.379000,1900-01-01 00:22:29.359000,Zullen we een rijtje nemen?,Shall we have a drink?,suggestion,neutral,neutral
+1900-01-01 00:22:29.379000,1900-01-01 00:22:31.359000,Ik heb ze al namen gegeven.,I have already given them names.,pride,happiness,mild
+1900-01-01 00:22:31.379000,1900-01-01 00:22:33.379000,We weten niet of we met z'n allen gaan.,We don't know if we're all going.,uncertainty,fear,mild
+1900-01-01 00:22:34.359000,1900-01-01 00:22:36.359000,Iedereen moet ze sowieso allemaal leren.,Everyone has to learn them all anyway.,expectation,neutral,neutral
+1900-01-01 00:22:36.379000,1900-01-01 00:22:39.379000,"Als je ze opsplitst, dan lukt je maar de helft.","If you split them up, you'll only manage half.",doubt,sadness,mild
+1900-01-01 00:22:40.359000,1900-01-01 00:22:41.379000,Ik ben visiel ingesteld.,I am visually oriented.,self-awareness,neutral,neutral
+1900-01-01 00:22:42.359000,1900-01-01 00:22:45.359000,Ik ben eerst begonnen met het rechterrijtje van boven naar onder.,I first started with the right column from top to bottom.,recollection,neutral,neutral
+1900-01-01 00:22:45.379000,1900-01-01 00:22:48.379000,"De eerste was een slang, de tweede was een soort zon.","The first was a snake, the second was a kind of sun.",curiosity,neutral,neutral
+1900-01-01 00:22:50.379000,1900-01-01 00:22:51.379000,Happy face. Stil.,Happy face. Stil.,contentment,happiness,mild
+1900-01-01 00:22:52.359000,1900-01-01 00:22:54.359000,"Man, vrouw, slak.","Man, woman, snail.",neutrality,neutral,neutral
+1900-01-01 00:22:54.379000,1900-01-01 00:22:55.379000,Tosti.,Tosti.,neutrality,neutral,neutral
+1900-01-01 00:22:56.359000,1900-01-01 00:22:57.379000,Linksboven.,Top left.,neutrality,neutral,neutral
+1900-01-01 00:22:58.360000,1900-01-01 00:22:59.379000,Tosti. Drie.,Toastie. Three.,neutrality,neutral,neutral
+1900-01-01 00:22:59.379000,1900-01-01 00:23:01.379000,Org. Swirl.,Org. Swirl.,confusion,surprise,mild
+1900-01-01 00:23:01.399000,1900-01-01 00:23:03.379000,Baard. Rob. Zon.,Beard. Rob. Sun.,neutrality,neutral,neutral
+1900-01-01 00:23:03.399000,1900-01-01 00:23:05.379000,Het ene teken was Rob.,One of the signs was Rob.,curiosity,neutral,neutral
+1900-01-01 00:23:05.399000,1900-01-01 00:23:08.379000,"Want die had van dat rare, stekelige...","Because it had that weird, prickly...",curiosity,neutral,mild
+1900-01-01 00:23:08.399000,1900-01-01 00:23:11.379000,onbeperkte zanger van de Cure haar.,unlimited singer of the Cure hair.,confusion,neutral,neutral
+1900-01-01 00:23:11.399000,1900-01-01 00:23:13.379000,Dat was een kapotte televisie.,That was a broken television.,disappointment,sadness,mild
+1900-01-01 00:23:13.399000,1900-01-01 00:23:16.379000,Een soort appeltje met handen en voeten.,A kind of little apple with hands and feet.,curiosity,neutral,neutral
+1900-01-01 00:23:16.399000,1900-01-01 00:23:19.379000,"Drie pootjes links, daar rechts zit niks.","Three little legs on the left, there's nothing on the right.",observation,neutral,neutral
+1900-01-01 00:23:19.399000,1900-01-01 00:23:21.379000,Drie puntjes en een kruis.,Three dots and a cross.,curiosity,neutral,neutral
+1900-01-01 00:23:22.379000,1900-01-01 00:23:25.379000,Dus dan hebben we allemaal alle tekens uit ons hoofd geleerd.,So then we have all learned all the signs by heart.,satisfaction,happiness,mild
+1900-01-01 00:23:25.399000,1900-01-01 00:23:27.379000,"En dat was goed ook, want...","And that was good too, because...",anticipation,neutral,mild
+1900-01-01 00:23:27.379000,1900-01-01 00:23:29.379000,er zit natuurlijk weer een adertje onder het gras.,"Of course, there's a catch again.",suspicion,fear,mild
+1900-01-01 00:23:29.399000,1900-01-01 00:23:32.399000,Het adertje was dat er in het water ook verkeerde tekens lagen.,The catch was that there were also wrong signs in the water.,suspicion,fear,mild
+1900-01-01 00:23:33.379000,1900-01-01 00:23:36.379000,"En als we die mee zouden nemen, daar moesten we ze goed onthouden...","And if we were to take those with us, we had to remember them well...",caution,fear,mild
+1900-01-01 00:23:36.399000,1900-01-01 00:23:38.399000,dan ging het geld af van de pot.,then the money was taken from the pot.,resignation,neutral,neutral
+1900-01-01 00:23:38.399000,1900-01-01 00:23:39.399000,Welke wil jij?,Which one do you want?,curiosity,neutral,neutral
+1900-01-01 00:23:39.399000,1900-01-01 00:23:41.379000,Let's do this.,Let's do this.,determination,happiness,moderate
+1900-01-01 00:23:41.399000,1900-01-01 00:23:46.399000,Vervolgens zijn we in twee tweetallen en in drietal de boot ingestapt.,Then we boarded the boat in two pairs and a group of three.,calm,neutral,neutral
+1900-01-01 00:23:46.399000,1900-01-01 00:23:47.399000,Hola.,Hello.,neutrality,neutral,neutral
+1900-01-01 00:23:47.399000,1900-01-01 00:23:49.399000,Zullen wij doorstappen? Ja.,Shall we walk faster? Yes.,readiness,neutral,neutral
+1900-01-01 00:23:50.379000,1900-01-01 00:23:52.399000,Wij waren team T van Taken.,We were team T from Taken.,pride,happiness,mild
+1900-01-01 00:23:53.379000,1900-01-01 00:23:54.379000,Of wel Tim.,Or rather Tim.,uncertainty,neutral,neutral
+1900-01-01 00:23:54.379000,1900-01-01 00:23:56.399000,"Cecile en Klaas waren samen, dat was team C.","Cecile and Klaas were together, that was team C.",matter-of-factness,neutral,neutral
+1900-01-01 00:23:57.379000,1900-01-01 00:23:59.379000,"En Annemiek, Rob en Marjolein waren samen, dat was team A.","And Annemiek, Rob and Marjolein were together, that was team A.",description,neutral,neutral
+1900-01-01 00:23:59.399000,1900-01-01 00:24:01.379000,Samen waren we TCA.,Together we were TCA.,nostalgia,happiness,mild
+1900-01-01 00:24:03.399000,1900-01-01 00:24:05.399000,Succes. Doei.,Success. Bye.,farewell,neutral,neutral
+1900-01-01 00:24:05.399000,1900-01-01 00:24:07.399000,"Boot C, boot A. Succes.","Boot C, boot A. Success.",satisfaction,happiness,mild
+1900-01-01 00:24:08.379000,1900-01-01 00:24:10.379000,"Alrighty, daar gaan we.","Alrighty, here we go.",readiness,neutral,mild
+1900-01-01 00:24:10.399000,1900-01-01 00:24:12.379000,"Roger, Whittaker.","Roger, Whittaker.",neutrality,neutral,neutral
+1900-01-01 00:24:12.399000,1900-01-01 00:24:14.399000,Die kennen ze natuurlijk niet.,Of course they don't know those.,dismissal,neutral,neutral
+1900-01-01 00:24:15.379000,1900-01-01 00:24:17.399000,"Oké, Tosti, Driehoer, Krul.","Okay, Tosti, Driehoer, Krul.",acceptance,neutral,neutral
+1900-01-01 00:24:18.379000,1900-01-01 00:24:20.399000,"Aap, Rob, Sterp, Son.","Aap, Rob, Sterp, Son.",neutrality,neutral,neutral
+1900-01-01 00:24:21.399000,1900-01-01 00:24:23.420000,"Vogel, schildpad, baby, check.","Bird, turtle, baby, check.",focus,neutral,neutral
+1900-01-01 00:24:24.399000,1900-01-01 00:24:26.420000,De opdracht was om op zoek te gaan naar die bordjes.,The assignment was to go look for those signs.,focus,neutral,neutral
+1900-01-01 00:24:27.399000,1900-01-01 00:24:30.420000,En die bordjes waren vastgemaakt aan boeien in het water.,And those signs were attached to buoys in the water.,description,neutral,neutral
+1900-01-01 00:24:31.399000,1900-01-01 00:24:34.420000,Als we negen identieke plaatjes hadden gevonden...,If we had found nine identical pictures...,regret,sadness,mild
+1900-01-01 00:24:34.420000,1900-01-01 00:24:37.420000,dan zouden we de puzzel compleet kunnen maken.,then we could complete the puzzle.,hope,happiness,mild
+1900-01-01 00:24:37.420000,1900-01-01 00:24:39.420000,Heb jij aanwijzingen aan de captain?,Do you have instructions for the captain?,curiosity,neutral,neutral
+1900-01-01 00:24:39.420000,1900-01-01 00:24:41.420000,"Oké, Mario, we take a left here.","Oké, Mario, we take a left here.",direction,neutral,neutral
+1900-01-01 00:24:43.420000,1900-01-01 00:24:46.399000,"Even checken, boot C, boot Cecile.","Just checking, boat C, boat Cecile.",curiosity,neutral,neutral
+1900-01-01 00:24:46.420000,1900-01-01 00:24:47.420000,"Oké, slow down, slow down.","Oké, slow down, slow down.",impatience,anger,mild
+1900-01-01 00:24:47.420000,1900-01-01 00:24:50.439000,Boot C gaat alvast een beetje voor op boot T.,Boat C is already a little ahead of boat T.,anticipation,happiness,mild
+1900-01-01 00:24:51.420000,1900-01-01 00:24:54.420000,Ik had de porto nog niet eerder gehad in een opdracht.,I had not had the walkie-talkie before in an assignment.,novelty,surprise,mild
+1900-01-01 00:24:54.439000,1900-01-01 00:24:58.420000,"En ja, er kon eigenlijk weinig misgaan.","And yes, little could actually go wrong.",confidence,happiness,mild
+1900-01-01 00:25:00.439000,1900-01-01 00:25:02.420000,"Oh, het gaat diep, hè?","Oh, it goes deep, doesn't it?",curiosity,surprise,mild
+1900-01-01 00:25:02.439000,1900-01-01 00:25:04.420000,"Jezus, kijk die vogel.","Jesus, look at that bird.",amazement,surprise,mild
+1900-01-01 00:25:04.439000,1900-01-01 00:25:08.420000,We zijn ergens een waai ingegaan op zoek naar tekens.,We went into a backwater somewhere looking for signs.,curiosity,neutral,mild
+1900-01-01 00:25:08.439000,1900-01-01 00:25:11.439000,"Prachtig kalm water, prachtige mangroves.","Beautiful calm water, beautiful mangroves.",admiration,happiness,mild
+1900-01-01 00:25:14.420000,1900-01-01 00:25:16.420000,"Oh, is het hier mooi?","Oh, is it beautiful here?",curiosity,surprise,mild
+1900-01-01 00:25:16.439000,1900-01-01 00:25:20.420000,Ik had het gevoel dat Johnny Depp elk moment met het black pearl...,I had the feeling that Johnny Depp could appear with the Black Pearl at any moment...,anticipation,surprise,mild
+1900-01-01 00:25:20.439000,1900-01-01 00:25:22.439000,van de zijkant het beeld in kon schieten.,could shoot into the frame from the side.,anticipation,surprise,mild
+1900-01-01 00:25:23.420000,1900-01-01 00:25:25.420000,Want het was echt Pirates of the Caribbean.,Because it was really Pirates of the Caribbean.,nostalgia,happiness,mild
+1900-01-01 00:25:25.439000,1900-01-01 00:25:28.420000,"Hoge cliffs overal, grotten, spelonken.","High cliffs everywhere, caves, caverns.",awe,surprise,mild
+1900-01-01 00:25:30.439000,1900-01-01 00:25:33.420000,Pelikanen die eerst hoog in de lucht vlogen...,Pelicans that first flew high in the sky...,curiosity,neutral,mild
+1900-01-01 00:25:33.439000,1900-01-01 00:25:36.439000,en dan in één keer naar beneden gingen om wat te eten.,and then suddenly went downstairs to get something to eat.,impulsiveness,surprise,mild
+1900-01-01 00:25:36.439000,1900-01-01 00:25:37.439000,Echt prachtig.,Really beautiful.,admiration,happiness,moderate
+1900-01-01 00:25:38.420000,1900-01-01 00:25:40.420000,Het was echt een droom.,It was really a dream.,wonder,happiness,mild
+1900-01-01 00:25:40.439000,1900-01-01 00:25:44.420000,"En dan vergeet je af en toe, oh ja, ik moet ook nog wat doen.","And then you sometimes forget, oh right, I still have to do something.",absentmindedness,neutral,mild
+1900-01-01 00:25:44.420000,1900-01-01 00:25:46.420000,"Boot A, Annemiek, kom er eens uit.","Boat A, Annemiek, come out for a moment.",command,neutral,neutral
+1900-01-01 00:25:46.439000,1900-01-01 00:25:47.420000,Er is echt niks.,There is really nothing.,emptiness,sadness,moderate
+1900-01-01 00:25:47.439000,1900-01-01 00:25:49.420000,"Kom je daar niet achter? Nee, echt niet.","Don't you find out? No, really not.",doubt,surprise,mild
+1900-01-01 00:25:49.439000,1900-01-01 00:25:51.420000,"Maar daar? Nee, schat.","But there? No, darling.",rejection,disgust,mild
+1900-01-01 00:25:51.439000,1900-01-01 00:25:54.420000,Je moet volgens mij echt een boei kunnen zien.,I think you really should be able to see a buoy.,certainty,neutral,mild
+1900-01-01 00:25:54.439000,1900-01-01 00:25:56.439000,"Ja, maar goed, hij kan er liggen.","Yes, but well, he can be there.",acceptance,neutral,neutral
+1900-01-01 00:25:57.420000,1900-01-01 00:25:59.420000,"Boot A, Annemiek, kom er eens uit.","Boat A, Annemiek, come out for a moment.",command,neutral,neutral
+1900-01-01 00:25:59.439000,1900-01-01 00:26:00.439000,Over.,Over.,finality,neutral,neutral
+1900-01-01 00:26:04.439000,1900-01-01 00:26:08.420000,"Boot A, kom er eens in. En er gebeurde helemaal niks.","Boat A, come in. And nothing happened at all.",disappointment,sadness,mild
+1900-01-01 00:26:08.439000,1900-01-01 00:26:11.420000,"Annemiek, één zoekdiscipline, kom er eens uit.","Annemiek, one search discipline, come out for once.",impatience,anger,mild
+1900-01-01 00:26:11.439000,1900-01-01 00:26:13.420000,Niet tussendoor? Nee.,Not in between? No.,rejection,anger,mild
+1900-01-01 00:26:13.439000,1900-01-01 00:26:15.439000,Ze zijn bij de eilanden geweest.,They have been to the islands.,reminiscence,neutral,neutral
+1900-01-01 00:26:17.439000,1900-01-01 00:26:19.420000,Ze zijn naar links geklaagd.,They complained to the left.,dissatisfaction,anger,mild
+1900-01-01 00:26:19.439000,1900-01-01 00:26:21.439000,Ik heb allebei de kant op gekeken.,I looked both ways.,caution,fear,mild
+1900-01-01 00:26:22.420000,1900-01-01 00:26:23.439000,Nou ja.,Well then.,resignation,neutral,mild
+1900-01-01 00:26:24.420000,1900-01-01 00:26:26.420000,"Ja, ja, ja, ja, ja, ja.","Yes, yes, yes, yes, yes, yes.",amusement,happiness,mild
+1900-01-01 00:26:26.439000,1900-01-01 00:26:28.439000,"Team CFB, we zien een boei.","Team CFB, we see a buoy.",alertness,surprise,mild
+1900-01-01 00:26:29.420000,1900-01-01 00:26:30.420000,Yes.,Yes.,agreement,neutral,neutral
+1900-01-01 00:26:30.439000,1900-01-01 00:26:31.439000,Cecil heeft een boei.,Cecil has a buoy.,neutrality,neutral,neutral
+1900-01-01 00:26:32.420000,1900-01-01 00:26:33.439000,En wel meerdere trouwens.,"And several, by the way.",nonchalance,neutral,neutral
+1900-01-01 00:26:34.420000,1900-01-01 00:26:37.420000,"En uiteindelijk, net toen ik dacht, dit gaat niet meer lukken...","And finally, just when I thought, this isn't going to work anymore...",hopelessness,sadness,moderate
+1900-01-01 00:26:37.439000,1900-01-01 00:26:41.420000,kwamen we bij een baai waar meerdere oranje boeien waren.,we arrived at a bay where there were several orange buoys.,curiosity,neutral,neutral
+1900-01-01 00:26:41.439000,1900-01-01 00:26:44.439000,"Oké, dan gaan we jullie... Hoe zien die boeien eruit?","Okay, then we'll go to you... What do those buoys look like?",curiosity,surprise,mild
+1900-01-01 00:26:45.420000,1900-01-01 00:26:46.439000,Oranje en rood.,Orange and red.,neutrality,neutral,neutral
+1900-01-01 00:26:48.420000,1900-01-01 00:26:51.420000,"Oké, dit is het aapje. Het is niet het goeie aapje, volgens mij.","Okay, this is the monkey. I don't think it's the right monkey.",doubt,sadness,mild
+1900-01-01 00:26:51.439000,1900-01-01 00:26:52.439000,Kijk eens.,Look.,curiosity,neutral,mild
+1900-01-01 00:26:53.420000,1900-01-01 00:26:54.439000,"Die is niet goed. Nee, hè?","That one is not good. No, right?",disappointment,sadness,mild
+1900-01-01 00:26:55.420000,1900-01-01 00:26:56.439000,"Die is niet goed, die van ons.","That one is not good, ours.",disappointment,sadness,mild
+1900-01-01 00:26:57.420000,1900-01-01 00:27:00.420000,Het is een aapje met de baardharen naar de zijkant.,It is a little monkey with its beard hairs to the side.,observation,neutral,neutral
+1900-01-01 00:27:00.439000,1900-01-01 00:27:03.439000,We hadden een aapje met de baardharen naar rechts.,We had a little monkey with its beard hairs to the right.,nostalgia,happiness,mild
+1900-01-01 00:27:03.439000,1900-01-01 00:27:06.420000,"Aan de zijkant, dus het is niet de goeie.","On the side, so it's not the right one.",disappointment,sadness,mild
+1900-01-01 00:27:06.439000,1900-01-01 00:27:08.439000,"Ja, een boei. Ik zie nog een boei.","Yes, a buoy. I see another buoy.",observation,neutral,neutral
+1900-01-01 00:27:08.439000,1900-01-01 00:27:10.439000,Om met Elielus te spreken.,To speak with Elielus.,anticipation,happiness,mild
+1900-01-01 00:27:10.460000,1900-01-01 00:27:13.439000,"Wij waren als eerste ter plaatse, Cecil en ik.","We were the first on the scene, Cecil and I.",recollection,neutral,neutral
+1900-01-01 00:27:13.460000,1900-01-01 00:27:16.439000,Gelukkig kwamen Tim en Taken ook vrij snel.,"Fortunately, Tim and Taken also arrived quite quickly.",relief,happiness,mild
+1900-01-01 00:27:16.460000,1900-01-01 00:27:17.460000,"Daar, daar, daar.","There, there, there.",reassurance,neutral,mild
+1900-01-01 00:27:18.439000,1900-01-01 00:27:19.439000,"Oké, hebben ze.","Okay, they have it.",acceptance,neutral,neutral
+1900-01-01 00:27:19.460000,1900-01-01 00:27:24.460000,"Maar team Annemiek, Marjolein en Rob bleven mysterieuze wijze vrij achter.","But team Annemiek, Marjolein and Rob remained mysteriously free.",curiosity,surprise,mild
+1900-01-01 00:27:26.460000,1900-01-01 00:27:28.460000,Maar zie je hun boei? Nee.,But do you see their buoy? No.,doubt,sadness,mild
+1900-01-01 00:27:30.460000,1900-01-01 00:27:32.460000,"Ja, maar die was de baard.","Yes, but that was the beard.",dismissal,neutral,neutral
+1900-01-01 00:27:33.439000,1900-01-01 00:27:34.439000,"Linksmidden, toch?","Left midfield, right?",uncertainty,neutral,mild
+1900-01-01 00:27:34.460000,1900-01-01 00:27:35.460000,Andersom.,The other way around.,confusion,surprise,mild
+1900-01-01 00:27:35.479000,1900-01-01 00:27:36.479000,"Andersom, hè?","The other way around, right?",confusion,surprise,mild
+1900-01-01 00:27:37.460000,1900-01-01 00:27:39.479000,Het eerste teken was de man met de baard.,The first sign was the man with the beard.,curiosity,neutral,neutral
+1900-01-01 00:27:40.460000,1900-01-01 00:27:42.460000,"Ja, ik heb hem onthouden als de baard.","Yes, I remembered him as the beard.",recollection,neutral,neutral
+1900-01-01 00:27:42.479000,1900-01-01 00:27:44.479000,"Deze is goed. Cecil, kijk eens.","This one is good. Cecil, take a look.",satisfaction,happiness,mild
+1900-01-01 00:27:44.479000,1900-01-01 00:27:46.479000,Die is goed. We hebben een goeie.,That one is good. We have a good one.,satisfaction,happiness,mild
+1900-01-01 00:27:46.479000,1900-01-01 00:27:49.479000,"Ik hield er eentje omhoog. Cecil, volgens mij is deze oké.","I held one up. Cecil, I think this one is okay.",reassurance,happiness,mild
+1900-01-01 00:27:49.479000,1900-01-01 00:27:51.479000,"Jack, hoppakee, naar binnen.","Jack, hoppakee, inside.",encouragement,happiness,mild
+1900-01-01 00:27:51.479000,1900-01-01 00:27:52.479000,Daar ligt er nog één.,There is another one over there.,observation,neutral,neutral
+1900-01-01 00:27:53.460000,1900-01-01 00:27:55.479000,Toen kwamen we al vrij snel een boeitje tegen.,Then we soon came across a little buoy.,curiosity,surprise,mild
+1900-01-01 00:27:56.460000,1900-01-01 00:27:58.479000,"Deze moesten we ook hebben. 1, 2, 3, die mist.","We needed to have these too. 1, 2, 3, that one is missing.",frustration,sadness,mild
+1900-01-01 00:27:58.479000,1900-01-01 00:28:02.460000,De tv-antenne met de drie kruisjes aan stokjes eraan.,The TV antenna with the three crosses on sticks attached to it.,nostalgia,neutral,mild
+1900-01-01 00:28:02.479000,1900-01-01 00:28:03.479000,Daar was nog één.,There was one more.,remembrance,neutral,neutral
+1900-01-01 00:28:03.480000,1900-01-01 00:28:05.480000,Dit is...,This is...,uncertainty,neutral,neutral
+1900-01-01 00:28:06.480000,1900-01-01 00:28:08.480000,"Nee. Nee, helaas.","No. No, unfortunately.",regret,sadness,mild
+1900-01-01 00:28:09.460000,1900-01-01 00:28:12.460000,Licht bij het eilandje in de baai waar we nu zijn.,Light near the little island in the bay where we are now.,curiosity,neutral,mild
+1900-01-01 00:28:12.480000,1900-01-01 00:28:15.480000,Kijk even waar wij zijn. Boot A. Die is fout.,Take a look at where we are. Boat A. That one is wrong.,frustration,anger,mild
+1900-01-01 00:28:16.460000,1900-01-01 00:28:19.460000,We hebben een derde goeie. Het lieve heersbeestje.,We have a third good one. The ladybug.,satisfaction,happiness,mild
+1900-01-01 00:28:19.480000,1900-01-01 00:28:21.480000,Beter bekend als Rob.,Better known as Rob.,neutrality,neutral,neutral
+1900-01-01 00:28:21.480000,1900-01-01 00:28:23.480000,Daar ligt er nog één. Hebben we die al gehad?,There's another one over there. Have we already had that one?,curiosity,surprise,mild
+1900-01-01 00:28:23.480000,1900-01-01 00:28:25.480000,Nee. Licht bij.,No. Light on.,dismissal,neutral,neutral
+1900-01-01 00:28:25.480000,1900-01-01 00:28:28.480000,Dat is een 8. Staat er nog iets op de achterkant?,That is an 8. Is there anything on the back?,curiosity,surprise,mild
+1900-01-01 00:28:29.460000,1900-01-01 00:28:31.480000,"Daar, nog eentje. Zie je mijn vinger?","There, another one. Do you see my finger?",curiosity,neutral,mild
+1900-01-01 00:28:31.480000,1900-01-01 00:28:35.480000,We hadden de hele tijd of pech of er lag een verkeerde.,We had either bad luck all the time or there was a wrong one.,frustration,sadness,moderate
+1900-01-01 00:28:36.460000,1900-01-01 00:28:38.480000,Het is goed.,It is good.,acceptance,happiness,mild
+1900-01-01 00:28:38.480000,1900-01-01 00:28:40.480000,Heeft-ie de bootjes gebogen?,Did he bend the little boats?,curiosity,neutral,mild
+1900-01-01 00:28:40.480000,1900-01-01 00:28:43.480000,Boven gebogen en onder zo. Dit is toch goed?,"Curved on top and like this on the bottom. This is correct, right?",uncertainty,fear,mild
+1900-01-01 00:28:44.460000,1900-01-01 00:28:47.480000,Team C heeft de schildpad over.,Team C has the turtle left over.,indifference,neutral,neutral
+1900-01-01 00:28:47.480000,1900-01-01 00:28:49.480000,Top. Zit de schildpad?,Great. Is the turtle sitting?,curiosity,neutral,mild
+1900-01-01 00:28:49.480000,1900-01-01 00:28:53.480000,Binnen no-time hadden wij vijf van die houten blokjes meegenomen.,In no time we had taken five of those wooden blocks with us.,excitement,happiness,mild
+1900-01-01 00:28:54.460000,1900-01-01 00:28:55.480000,Ik vind het leuk!,I like it!,enjoyment,happiness,moderate
+1900-01-01 00:28:55.480000,1900-01-01 00:28:57.480000,"1, 2, 3, 4, 5.","1, 2, 3, 4, 5.",neutrality,neutral,neutral
+1900-01-01 00:28:58.480000,1900-01-01 00:28:59.480000,Lekker bezig.,Doing well.,encouragement,happiness,mild
+1900-01-01 00:28:59.480000,1900-01-01 00:29:03.480000,Je bent een vieze uitsloper. Dan verdenkt niemand ons meer.,You are a dirty sneak. Then no one will suspect us anymore.,contempt,disgust,moderate
+1900-01-01 00:29:04.460000,1900-01-01 00:29:05.480000,Mooi zo.,"Good, that's nice.",satisfaction,happiness,mild
+1900-01-01 00:29:06.480000,1900-01-01 00:29:08.480000,Wij hebben er drie over.,We have three left.,contentment,neutral,neutral
+1900-01-01 00:29:08.480000,1900-01-01 00:29:11.480000,Moeten we even bij boot A bij elkaar komen?,Should we get together at boat A for a moment?,suggestion,neutral,neutral
+1900-01-01 00:29:12.460000,1900-01-01 00:29:13.480000,Goed idee.,Good idea.,agreement,happiness,mild
+1900-01-01 00:29:14.460000,1900-01-01 00:29:15.480000,Wij gaan stilliggen.,We are going to stop moving.,resignation,neutral,neutral
+1900-01-01 00:29:20.480000,1900-01-01 00:29:23.480000,We zijn met z'n drieën naar elkaar toegevaren.,The three of us sailed towards each other.,companionship,happiness,mild
+1900-01-01 00:29:23.480000,1900-01-01 00:29:25.480000,Hallo. Hoi.,Hello. Hi.,greeting,neutral,neutral
+1900-01-01 00:29:25.480000,1900-01-01 00:29:27.480000,Wij zijn Tim en Taken.,We are Tim and Taken.,introduction,neutral,neutral
+1900-01-01 00:29:28.480000,1900-01-01 00:29:29.480000,Hebben.,Have.,neutrality,neutral,neutral
+1900-01-01 00:29:30.460000,1900-01-01 00:29:31.480000,Die zitten hier.,They are sitting here.,certainty,neutral,neutral
+1900-01-01 00:29:32.460000,1900-01-01 00:29:33.480000,Dit is de totstuur.,This is the totstuur.,confusion,neutral,neutral
+1900-01-01 00:29:34.460000,1900-01-01 00:29:36.480000,Wij hadden een soort letterbak bij ons.,We had a kind of letter case with us.,nostalgia,happiness,mild
+1900-01-01 00:29:37.460000,1900-01-01 00:29:40.460000,In die letterbak zouden alle tekens gezet moeten worden.,All characters should be placed in that type case.,expectation,neutral,neutral
+1900-01-01 00:29:40.480000,1900-01-01 00:29:43.480000,Zodat we uiteindelijk een oplossing zouden vinden.,So that we would eventually find a solution.,hope,happiness,mild
+1900-01-01 00:29:43.480000,1900-01-01 00:29:47.480000,"Als we die tekens om zouden draaien, zou er een schatkaart uitkomen.","If we were to turn those symbols around, a treasure map would come out.",curiosity,surprise,mild
+1900-01-01 00:29:47.480000,1900-01-01 00:29:49.480000,Die zat hieronder. Ja.,That was underneath here. Yes.,confirmation,neutral,neutral
+1900-01-01 00:29:49.480000,1900-01-01 00:29:51.480000,Dat is Rob. Maar Rob is verkeerd.,That is Rob. But Rob is wrong.,disapproval,disgust,mild
+1900-01-01 00:29:52.460000,1900-01-01 00:29:53.480000,De zon moet rechts.,The sun should be on the right.,preference,neutral,neutral
+1900-01-01 00:29:54.480000,1900-01-01 00:29:57.480000,Wij hadden er drie en er waren er nog vijf gescoord.,We had three and there were five more scored.,recollection,neutral,neutral
+1900-01-01 00:29:58.460000,1900-01-01 00:30:01.480000,Waarvan bleek dat Klaas en Cecil er vijf hadden gescoord.,Which showed that Klaas and Cecil had scored five.,pride,happiness,mild
+1900-01-01 00:30:02.460000,1900-01-01 00:30:04.480000,En het team van Annemieke er nul had gescoord.,And Annemieke's team had scored zero.,disappointment,sadness,mild
+1900-01-01 00:30:05.460000,1900-01-01 00:30:06.480000,Eentje mis is niet zo'n hulp.,One missing is not such a help.,disappointment,sadness,mild
+1900-01-01 00:30:07.460000,1900-01-01 00:30:09.480000,Als je die totstuur nu rechtsboven legt...,If you put that remote in the top right now...,expectation,neutral,mild
+1900-01-01 00:30:09.480000,1900-01-01 00:30:11.480000,Boca del Tiburon staat er nog.,Boca del Tiburon is still there.,reassurance,neutral,neutral
+1900-01-01 00:30:12.459000,1900-01-01 00:30:14.480000,Wat is de Boca del Tiburon?,What is the Boca del Tiburon?,curiosity,neutral,mild
+1900-01-01 00:30:15.459000,1900-01-01 00:30:17.480000,Er stond een kruis en Boca Tiburon.,There was a cross and Boca Tiburon.,curiosity,neutral,neutral
+1900-01-01 00:30:18.459000,1900-01-01 00:30:19.480000,Overtuwel haaienbek.,Overtuwel shark's mouth.,confusion,surprise,mild
+1900-01-01 00:30:20.459000,1900-01-01 00:30:21.480000,Boca del Tiburon.,Boca del Tiburon.,neutrality,neutral,neutral
+1900-01-01 00:30:22.480000,1900-01-01 00:30:24.480000,Boca del Tiburon.,Shark's Mouth.,neutrality,neutral,neutral
+1900-01-01 00:30:24.480000,1900-01-01 00:30:26.480000,Boca del Tiburon.,Shark's Mouth.,neutrality,neutral,neutral
+1900-01-01 00:30:27.459000,1900-01-01 00:30:29.480000,"En we hadden 1, 1, 3 als code.","And we had 1, 1, 3 as the code.",recollection,neutral,neutral
+1900-01-01 00:30:29.480000,1900-01-01 00:30:31.480000,Waarom hebben we een code?,Why do we have a code?,curiosity,neutral,neutral
+1900-01-01 00:30:31.480000,1900-01-01 00:30:33.480000,"Toen dacht ik, hee, cijferslot.","Then I thought, hey, combination lock.",realization,surprise,mild
+1900-01-01 00:30:33.480000,1900-01-01 00:30:35.480000,Wat nou als we gewoon weer een kist hebben?,What if we just have a coffin again?,uncertainty,fear,mild
+1900-01-01 00:30:41.480000,1900-01-01 00:30:43.480000,Dus wij een hele snelle vaart erheen.,So we went there at a very fast pace.,urgency,surprise,moderate
+1900-01-01 00:30:47.480000,1900-01-01 00:30:49.480000,"O, tof!","Oh, cool!",enthusiasm,happiness,mild
+1900-01-01 00:30:49.480000,1900-01-01 00:30:51.480000,Tof! Is dit...,Cool! Is this...,curiosity,surprise,mild
+1900-01-01 00:30:52.459000,1900-01-01 00:30:53.480000,"Ja, ja, ja.","Yes, yes, yes.",amusement,happiness,mild
+1900-01-01 00:30:55.480000,1900-01-01 00:30:57.480000,"O, dit is hem. Dit is de Boca.","Oh, this is it. This is the Boca.",recognition,surprise,mild
+1900-01-01 00:30:57.480000,1900-01-01 00:30:59.480000,Kijk hoe mooi hij is.,Look how beautiful he is.,admiration,happiness,mild
+1900-01-01 00:30:59.480000,1900-01-01 00:31:01.480000,"Ja, vet, hè?","Yeah, cool, right?",enthusiasm,happiness,mild
+1900-01-01 00:31:01.480000,1900-01-01 00:31:03.480000,Wauw. Jeutje.,Wow. Jeez.,astonishment,surprise,mild
+1900-01-01 00:31:03.480000,1900-01-01 00:31:04.480000,Spannend.,Exciting.,anticipation,surprise,mild
+1900-01-01 00:31:09.459000,1900-01-01 00:31:10.480000,"O, tof, jongens.","Oh, cool, guys.",enthusiasm,happiness,mild
+1900-01-01 00:31:10.480000,1900-01-01 00:31:15.480000,Daar doemt vanuit de verte een fantastische rots op waar je in komt.,"In the distance, a fantastic rock looms up that you enter.",wonder,surprise,mild
+1900-01-01 00:31:15.480000,1900-01-01 00:31:18.480000,En dat leek inderdaad op een soort haaienbek met tanden.,And that indeed looked like a kind of shark's mouth with teeth.,recognition,surprise,mild
+1900-01-01 00:31:18.480000,1900-01-01 00:31:20.480000,Het zag er prachtig uit.,It looked beautiful.,admiration,happiness,mild
+1900-01-01 00:31:20.480000,1900-01-01 00:31:22.480000,"1, 1, 3, Klaas.","1, 1, 3, Klaas.",neutrality,neutral,neutral
+1900-01-01 00:31:23.459000,1900-01-01 00:31:24.480000,"1, 1, 3.","1, 1, 3.",neutrality,neutral,neutral
+1900-01-01 00:31:24.480000,1900-01-01 00:31:27.480000,"En inderdaad, daar was een kist.","And indeed, there was a chest.",confirmation,surprise,mild
+1900-01-01 00:31:27.480000,1900-01-01 00:31:29.480000,Maar een kist met een slot erop.,But a chest with a lock on it.,curiosity,neutral,mild
+1900-01-01 00:31:29.480000,1900-01-01 00:31:32.480000,En toen kwamen die cijfers van pas.,And then those numbers came in handy.,relief,happiness,mild
+1900-01-01 00:31:32.480000,1900-01-01 00:31:35.480000,"1, 1, 3. Klik, open.","1, 1, 3. Click, open.",focus,neutral,neutral
+1900-01-01 00:31:35.480000,1900-01-01 00:31:37.480000,Hebben!,Have!,desire,happiness,intense
+1900-01-01 00:31:37.480000,1900-01-01 00:31:39.480000,"Wat zit erin, Klaas?","What's in it, Klaas?",curiosity,surprise,mild
+1900-01-01 00:31:40.480000,1900-01-01 00:31:42.480000,Hoeveel?,How much?,curiosity,neutral,neutral
+1900-01-01 00:31:42.480000,1900-01-01 00:31:44.480000,Duizend euro!,A thousand euros!,excitement,surprise,moderate
+1900-01-01 00:31:45.480000,1900-01-01 00:31:48.480000,Bontje van de zaak!,Perk from the company!,excitement,happiness,mild
+1900-01-01 00:31:48.480000,1900-01-01 00:31:51.480000,Dit is een mooie eventoon. Weet je wie erop staat?,This is a beautiful exhibition. Do you know who is on it?,curiosity,neutral,mild
+1900-01-01 00:31:51.480000,1900-01-01 00:31:53.480000,Ellie! Ellie Lust!,Ellie! Ellie Lust!,calling,neutral,neutral
+1900-01-01 00:31:53.480000,1900-01-01 00:31:55.480000,Ellie!,Ellie!,alertness,surprise,mild
+1900-01-01 00:32:05.480000,1900-01-01 00:32:07.480000,Een lekker middagje op zee.,A nice afternoon at sea.,contentment,happiness,mild
+1900-01-01 00:32:07.480000,1900-01-01 00:32:10.480000,En het heeft volgens mij nog geld opgeleverd voor de pot ook.,And I think it even brought in money for the pot as well.,satisfaction,happiness,mild
+1900-01-01 00:32:10.480000,1900-01-01 00:32:11.480000,Penningmeester?,Treasurer?,curiosity,surprise,mild
+1900-01-01 00:32:11.480000,1900-01-01 00:32:13.480000,Ik heb Ellie na aan het hart liggen.,Ellie is dear to my heart.,affection,happiness,mild
+1900-01-01 00:32:13.480000,1900-01-01 00:32:16.480000,Je hebt Ellie na aan het hart liggen. Laat maar zien.,"You hold Ellie close to your heart. Go ahead, show it.",affection,happiness,mild
+1900-01-01 00:32:16.480000,1900-01-01 00:32:19.480000,Duizend euro. Gefeliciteerd.,A thousand euros. Congratulations.,pride,happiness,moderate
+1900-01-01 00:32:19.480000,1900-01-01 00:32:21.480000,Goed gedaan. Lekker dan.,Well done. Great then.,sarcasm,disgust,mild
+1900-01-01 00:32:21.480000,1900-01-01 00:32:24.480000,"En dat allemaal dankzij, dankzij wat eigenlijk?","And all that thanks to, thanks to what actually?",confusion,surprise,mild
+1900-01-01 00:32:24.480000,1900-01-01 00:32:27.480000,"Heldere communicatie, goede samenwerking.","Clear communication, good cooperation.",satisfaction,happiness,mild
+1900-01-01 00:32:27.480000,1900-01-01 00:32:29.480000,"Ja, ik geloof het wel.","Yes, I think so.",uncertainty,neutral,mild
+1900-01-01 00:32:29.480000,1900-01-01 00:32:32.480000,"Jullie beginnen in vorm te raken, heb ik het idee.","You are starting to get in shape, I think.",optimism,happiness,mild
+1900-01-01 00:32:32.480000,1900-01-01 00:32:34.480000,We hebben het wel nodig ook.,We really need it too.,need,neutral,mild
+1900-01-01 00:32:34.480000,1900-01-01 00:32:37.480000,"Het komt ook goed van pas, want morgen draait ook alles...","It also comes in handy, because tomorrow everything is happening too...",expectation,neutral,mild
+1900-01-01 00:32:37.480000,1900-01-01 00:32:40.480000,om goede samenwerking en heldere communicatie.,for good cooperation and clear communication.,hope,happiness,mild
+1900-01-01 00:32:40.480000,1900-01-01 00:32:42.480000,Tot morgen.,See you tomorrow.,expectation,neutral,neutral
+1900-01-01 00:32:42.480000,1900-01-01 00:32:44.480000,Goedemorgen.,Good morning.,calm,neutral,neutral
+1900-01-01 00:32:49.480000,1900-01-01 00:32:52.480000,Ik vind het een hele mooie buurt.,I think it's a very beautiful neighborhood.,appreciation,happiness,mild
+1900-01-01 00:32:52.480000,1900-01-01 00:32:54.480000,2014.,2014.,neutrality,neutral,neutral
+1900-01-01 00:32:55.480000,1900-01-01 00:32:57.480000,We zitten sinds kort in een appartement.,We have recently moved into an apartment.,adjustment,neutral,neutral
+1900-01-01 00:32:57.480000,1900-01-01 00:33:01.480000,Dat is toch anders dan een hotel. We zijn een soort gezin geworden.,That is different from a hotel. We have become a kind of family.,closeness,happiness,moderate
+1900-01-01 00:33:04.480000,1900-01-01 00:33:06.480000,Ik moet wel gelijk eerlijk zeggen...,I must be honest right away...,confession,neutral,mild
+1900-01-01 00:33:06.480000,1900-01-01 00:33:10.480000,dat ik tot nu toe de huiselijke taakjes vredelijk weet te ontwijken.,that so far I have been able to peacefully avoid the household chores.,contentment,happiness,mild
+1900-01-01 00:33:10.480000,1900-01-01 00:33:13.480000,"Mevrouw Narens, mag ik jullie proosten?","Mrs. Narens, may I toast you all?",politeness,neutral,neutral
+1900-01-01 00:33:13.480000,1900-01-01 00:33:16.480000,Het is heel onwerkelijk om hier met z'n allen te zitten.,It is very surreal to be sitting here with all of us.,surrealness,surprise,moderate
+1900-01-01 00:33:16.480000,1900-01-01 00:33:19.480000,"We zitten ook op een soort filmlocatie, lijkt wel soms.","We are also on a kind of film location, it seems sometimes.",curiosity,surprise,mild
+1900-01-01 00:33:19.480000,1900-01-01 00:33:21.480000,Klaas. Ik schrik het in.,Klaas. I get startled by it.,startlement,surprise,moderate
+1900-01-01 00:33:21.480000,1900-01-01 00:33:23.480000,"Ja, ik zit in m'n knolletuin.","Yes, I'm sitting in my vegetable garden.",contentment,happiness,mild
+1900-01-01 00:33:28.480000,1900-01-01 00:33:31.480000,Al het geld was opgerold en ik vind dat niet netjes.,All the money was rolled up and I don't think that's proper.,disapproval,disgust,mild
+1900-01-01 00:33:31.480000,1900-01-01 00:33:34.480000,"Je moet geld natuurlijk, zeker als je ervoor moet passen...","You need money of course, especially if you have to watch out for it...",resignation,sadness,mild
+1900-01-01 00:33:34.480000,1900-01-01 00:33:36.480000,moet je dat een beetje netjes behandelen.,you should treat that a bit nicely.,consideration,neutral,mild
+1900-01-01 00:33:36.480000,1900-01-01 00:33:40.480000,Dus ik heb het eerst laten drogen en toen heb ik het gestreken.,So I let it dry first and then I ironed it.,matter-of-factness,neutral,neutral
+1900-01-01 00:33:40.480000,1900-01-01 00:33:43.480000,En de penningmeester die met kartonnen enveloppen werkt...,And the treasurer who works with cardboard envelopes...,amusement,happiness,mild
+1900-01-01 00:33:43.480000,1900-01-01 00:33:46.480000,is natuurlijk een penningmeester van helemaal niks.,is of course a treasurer of absolutely nothing.,contempt,disgust,moderate
+1900-01-01 00:33:46.480000,1900-01-01 00:33:50.480000,"Dus dit is hem, de zwarte, nepledere penningmeesteressen-portefeuille.","So this is it, the black, fake leather treasurer's wallet.",presentation,neutral,neutral
+1900-01-01 00:33:50.480000,1900-01-01 00:33:53.480000,En ik ga er ook mee onder de douche en ik ga er mee slapen.,And I also take it with me into the shower and I sleep with it.,attachment,happiness,mild
+1900-01-01 00:33:53.480000,1900-01-01 00:33:56.480000,"Want niemand, niemand, niemand komt aan deze centen.","Because nobody, nobody, nobody touches this money.",possessiveness,anger,moderate
+1900-01-01 00:33:56.480000,1900-01-01 00:33:58.480000,Helemaal niemand.,Absolutely no one.,isolation,sadness,moderate
+1900-01-01 00:34:04.480000,1900-01-01 00:34:10.480000,MUZIEK,MUSIC,neutrality,neutral,neutral
+1900-01-01 00:34:20.480000,1900-01-01 00:34:22.480000,We kwamen aan bij een prachtige brug.,We arrived at a beautiful bridge.,admiration,happiness,mild
+1900-01-01 00:34:22.480000,1900-01-01 00:34:26.480000,"Het was een wandelbrug, een loopbrug, maar echt gigantisch lang.","It was a footbridge, a walkway, but really gigantically long.",awe,surprise,moderate
+1900-01-01 00:34:26.480000,1900-01-01 00:34:31.480000,"Ja, daar liepen allemaal mensen gezellig met schattige kindjes en gezinnen...","Yes, there were all kinds of people walking around cheerfully with cute children and families...",warmth,happiness,mild
+1900-01-01 00:34:31.480000,1900-01-01 00:34:33.480000,te wandelen naar een eiland.,to walk to an island.,curiosity,neutral,neutral
+1900-01-01 00:34:33.480000,1900-01-01 00:34:35.480000,"En met tassen, met lekker drinken.","And with bags, with nice drinks.",contentment,happiness,mild
+1900-01-01 00:34:35.480000,1900-01-01 00:34:39.480000,Het leek me echt zo'n heerlijke plek waar je als je in dat stadje woont...,"It really seemed to me like such a lovely place where, if you lived in that little town...",longing,happiness,mild
+1900-01-01 00:34:39.480000,1900-01-01 00:34:42.480000,dan s'avonds gaat keuren en romantische afspraakjes hebt en zo.,then in the evenings you go judging and have romantic dates and such.,affection,happiness,mild
+1900-01-01 00:34:42.480000,1900-01-01 00:34:45.480000,"Nou ja, gewoon een prachtig plaatje.","Well, just a beautiful picture.",admiration,happiness,mild
+1900-01-01 00:34:45.480000,1900-01-01 00:34:47.480000,En toen volgde de opdracht.,And then the assignment followed.,expectation,neutral,neutral
+1900-01-01 00:34:47.480000,1900-01-01 00:34:48.480000,Goedemiddag.,Good afternoon.,politeness,neutral,neutral
+1900-01-01 00:34:48.480000,1900-01-01 00:34:51.480000,Dit wordt de brug naar nergens genoemd...,This is called the bridge to nowhere...,resignation,sadness,mild
+1900-01-01 00:34:51.480000,1900-01-01 00:34:54.480000,door de lokale bevolking van Samana.,by the local population of Samana.,neutrality,neutral,neutral
+1900-01-01 00:34:54.480000,1900-01-01 00:34:57.480000,U gaat zometeen verspreid op deze brug staan.,You are going to stand spread out on this bridge in a moment.,instruction,neutral,neutral
+1900-01-01 00:34:57.480000,1900-01-01 00:35:02.480000,Aan het begin en helemaal aan het einde vinden jullie een verhaal.,At the beginning and all the way at the end you will find a story.,anticipation,neutral,mild
+1900-01-01 00:35:03.480000,1900-01-01 00:35:05.480000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:35:05.480000,1900-01-01 00:35:11.480000,"En misschien raden jullie het al, die verhalen moeten jullie van plek laten wisselen.","And maybe you already guessed it, you have to make those stories switch places.",expectation,surprise,mild
+1900-01-01 00:35:11.480000,1900-01-01 00:35:16.480000,Dus het verhaal van het begin moet naar het einde en het verhaal van het einde moet naar het begin.,So the story from the beginning must go to the end and the story from the end must go to the beginning.,contemplation,neutral,neutral
+1900-01-01 00:35:16.480000,1900-01-01 00:35:18.480000,Dat doen jullie in estafette-vorm.,You do that in relay form.,instruction,neutral,neutral
+1900-01-01 00:35:18.480000,1900-01-01 00:35:23.480000,Dat betekent dat je alleen met de persoon direct voor of direct achter je mag communiceren.,That means you may only communicate with the person directly in front of or directly behind you.,restriction,neutral,neutral
+1900-01-01 00:35:23.480000,1900-01-01 00:35:25.480000,Succes!,Success!,triumph,happiness,moderate
+1900-01-01 00:35:26.480000,1900-01-01 00:35:30.480000,Alle kandidaten stonden op vaste posten op de brug...,All the candidates stood at fixed posts on the bridge...,expectation,neutral,neutral
+1900-01-01 00:35:30.480000,1900-01-01 00:35:33.480000,en moesten die twee verhalen doorgeven aan elkaar.,and had to pass those two stories on to each other.,obligation,neutral,neutral
+1900-01-01 00:35:33.480000,1900-01-01 00:35:37.480000,Dus we hadden allemaal een gedeelte van de brug waar we mochten bewegen...,So we each had a part of the bridge where we were allowed to move...,reminiscence,neutral,neutral
+1900-01-01 00:35:37.480000,1900-01-01 00:35:41.480000,"maar we mochten niet buiten ons vak komen, om het zo maar te zeggen.","but we were not allowed to step outside our field, so to speak.",restriction,sadness,mild
+1900-01-01 00:35:41.480000,1900-01-01 00:35:45.480000,Wij moesten mondelings zorgen dat het verhaal van de linkerkant...,We had to make sure orally that the story from the left side...,uncertainty,neutral,neutral
+1900-01-01 00:35:45.480000,1900-01-01 00:35:48.480000,rechts op het bord goed uitgeschreven werd en vice versa.,on the right side of the board it was written out correctly and vice versa.,objectivity,neutral,neutral
+1900-01-01 00:35:50.480000,1900-01-01 00:35:53.480000,Meervoudige persoonlijkheidsstoornis is volgens de Vandalen...,Multiple personality disorder according to the Vandals...,curiosity,neutral,mild
+1900-01-01 00:35:53.480000,1900-01-01 00:35:57.480000,met 38 letters het langste woord in de Nederlandse taal.,with 38 letters the longest word in the Dutch language.,curiosity,neutral,neutral
+1900-01-01 00:35:57.480000,1900-01-01 00:35:59.480000,Meervoudigheid. Jezus.,Plurality. Jesus.,contemplation,neutral,neutral
+1900-01-01 00:35:59.480000,1900-01-01 00:36:04.480000,"Ik wilde dolgraag het begin zijn, want taal is helemaal mijn ding.","I really wanted to be the beginning, because language is totally my thing.",enthusiasm,happiness,moderate
+1900-01-01 00:36:04.480000,1900-01-01 00:36:07.480000,En voor de rest vind ik het ook gewoon fijn...,"And for the rest, I just like it too...",contentment,happiness,mild
+1900-01-01 00:36:07.480000,1900-01-01 00:36:11.480000,om in ieder geval zelf de controle te hebben over wat we aan het doen zijn.,to at least have control ourselves over what we are doing.,determination,neutral,mild
+1900-01-01 00:36:11.480000,1900-01-01 00:36:13.480000,Nederlandse taal. Oké.,Dutch language. Okay.,acceptance,neutral,neutral
+1900-01-01 00:36:13.480000,1900-01-01 00:36:17.480000,Meervoudige persoonlijkheidsstoornis is volgens de Vandalen...,Multiple personality disorder according to the Vandals...,curiosity,neutral,mild
+1900-01-01 00:36:17.480000,1900-01-01 00:36:21.480000,"Ik wilde heel graag op mijn bord staan, zodat ik het verhaal kon lezen...","I really wanted to be on my board, so I could read the story...",longing,sadness,moderate
+1900-01-01 00:36:21.480000,1900-01-01 00:36:25.480000,dat ik het goed kon overbrengen om de volgende in de ketting goed te instrueren.,that I was able to convey it well in order to properly instruct the next person in the chain.,confidence,happiness,mild
+1900-01-01 00:36:26.480000,1900-01-01 00:36:30.480000,"Ik zag de tekst en ik dacht, gelukkig, hij is niet zo lang.","I saw the text and I thought, luckily, it's not that long.",relief,happiness,mild
+1900-01-01 00:36:30.480000,1900-01-01 00:36:33.480000,Het langste woord dat je met je linkerhand...,The longest word you can type with your left hand...,curiosity,neutral,mild
+1900-01-01 00:36:33.480000,1900-01-01 00:36:38.480000,"aan de linkerkant van je toetsenbord kunt typen, is niet stewardess.",what you can type on the left side of your keyboard is not stewardess.,confusion,neutral,mild
+1900-01-01 00:36:38.480000,1900-01-01 00:36:42.480000,Het langste woord dat je met je linkerhand...,The longest word you can type with your left hand...,curiosity,neutral,mild
+1900-01-01 00:36:42.480000,1900-01-01 00:36:46.480000,"aan de linkerkant van het dashboard kunt typen, toetsenbord, kan typen...","on the left side of the dashboard you can type, keyboard, can type...",instruction,neutral,neutral
+1900-01-01 00:36:46.480000,1900-01-01 00:36:48.480000,is niet stewardess.,is not a stewardess.,correction,neutral,neutral
+1900-01-01 00:36:48.480000,1900-01-01 00:36:50.480000,Dit was eigenlijk wel de opdracht waar ik me een beetje...,This was actually the assignment where I felt a little...,hesitation,fear,mild
+1900-01-01 00:36:50.480000,1900-01-01 00:36:52.480000,"Nou, zorg is een groot woord.","Well, 'concern' is a big word.",reservation,neutral,mild
+1900-01-01 00:36:52.480000,1900-01-01 00:36:56.480000,"waarvan ik dacht, dit zou ik wel eens wat minder kunnen doen dan de andere.","of which I thought, I could perhaps do this a bit less than the others.",doubt,neutral,mild
+1900-01-01 00:36:56.480000,1900-01-01 00:36:58.480000,Het langste woord dat je met je linkerhand...,The longest word you can type with your left hand...,curiosity,neutral,mild
+1900-01-01 00:36:58.480000,1900-01-01 00:37:02.480000,"aan de linkerkant van het toetsenbord kunt typen, is niet stewardess.",what you can type on the left side of the keyboard is not stewardess.,confusion,neutral,neutral
+1900-01-01 00:37:02.480000,1900-01-01 00:37:04.480000,Ja. Top.,Yes. Great.,satisfaction,happiness,mild
+1900-01-01 00:37:04.480000,1900-01-01 00:37:08.480000,Meervoudige persoonlijkheidsstoornis is volgens de Vandalen...,Multiple personality disorder according to the Vandals...,curiosity,neutral,mild
+1900-01-01 00:37:08.480000,1900-01-01 00:37:12.480000,met 38 letters het langste woord in de Nederlandse taal.,with 38 letters the longest word in the Dutch language.,curiosity,neutral,neutral
+1900-01-01 00:37:12.480000,1900-01-01 00:37:14.480000,Meervoudige persoonlijkheidsstoornis...,Multiple personality disorder...,confusion,neutral,neutral
+1900-01-01 00:37:14.480000,1900-01-01 00:37:18.480000,Meervoudige persoonlijkheidsstoornis is volgens de Vandalen...,Multiple personality disorder according to the Vandals...,curiosity,neutral,mild
+1900-01-01 00:37:18.480000,1900-01-01 00:37:22.480000,met 38 letters het langste woord in de Nederlandse taal.,with 38 letters the longest word in the Dutch language.,curiosity,neutral,neutral
+1900-01-01 00:37:24.640000,1900-01-01 00:37:28.620000,"Er zijn acteurs bij, er zijn presentatoren bij.","There are actors, there are presenters.",matter-of-factness,neutral,neutral
+1900-01-01 00:37:28.640000,1900-01-01 00:37:33.620000,"Ja, als er iets moet lukken, is het het onthouden van tekst en het doorgeven.","Yes, if anything has to succeed, it's remembering text and passing it on.",confidence,happiness,mild
+1900-01-01 00:37:33.640000,1900-01-01 00:37:34.640000,Bam!,Bam!,excitement,surprise,intense
+1900-01-01 00:37:36.640000,1900-01-01 00:37:41.620000,"Het langste woord dat je met je linkerhand kan typen, is niet stuurbilis.",The longest word you can type with your left hand is not stuurbilis.,correction,neutral,neutral
+1900-01-01 00:37:41.640000,1900-01-01 00:37:42.640000,Fuck you's.,Fuck you's.,hostility,anger,intense
+1900-01-01 00:37:43.620000,1900-01-01 00:37:44.640000,Ik vond het geweldig om te doen.,I loved doing it.,enjoyment,happiness,moderate
+1900-01-01 00:37:45.620000,1900-01-01 00:37:47.640000,Aan de ene kant had ik taken en aan de andere kant Tim.,On the one hand I had tasks and on the other hand Tim.,conflict,neutral,mild
+1900-01-01 00:37:48.620000,1900-01-01 00:37:52.640000,Tim is ook televisiepresentator en doet dat vaker.,Tim is also a television presenter and does that more often.,matter-of-factness,neutral,neutral
+1900-01-01 00:37:52.640000,1900-01-01 00:37:57.640000,"Het langste woord dat je met je linkerhand kan typen, is niet stuurbilis.",The longest word you can type with your left hand is not stuurbilis.,correction,neutral,neutral
+1900-01-01 00:37:58.620000,1900-01-01 00:37:59.640000,"Niet stuurbilis. Ja, oké.","Not steerable. Yes, okay.",resignation,sadness,mild
+1900-01-01 00:38:00.620000,1900-01-01 00:38:01.640000,Dat is het? Ja.,That's it? Yes.,resignation,sadness,mild
+1900-01-01 00:38:01.640000,1900-01-01 00:38:03.640000,"Dan wacht ik hier wel op jou. Ja, is goed.","Then I'll wait here for you. Yes, that's fine.",acceptance,neutral,neutral
+1900-01-01 00:38:03.640000,1900-01-01 00:38:07.620000,"Ik dacht, ik doe net alsof ik een programma maak over de dikke vandalen.","I thought, I'll pretend I'm making a show about the Dikke Vandalen.",playfulness,happiness,mild
+1900-01-01 00:38:07.640000,1900-01-01 00:38:09.640000,Dan kom ik denk ik wel uit.,Then I think I'll manage.,confidence,happiness,mild
+1900-01-01 00:38:10.620000,1900-01-01 00:38:11.640000,Luister goed. Ja.,Listen carefully. Yes.,command,neutral,neutral
+1900-01-01 00:38:11.640000,1900-01-01 00:38:16.640000,Meervoudige persoonlijkheidsstoornis is volgens de vandalen...,Multiple personality disorder according to the vandals...,curiosity,neutral,mild
+1900-01-01 00:38:16.640000,1900-01-01 00:38:20.640000,met 38 letters het langste woord in de Nederlandse taal.,with 38 letters the longest word in the Dutch language.,curiosity,neutral,neutral
+1900-01-01 00:38:21.640000,1900-01-01 00:38:25.640000,Meervoudige persoonlijkheidsstoornis is volgens de vandalen...,Multiple personality disorder according to the vandals...,curiosity,neutral,neutral
+1900-01-01 00:38:26.620000,1900-01-01 00:38:29.640000,met 38 letters het langste woord in de Nederlandse taal.,with 38 letters the longest word in the Dutch language.,curiosity,neutral,neutral
+1900-01-01 00:38:29.640000,1900-01-01 00:38:32.640000,Ik vond het een leuke opdracht. Ik ben gewend teksten te onthouden.,I thought it was a fun assignment. I am used to memorizing texts.,satisfaction,happiness,mild
+1900-01-01 00:38:33.620000,1900-01-01 00:38:36.640000,Ik vond het een uitdaging. Het gerennen over die brug was leuk.,I found it a challenge. Running over that bridge was fun.,excitement,happiness,moderate
+1900-01-01 00:38:36.640000,1900-01-01 00:38:37.640000,"Ja, mag ik? Ja.","Yes, may I? Yes.",seeking-permission,neutral,neutral
+1900-01-01 00:38:37.640000,1900-01-01 00:38:42.640000,Meervoudige persoonlijkheidsstoornis is met 38 woorden volgens de vandalen...,Multiple personality disorder is described with 38 words according to the vandals...,sarcasm,disgust,mild
+1900-01-01 00:38:42.640000,1900-01-01 00:38:44.640000,Woorden of letters? Letters.,Words or letters? Letters.,preference,neutral,neutral
+1900-01-01 00:38:44.640000,1900-01-01 00:38:47.640000,Volgens de vandalen het langste woord in de Nederlandse taal.,"According to the vandals, the longest word in the Dutch language.",curiosity,neutral,neutral
+1900-01-01 00:38:47.640000,1900-01-01 00:38:52.640000,Het langste woord dat je met je linkerhand aan de linkerkant van het toetsenbord kan typen...,The longest word you can type with your left hand on the left side of the keyboard...,curiosity,neutral,mild
+1900-01-01 00:38:52.640000,1900-01-01 00:38:53.640000,is niet stuwardes.,is not a stewardess.,dismissal,neutral,neutral
+1900-01-01 00:38:54.620000,1900-01-01 00:38:56.640000,Het was niet zo heel erg moeilijk.,It was not that very difficult.,relief,happiness,mild
+1900-01-01 00:38:56.640000,1900-01-01 00:39:00.640000,Maar het ging van rechts naar links en van links naar rechts tegelijk.,But it went from right to left and from left to right at the same time.,confusion,surprise,mild
+1900-01-01 00:39:00.640000,1900-01-01 00:39:03.640000,De woorden waar 60. Ja.,The words where 60. Yes.,confusion,neutral,neutral
+1900-01-01 00:39:03.640000,1900-01-01 00:39:05.640000,Zeveraars. Ja.,Blabbermouths. Yes.,annoyance,anger,mild
+1900-01-01 00:39:05.640000,1900-01-01 00:39:07.640000,Wereldverbeteraars.,World improvers.,admiration,happiness,mild
+1900-01-01 00:39:07.640000,1900-01-01 00:39:09.640000,Aardgrachtsreserves.,Aardgrachtsreserves.,neutrality,neutral,neutral
+1900-01-01 00:39:10.620000,1900-01-01 00:39:11.640000,En...,En...,hesitation,neutral,mild
+1900-01-01 00:39:12.620000,1900-01-01 00:39:14.640000,"Oké, ze zijn lang. Vergeet-ie maar.","Okay, they are long. Just forget it.",resignation,sadness,mild
+1900-01-01 00:39:14.640000,1900-01-01 00:39:16.640000,De woorden. Waar 60.,The words. Where 60.,confusion,neutral,neutral
+1900-01-01 00:39:16.640000,1900-01-01 00:39:18.640000,"Denk aan de handpalmen. Ja, waar 60.","Think about the palms. Yes, where 60.",concentration,neutral,mild
+1900-01-01 00:39:18.640000,1900-01-01 00:39:20.640000,Zeveraars. Zeveraars.,Blabbermouths. Blabbermouths.,annoyance,anger,mild
+1900-01-01 00:39:20.640000,1900-01-01 00:39:23.640000,Wereldverbeteraars. Aardgrachtsreserves.,World improvers. Earth canal reserves.,curiosity,neutral,neutral
+1900-01-01 00:39:23.640000,1900-01-01 00:39:24.640000,Ze zijn langer.,They are taller.,observation,neutral,neutral
+1900-01-01 00:39:24.640000,1900-01-01 00:39:28.640000,Elektriciteitsproductiemaatschappij is met 35 letters...,Elektriciteitsproductiemaatschappij is with 35 letters...,curiosity,neutral,neutral
+1900-01-01 00:39:28.640000,1900-01-01 00:39:33.640000,het een-na-langste woord in de Nederlandse taal volgens de vandalen.,the second-longest word in the Dutch language according to the vandals.,curiosity,neutral,neutral
+1900-01-01 00:39:33.640000,1900-01-01 00:39:39.640000,Elektriciteitsproductiemaatschappij is met 35 letters volgens de vandalen.,Elektriciteitsproductiemaatschappij has 35 letters according to the Vandals.,curiosity,neutral,neutral
+1900-01-01 00:39:39.640000,1900-01-01 00:39:41.640000,"Nee, die komt als laatste.","No, that one comes last.",certainty,neutral,neutral
+1900-01-01 00:39:42.640000,1900-01-01 00:39:47.640000,Het een-na-langste woord in de Nederlandse taal volgens de vandalen.,The second-longest word in the Dutch language according to the vandals.,curiosity,neutral,neutral
+1900-01-01 00:39:47.640000,1900-01-01 00:39:50.640000,"Wat heel moeilijk was, is dat vandalen moest komen...","What was very difficult, is that vandals had to come...",frustration,sadness,moderate
+1900-01-01 00:39:50.640000,1900-01-01 00:39:53.640000,volgens in de Nederlandse taal of juist andersom.,according to in the Dutch language or the other way around.,confusion,neutral,mild
+1900-01-01 00:39:53.640000,1900-01-01 00:39:55.640000,"Maar ik dacht, oké, die heb ik.","But I thought, okay, I have that one.",confidence,happiness,mild
+1900-01-01 00:39:55.640000,1900-01-01 00:39:58.640000,Dus al rennend ging ik naar Marjolein toe en gaf ik dat door.,So while running I went to Marjolein and passed that on.,urgency,fear,mild
+1900-01-01 00:39:58.640000,1900-01-01 00:40:00.640000,Mag ik hem eerst zeggen?,May I say it first?,eagerness,happiness,mild
+1900-01-01 00:40:00.640000,1900-01-01 00:40:03.640000,We zaten elkaar ontzettend in de weg met het overgeven.,We were really in each other's way with the vomiting.,frustration,anger,moderate
+1900-01-01 00:40:03.640000,1900-01-01 00:40:07.640000,Elektriciteitsproductiemaatschappij is met 35 letters...,Electricity production company is with 35 letters...,curiosity,neutral,neutral
+1900-01-01 00:40:07.640000,1900-01-01 00:40:11.640000,het een-na-langste woord in de Nederlandse taal volgens de vandalen.,the second-longest word in the Dutch language according to the vandals.,curiosity,neutral,neutral
+1900-01-01 00:40:11.640000,1900-01-01 00:40:13.640000,Zat vandalen aan de achterkant?,Were there vandals at the back?,suspicion,fear,mild
+1900-01-01 00:40:13.640000,1900-01-01 00:40:15.640000,De eerste keer vond ik het moeilijkste.,The first time I found it the hardest.,apprehension,fear,mild
+1900-01-01 00:40:15.640000,1900-01-01 00:40:18.640000,Toen kwam Rob met een zin en ik had mijn zin gerepeteerd.,Then Rob came with a sentence and I had rehearsed my sentence.,preparation,neutral,neutral
+1900-01-01 00:40:18.640000,1900-01-01 00:40:20.640000,Toen zat hij van hem even in de weg.,Then he was in his way for a moment.,annoyance,anger,mild
+1900-01-01 00:40:20.640000,1900-01-01 00:40:22.640000,"Oh, kut.","Oh, shit.",frustration,anger,mild
+1900-01-01 00:40:23.640000,1900-01-01 00:40:25.640000,Met je linkerhand...,With your left hand...,instruction,neutral,neutral
+1900-01-01 00:40:25.640000,1900-01-01 00:40:28.640000,aan de linkerkant van het toetsenbord...,on the left side of the keyboard...,neutrality,neutral,neutral
+1900-01-01 00:40:28.640000,1900-01-01 00:40:30.640000,"God, ik had hem weer zo.","God, I had him like that again.",frustration,anger,moderate
+1900-01-01 00:40:30.640000,1900-01-01 00:40:32.640000,Wat je met je linkerhand kan typen...,What you can type with your left hand...,curiosity,neutral,mild
+1900-01-01 00:40:32.640000,1900-01-01 00:40:34.640000,Denk even na voordat je het zegt.,Think before you say it.,caution,fear,mild
+1900-01-01 00:40:34.640000,1900-01-01 00:40:38.640000,Wat je aan de linkerkant van het toetsenbord kan typen met je linkerhand is niet stewardess.,What you can type on the left side of the keyboard with your left hand is not stewardess.,curiosity,neutral,neutral
+1900-01-01 00:40:38.640000,1900-01-01 00:40:42.640000,Wat je aan de linkerkant van het toetsenbord kan typen met je linkerhand...,What you can type on the left side of the keyboard with your left hand...,curiosity,neutral,mild
+1900-01-01 00:40:42.640000,1900-01-01 00:40:44.640000,Linkerkant met je linkerhand.,Left side with your left hand.,instruction,neutral,neutral
+1900-01-01 00:40:44.640000,1900-01-01 00:40:46.640000,Lange woorden zijn namelijk...,Long words are actually...,contemplation,neutral,neutral
+1900-01-01 00:40:46.640000,1900-01-01 00:40:48.640000,waar zegt ze...,where does she say...,curiosity,neutral,mild
+1900-01-01 00:40:48.640000,1900-01-01 00:40:50.640000,zeveren...,drooling...,boredom,neutral,mild
+1900-01-01 00:40:50.640000,1900-01-01 00:40:52.640000,"eh, wereldbol.","eh, globe.",indifference,neutral,neutral
+1900-01-01 00:40:52.640000,1900-01-01 00:40:54.640000,"Werken onder druk, snel teksten leren...","Working under pressure, quickly learning texts...",stress,fear,moderate
+1900-01-01 00:40:54.640000,1900-01-01 00:40:57.640000,is natuurlijk iets wat ik in mijn werk wel vaker tegenkom.,is of course something I encounter more often in my work.,familiarity,neutral,neutral
+1900-01-01 00:40:57.640000,1900-01-01 00:40:59.640000,Taken daarentegen was echt een ander verhaal.,"Tasks, on the other hand, was really a different story.",contrast,neutral,neutral
+1900-01-01 00:40:59.640000,1900-01-01 00:41:02.640000,Want die kreeg van Cecile een soort van les met gebaren...,Because he got a kind of lesson with gestures from Cecile...,curiosity,neutral,mild
+1900-01-01 00:41:02.640000,1900-01-01 00:41:04.640000,om het maar beter te kunnen onderhouden.,just to be able to maintain it better.,pragmatism,neutral,neutral
+1900-01-01 00:41:04.640000,1900-01-01 00:41:07.640000,Wereldbol en aardgasreserves zijn namelijk...,Globe and natural gas reserves are namely...,anticipation,neutral,mild
+1900-01-01 00:41:07.640000,1900-01-01 00:41:09.640000,langere woorden.,longer words.,boredom,neutral,neutral
+1900-01-01 00:41:09.640000,1900-01-01 00:41:11.640000,"Ja, zijn namelijk langere woorden, ja.","Yes, they are longer words, yes.",agreement,neutral,neutral
+1900-01-01 00:41:11.640000,1900-01-01 00:41:14.640000,"En je net zei langer, hè? Ja, klopt. Dus één van twee.","And you just said longer, right? Yes, that's correct. So one of the two.",confirmation,neutral,neutral
+1900-01-01 00:41:14.640000,1900-01-01 00:41:16.640000,Langere woorden. Yes.,Longer words. Yes.,satisfaction,happiness,mild
+1900-01-01 00:41:16.640000,1900-01-01 00:41:20.640000,Een 24-letter woord bestaat uit 24 letters van het.,A 24-letter word consists of 24 letters of it.,confusion,neutral,neutral
+1900-01-01 00:41:21.640000,1900-01-01 00:41:24.640000,Ik had het voordeel dat ik het kon zien.,I had the advantage that I could see it.,confidence,happiness,mild
+1900-01-01 00:41:24.640000,1900-01-01 00:41:26.640000,"Ik kon het visualiseren, ik kon het onthouden.","I could visualize it, I could remember it.",confidence,happiness,mild
+1900-01-01 00:41:26.640000,1900-01-01 00:41:29.640000,Dus ik liet Rob eerst zijn tekst aan mij geven.,So I had Rob give me his text first.,preparation,neutral,neutral
+1900-01-01 00:41:29.640000,1900-01-01 00:41:31.640000,En dan lepelde ik die van mij op.,And then I scooped up mine.,recollection,neutral,neutral
+1900-01-01 00:41:31.640000,1900-01-01 00:41:34.640000,Wat je aan de linkerkant van je toetsenbord kan toetsen...,What you can type on the left side of your keyboard...,curiosity,neutral,mild
+1900-01-01 00:41:34.640000,1900-01-01 00:41:37.640000,"met je linkerhand, is niet stewardess.","with your left hand, is not a stewardess.",confusion,neutral,neutral
+1900-01-01 00:41:37.640000,1900-01-01 00:41:40.640000,Wat je aan de linkerkant van je toetsenbord...,What you have on the left side of your keyboard...,curiosity,neutral,neutral
+1900-01-01 00:41:40.640000,1900-01-01 00:41:43.640000,"kan toetsen met je linkerhand, is niet stewardess.","can type with your left hand, is not a stewardess.",indifference,neutral,neutral
+1900-01-01 00:41:43.640000,1900-01-01 00:41:45.640000,Exact. I got it. Oké.,Exact. I got it. Oké.,understanding,neutral,neutral
+1900-01-01 00:41:45.640000,1900-01-01 00:41:49.640000,Een 24-letter woord bestaat uit 24 letters.,A 24-letter word consists of 24 letters.,observation,neutral,neutral
+1900-01-01 00:41:49.640000,1900-01-01 00:41:52.640000,Een 24-letter woord bestaat uit 24 letters.,A 24-letter word consists of 24 letters.,statement,neutral,neutral
+1900-01-01 00:41:52.640000,1900-01-01 00:41:55.640000,Waar zeg je zevera?,Where do you say zevera?,confusion,surprise,mild
+1900-01-01 00:41:55.640000,1900-01-01 00:41:57.640000,Dit is meer wereldbol.,This is more globe.,confusion,neutral,neutral
+1900-01-01 00:41:57.640000,1900-01-01 00:42:00.640000,"Dit is meer wereldbol. Ja, maar dit is zevera.","This is more globe. Yes, but this is nonsense.",dismissiveness,disgust,mild
+1900-01-01 00:42:04.640000,1900-01-01 00:42:07.640000,Wat je aan de linkerkant van je toetsenbord kan toetsen...,What you can type on the left side of your keyboard...,curiosity,neutral,mild
+1900-01-01 00:42:07.640000,1900-01-01 00:42:12.640000,"met je linkerhand, is niet stewardess.","with your left hand, is not a stewardess.",confusion,neutral,neutral
+1900-01-01 00:42:12.640000,1900-01-01 00:42:16.640000,"Waar zeg je zevera, wereldbol...","Where do you say zevera, globe...",confusion,neutral,mild
+1900-01-01 00:42:16.640000,1900-01-01 00:42:19.640000,en aardgasreserves zijn namelijk langer.,and natural gas reserves are in fact longer.,assertion,neutral,neutral
+1900-01-01 00:42:19.640000,1900-01-01 00:42:21.640000,Die vier woorden vond ik heel leuk.,I really liked those four words.,fondness,happiness,mild
+1900-01-01 00:42:21.640000,1900-01-01 00:42:25.640000,Ik zag namelijk een soort van hele nare waar zeg je zevera voor me.,"I actually saw a kind of really nasty, what do you call it, zevera in front of me.",discomfort,disgust,moderate
+1900-01-01 00:42:25.640000,1900-01-01 00:42:27.640000,Want dat was die zeveraar.,Because that was that blabbermouth.,contempt,disgust,moderate
+1900-01-01 00:42:27.640000,1900-01-01 00:42:30.640000,Die zat te kijken in een soort aardbol waar die aardgas dan in zat.,He was looking into a kind of globe that contained natural gas.,curiosity,neutral,mild
+1900-01-01 00:42:30.640000,1900-01-01 00:42:33.640000,"Waar zeg je zeveraar, wereldbol...","Where do you say blabbermouth, globe...",confusion,neutral,mild
+1900-01-01 00:42:33.640000,1900-01-01 00:42:37.640000,en aardgasreserves zijn namelijk langer.,and natural gas reserves are in fact longer.,matter-of-factness,neutral,neutral
+1900-01-01 00:42:37.640000,1900-01-01 00:42:41.640000,We maakten er een soort dans-uitbeeldings-levendig stukje van.,We made it into a kind of dance-interpretation-lively piece.,creativity,happiness,mild
+1900-01-01 00:42:41.640000,1900-01-01 00:42:43.640000,Maar volgens mij werkte het.,But I think it worked.,confidence,happiness,mild
+1900-01-01 00:42:43.640000,1900-01-01 00:42:47.640000,"Engelse woord voor typemachine, typewriter...","English word for typemachine, typewriter...",curiosity,neutral,neutral
+1900-01-01 00:42:47.640000,1900-01-01 00:42:50.640000,is de één langste woord...,is the one longest word...,curiosity,neutral,neutral
+1900-01-01 00:42:50.640000,1900-01-01 00:42:53.640000,dat je kunt maken met de bovenste rij van je toetsenbord.,that you can make with the top row of your keyboard.,curiosity,neutral,neutral
+1900-01-01 00:42:53.640000,1900-01-01 00:42:55.640000,Van je toetsenbord.,From your keyboard.,neutrality,neutral,neutral
+1900-01-01 00:42:55.640000,1900-01-01 00:42:57.640000,Van je toetsenbord.,From your keyboard.,neutrality,neutral,neutral
+1900-01-01 00:42:57.640000,1900-01-01 00:43:00.640000,"Het Engelse woord voor typemachine, typewriter...","The English word for typemachine, typewriter...",curiosity,neutral,neutral
+1900-01-01 00:43:00.640000,1900-01-01 00:43:02.640000,is het ene langste woord...,is it the one longest word...,curiosity,neutral,mild
+1900-01-01 00:43:02.640000,1900-01-01 00:43:05.640000,Typewriter is het ene langste woord...,Typewriter is the only longest word...,curiosity,neutral,mild
+1900-01-01 00:43:05.640000,1900-01-01 00:43:08.640000,dat je met de bovenste rij is...,that you are with the top row is...,confusion,neutral,mild
+1900-01-01 00:43:08.640000,1900-01-01 00:43:10.640000,Het ene langste woord?,The one longest word?,curiosity,neutral,mild
+1900-01-01 00:43:10.640000,1900-01-01 00:43:13.640000,Dat je kunt maken op de bovenste rij van je toetsenbord.,That you can make on the top row of your keyboard.,curiosity,neutral,neutral
+1900-01-01 00:43:13.640000,1900-01-01 00:43:16.640000,Is het ene langste woord dat je kunt maken op de bovenste rij?,Is the one longest word you can make on the top row?,curiosity,neutral,mild
+1900-01-01 00:43:16.640000,1900-01-01 00:43:20.640000,Het ging allemaal een beetje over een toetsenbord van een computer.,It was all a bit about a computer keyboard.,detachment,neutral,mild
+1900-01-01 00:43:20.640000,1900-01-01 00:43:24.640000,En met welke letters je met je linkerhand kon maken of met je rechterhand.,And with which letters you could make with your left hand or with your right hand.,curiosity,neutral,mild
+1900-01-01 00:43:24.640000,1900-01-01 00:43:28.640000,"Het Engelse woord voor typemachine, typewriter...","The English word for typemachine, typewriter...",curiosity,neutral,neutral
+1900-01-01 00:43:28.640000,1900-01-01 00:43:32.640000,is het ene langste woord dat je kunt maken...,is it the longest word you can make...,curiosity,neutral,mild
+1900-01-01 00:43:32.640000,1900-01-01 00:43:35.640000,op de bovenste rij van je toetsenbord.,on the top row of your keyboard.,instruction,neutral,neutral
+1900-01-01 00:43:35.640000,1900-01-01 00:43:37.640000,We zijn hartstikke goed bezig.,We are doing really well.,pride,happiness,moderate
+1900-01-01 00:43:37.640000,1900-01-01 00:43:39.640000,Annemieke was in vorm.,Annemieke was in shape.,admiration,happiness,mild
+1900-01-01 00:43:39.640000,1900-01-01 00:43:41.640000,Marjolein was vrij rustig.,Marjolein was quite calm.,calmness,neutral,mild
+1900-01-01 00:43:41.640000,1900-01-01 00:43:43.640000,Die was niet heel erg ingewikkeld bezig.,He/she was not doing anything very complicated.,dismissiveness,neutral,mild
+1900-01-01 00:43:43.640000,1900-01-01 00:43:46.640000,Dus dat ging eigenlijk van beide kanten heel erg goed.,So that actually went very well from both sides.,satisfaction,happiness,mild
+1900-01-01 00:43:47.640000,1900-01-01 00:43:51.640000,Het langste woord dat je met je rechterhand kunt maken...,The longest word you can make with your right hand...,curiosity,neutral,mild
+1900-01-01 00:43:51.640000,1900-01-01 00:43:54.640000,aan de rechterhelft van het toetsenbord...,on the right half of the keyboard...,neutrality,neutral,neutral
+1900-01-01 00:43:54.640000,1900-01-01 00:43:57.640000,"is 11 letters lang, namelijk minimumloon.","is 11 letters long, namely minimum wage.",explanation,neutral,neutral
+1900-01-01 00:43:57.640000,1900-01-01 00:44:00.640000,Het langste woord dat je met je rechterhand kunt maken...,The longest word you can make with your right hand...,curiosity,neutral,mild
+1900-01-01 00:44:00.640000,1900-01-01 00:44:02.640000,aan de rechterkant van het toetsenbord...,on the right side of the keyboard...,neutrality,neutral,neutral
+1900-01-01 00:44:02.640000,1900-01-01 00:44:04.640000,"Rechterhelft, sorry.","Right half, sorry.",apology,sadness,mild
+1900-01-01 00:44:04.640000,1900-01-01 00:44:07.640000,"...is 11 letters lang, namelijk minimumloon.","...is 11 letters long, namely minimum wage.",neutrality,neutral,neutral
+1900-01-01 00:44:07.640000,1900-01-01 00:44:10.640000,Nog één ding. Het woord dat ik vergeten was was secretarissedag.,One more thing. The word I forgot was Secretary's Day.,remembrance,neutral,mild
+1900-01-01 00:44:10.640000,1900-01-01 00:44:13.640000,Dat moet voor aardgasreserve. Secretarissedag.,That is for natural gas reserve. Secretary's Day.,detachment,neutral,neutral
+1900-01-01 00:44:13.640000,1900-01-01 00:44:15.640000,"Secretarissedag, oké.","Secretary's Day, okay.",acceptance,neutral,neutral
+1900-01-01 00:44:15.640000,1900-01-01 00:44:17.640000,Ik was het woord secretarissedag vergeten.,I forgot the word Secretary's Day.,regret,sadness,mild
+1900-01-01 00:44:17.640000,1900-01-01 00:44:21.640000,"Ik dacht, dat kan ik makkelijk nog een keer overbrengen aan Taak.","I thought, I can easily convey that to Taak again.",confidence,happiness,mild
+1900-01-01 00:44:21.640000,1900-01-01 00:44:23.640000,Die kan dat dan heel makkelijk aan Klaas zeggen.,He can then very easily say that to Klaas.,indifference,neutral,neutral
+1900-01-01 00:44:23.640000,1900-01-01 00:44:26.640000,Klaas! Dan zullen we dat er nog even tussen zetten.,Klaas! Then we'll just add that in for a moment.,cooperation,neutral,mild
+1900-01-01 00:44:26.640000,1900-01-01 00:44:28.640000,Voor aardgas hoort nog secretarissedag.,"For natural gas, there is still Secretary's Day to come.",anticipation,neutral,mild
+1900-01-01 00:44:28.640000,1900-01-01 00:44:31.640000,Ik meen dat ik het heel duidelijk heb doorgegeven aan Klaas.,I believe that I have communicated it very clearly to Klaas.,certainty,neutral,mild
+1900-01-01 00:44:31.640000,1900-01-01 00:44:34.640000,Dat Cecile en ik een woordje vergeten waren.,That Cecile and I had forgotten a word.,regret,sadness,mild
+1900-01-01 00:44:34.640000,1900-01-01 00:44:36.640000,Aardgas hoort nog voor secretarissedag.,Natural gas should still be before Secretary's Day.,expectation,neutral,neutral
+1900-01-01 00:44:36.640000,1900-01-01 00:44:38.640000,"Oké, dat is het. Ja.","Okay, that's it. Yes.",acceptance,neutral,neutral
+1900-01-01 00:44:38.640000,1900-01-01 00:44:40.640000,Aardgas. Aardgas.,Natural gas. Natural gas.,neutrality,neutral,neutral
+1900-01-01 00:44:40.640000,1900-01-01 00:44:42.640000,Komt voor secretarissedag.,Comes for Secretary's Day.,anticipation,happiness,mild
+1900-01-01 00:44:42.640000,1900-01-01 00:44:44.640000,Aardgas komt voor secretarissedag. Ja.,Natural gas comes for Secretary's Day. Yes.,confusion,surprise,mild
+1900-01-01 00:44:44.640000,1900-01-01 00:44:46.640000,Annemieke!,Annemieke!,calling,neutral,neutral
+1900-01-01 00:44:46.640000,1900-01-01 00:44:49.640000,Aardgas komt voor secretarissedag.,Natural gas comes for Secretary's Day.,confusion,neutral,neutral
+1900-01-01 00:44:49.640000,1900-01-01 00:44:51.640000,Secretarissedag? Dag.,Secretaries' Day? Bye.,dismissal,neutral,neutral
+1900-01-01 00:44:51.640000,1900-01-01 00:44:54.640000,Ik heb geen secretarissedag.,I don't have Secretary's Day.,exclusion,sadness,mild
+1900-01-01 00:44:54.640000,1900-01-01 00:44:57.640000,Ik heb helemaal geen secretarissedag.,I don't have a Secretary's Day at all.,resentment,anger,moderate
+1900-01-01 00:44:57.640000,1900-01-01 00:44:59.640000,"Ik dacht, wat lult ze nou?","I thought, what is she talking about?",confusion,surprise,mild
+1900-01-01 00:44:59.640000,1900-01-01 00:45:01.640000,Dit is gewoon een zin.,This is just a sentence.,neutrality,neutral,neutral
+1900-01-01 00:45:01.640000,1900-01-01 00:45:04.640000,Aardgas komt voor secretarissedag.,Natural gas comes for Secretary's Day.,confusion,neutral,neutral
+1900-01-01 00:45:04.640000,1900-01-01 00:45:07.640000,"Oké. Maar ik dacht alleen maar, schrijf het op.","Okay. But I just thought, write it down.",resignation,neutral,mild
+1900-01-01 00:45:07.640000,1900-01-01 00:45:09.640000,Ik wil helemaal geen secretarissedag.,I don't want Secretary's Day at all.,rejection,disgust,moderate
+1900-01-01 00:45:09.640000,1900-01-01 00:45:11.640000,"Whatever. Wat ik hoor, schrijf ik op.","Whatever. What I hear, I write down.",detachment,neutral,mild
+1900-01-01 00:45:11.640000,1900-01-01 00:45:14.640000,En laten we hopen dat er in godsnaam iets goeds is.,And let's hope that for God's sake there is something good.,hope,happiness,moderate
+1900-01-01 00:45:23.640000,1900-01-01 00:45:27.640000,Ik wil graag een zin uit jullie oeuvre voortdragen.,I would like to recite a sentence from your oeuvre.,respect,neutral,mild
+1900-01-01 00:45:27.640000,1900-01-01 00:45:30.640000,"Het Engelse woord voor typemachine, typewriter...","The English word for typemachine, typewriter...",curiosity,neutral,neutral
+1900-01-01 00:45:30.640000,1900-01-01 00:45:33.640000,is het een-na-langste woord dat je kunt maken...,is it the second-longest word you can make...,curiosity,neutral,mild
+1900-01-01 00:45:33.640000,1900-01-01 00:45:35.640000,op de bovenste rij van je toetsenbord.,on the top row of your keyboard.,instruction,neutral,neutral
+1900-01-01 00:45:35.640000,1900-01-01 00:45:37.640000,Kennen jullie dat? Ja.,Do you know that? Yes.,recognition,neutral,neutral
+1900-01-01 00:45:37.640000,1900-01-01 00:45:40.640000,Mooi. Het is de enige zin die goed was.,Beautiful. It is the only sentence that was correct.,satisfaction,happiness,mild
+1900-01-01 00:45:40.640000,1900-01-01 00:45:42.640000,De enige. Echt?,The only one. Really?,skepticism,surprise,moderate
+1900-01-01 00:45:42.640000,1900-01-01 00:45:45.640000,Jullie hebben zelfs een zin verzonnen.,You even made up a sentence.,accusation,anger,mild
+1900-01-01 00:45:45.640000,1900-01-01 00:45:47.640000,Aardgas voor secretarissedag.,Natural gas for Secretary's Day.,confusion,surprise,mild
+1900-01-01 00:45:47.640000,1900-01-01 00:45:49.640000,Die vandaan komt.,The one that comes from there.,curiosity,neutral,neutral
+1900-01-01 00:45:49.640000,1900-01-01 00:45:51.640000,Jezus. Nee.,Jesus. No.,dismay,surprise,moderate
+1900-01-01 00:45:51.640000,1900-01-01 00:45:53.640000,Kom op. Dat is niet waar.,Come on. That's not true.,skepticism,disgust,moderate
+1900-01-01 00:45:53.640000,1900-01-01 00:45:58.640000,"Afijn, deze duizend euro die ik zo graag kwijt wilde...","Anyway, this thousand euros that I so wanted to get rid of...",resignation,sadness,mild
+1900-01-01 00:45:58.640000,1900-01-01 00:46:01.640000,"moet ik houden. Nee, dat kan niet.","I have to keep it. No, that's not possible.",conflict,sadness,moderate
+1900-01-01 00:46:01.640000,1900-01-01 00:46:03.640000,"Fijne avond. Ja, thank you.","Have a nice evening. Yes, thank you.",gratitude,happiness,mild
+1900-01-01 00:46:03.640000,1900-01-01 00:46:06.640000,Ik was zo ervan overtuigd dat we het goed hadden.,I was so convinced that we were right.,conviction,happiness,moderate
+1900-01-01 00:46:06.640000,1900-01-01 00:46:09.640000,Ik denk dat het mollen vanaf nu echt is begonnen.,I think the sabotaging has really started now.,anticipation,surprise,moderate
+1900-01-01 00:46:09.640000,1900-01-01 00:46:12.640000,Het wordt nu steeds duidelijker dat er gewoon...,It is now becoming increasingly clear that there just...,realization,neutral,mild
+1900-01-01 00:46:12.640000,1900-01-01 00:46:15.640000,dat er geprobeerd wordt om alles te saboteren.,that there is an attempt to sabotage everything.,suspicion,fear,moderate
+1900-01-01 00:46:15.640000,1900-01-01 00:46:18.640000,"Jij zei tegen mij, aardgas komt voor secretarissedag.","You said to me, natural gas comes before Secretary's Day.",confusion,neutral,mild
+1900-01-01 00:46:18.640000,1900-01-01 00:46:21.640000,Geef dat nog even door. Dat zei jij.,Pass that on for a moment. You said that.,reminder,neutral,neutral
+1900-01-01 00:46:21.640000,1900-01-01 00:46:24.640000,Dit was toch aardgasreserves? Ja.,"This was natural gas reserves, right? Yes.",confirmation,neutral,neutral
+1900-01-01 00:46:24.640000,1900-01-01 00:46:28.640000,Eigenlijk komt het erop neer dat we bij een opdracht van de tijdrit...,"Actually, it comes down to the fact that with a time trial assignment...",reflection,neutral,neutral
+1900-01-01 00:46:28.640000,1900-01-01 00:46:30.640000,beter hadden moeten kijken.,should have looked better.,regret,sadness,mild
+1900-01-01 00:46:30.640000,1900-01-01 00:46:33.640000,En bij deze opdracht hadden we beter moeten luisteren.,"And with this assignment, we should have listened better.",regret,sadness,mild
+1900-01-01 00:46:33.640000,1900-01-01 00:46:36.640000,We kunnen dus echt gewoon helemaal niks.,We really just can't do anything at all.,hopelessness,sadness,intense
+1900-01-01 00:46:39.640000,1900-01-01 00:46:41.640000,TV Gelderland 2021,TV Gelderland 2021,neutrality,neutral,neutral
+1900-01-01 00:46:45.800000,1900-01-01 00:46:52.800000,MUZIEK,MUSIC,neutrality,neutral,neutral
+1900-01-01 00:46:52.800000,1900-01-01 00:46:54.800000,Tijd voor de test.,Time for the test.,anticipation,surprise,mild
+1900-01-01 00:46:55.780000,1900-01-01 00:46:59.780000,Twintig vragen over de identiteit in het doen en laten van de mol.,Twenty questions about the identity in the actions and behavior of the mole.,curiosity,neutral,mild
+1900-01-01 00:46:59.800000,1900-01-01 00:47:02.800000,"Degene die het minst weet, ligt uit het spel.",The one who knows the least is out of the game.,resignation,sadness,mild
+1900-01-01 00:47:03.780000,1900-01-01 00:47:06.800000,Behalve de mol. Die hoeft nooit naar huis.,Except for the mole. He never has to go home.,exclusion,neutral,neutral
+1900-01-01 00:47:08.800000,1900-01-01 00:47:10.800000,Ik vind dit een hele spannende test.,I find this a very exciting test.,anticipation,fear,moderate
+1900-01-01 00:47:10.800000,1900-01-01 00:47:13.800000,Omdat ik een nieuwe strategie ga proberen.,Because I am going to try a new strategy.,anticipation,happiness,mild
+1900-01-01 00:47:13.800000,1900-01-01 00:47:16.800000,Ik neem ook wat nieuwe mensen mee die ik verdenk...,I'm also bringing some new people whom I suspect...,suspicion,fear,moderate
+1900-01-01 00:47:16.800000,1900-01-01 00:47:19.800000,die ik daarvoor niet heb gebruikt in de test.,which I did not use for that in the test.,uncertainty,neutral,neutral
+1900-01-01 00:47:19.800000,1900-01-01 00:47:23.800000,"Als ik me daarmee in mijn vingers snijd, zou het zomaar kunnen zijn...","If I cut my fingers with that, it could just happen...",apprehension,fear,mild
+1900-01-01 00:47:23.800000,1900-01-01 00:47:25.800000,dat het afgelopen is voor me.,that it's over for me.,resignation,sadness,moderate
+1900-01-01 00:47:25.800000,1900-01-01 00:47:27.800000,"Spreiden, spreiden, spreiden.","Spread, spread, spread.",insistence,neutral,moderate
+1900-01-01 00:47:27.800000,1900-01-01 00:47:31.800000,"Het is een ontzettend cliché, maar het is het enige wat je kan helpen.","It is an incredible cliché, but it is the only thing that can help you.",resignation,sadness,mild
+1900-01-01 00:47:31.800000,1900-01-01 00:47:33.800000,En snel die test maken.,And quickly take that test.,impatience,anger,moderate
+1900-01-01 00:47:33.800000,1900-01-01 00:47:37.800000,Ik vind het nog te vroeg om op twee kandidaten te gaan zitten.,I think it's still too early to focus on two candidates.,hesitation,fear,mild
+1900-01-01 00:47:37.800000,1900-01-01 00:47:39.800000,Namelijk Klaas en Tim.,Namely Klaas and Tim.,neutrality,neutral,neutral
+1900-01-01 00:47:39.800000,1900-01-01 00:47:41.800000,Allebei nog met dezelfde redenen.,Both still for the same reasons.,resignation,neutral,neutral
+1900-01-01 00:47:41.800000,1900-01-01 00:47:43.800000,Intuïtie.,Intuition.,curiosity,neutral,neutral
+1900-01-01 00:47:43.800000,1900-01-01 00:47:46.800000,Tim staat hoog op mijn lijstje. Is niet heel veranderd.,Tim is high on my list. Hasn't changed much.,preference,neutral,neutral
+1900-01-01 00:47:46.800000,1900-01-01 00:47:47.800000,Annemieke ook.,Annemieke too.,inclusion,neutral,neutral
+1900-01-01 00:47:47.800000,1900-01-01 00:47:50.800000,Ik kan Taak ook net zo goed weer erbij schuiven.,I might as well add Task back in again.,resignation,sadness,mild
+1900-01-01 00:47:50.800000,1900-01-01 00:47:53.800000,Want het ging vandaag ook weer alle kanten op.,Because today it went in all directions again.,confusion,surprise,moderate
+1900-01-01 00:47:53.800000,1900-01-01 00:47:57.800000,Waarom heeft hij ons niet even gewaarschuwd waar de antwoorden waren?,Why didn't he even warn us where the answers were?,annoyance,anger,moderate
+1900-01-01 00:48:04.800000,1900-01-01 00:48:06.800000,Een aantal mensen heb ik al weg kunnen strepen.,I have already been able to cross off a number of people.,relief,happiness,mild
+1900-01-01 00:48:06.800000,1900-01-01 00:48:10.800000,Tim haalt keer op keer vrijwel nooit geld binnen.,Tim almost never brings in any money time and again.,disappointment,sadness,moderate
+1900-01-01 00:48:10.800000,1900-01-01 00:48:12.800000,"Trouwens, gewoon helemaal nooit geld binnen.","By the way, just never any money coming in at all.",frustration,sadness,moderate
+1900-01-01 00:48:12.800000,1900-01-01 00:48:16.800000,Dus uiteindelijk is het een beetje raar hoe alles loopt met hem.,So in the end it's a bit strange how everything is going with him.,confusion,surprise,mild
+1900-01-01 00:48:16.800000,1900-01-01 00:48:18.800000,En ik heb hem nog niet weg kunnen strepen.,And I haven't been able to cross it off yet.,frustration,sadness,mild
+1900-01-01 00:48:18.800000,1900-01-01 00:48:20.800000,Dus staat hij op mijn verdachte lijstje.,So he's on my suspect list.,suspicion,fear,mild
+1900-01-01 00:48:22.800000,1900-01-01 00:48:25.800000,"Ik blijf, omdat ik toch al vier ronden door ben...","I stay, because I have already made it through four rounds...",resignation,neutral,mild
+1900-01-01 00:48:25.800000,1900-01-01 00:48:30.800000,bij mijn twee mollen die ook die vier rondes hebben overleefd.,with my two moles who also survived those four rounds.,pride,happiness,mild
+1900-01-01 00:48:30.800000,1900-01-01 00:48:31.800000,Namelijk Rob en Klaas.,Namely Rob and Klaas.,neutrality,neutral,neutral
+1900-01-01 00:48:31.800000,1900-01-01 00:48:34.800000,En voor de zekere trek een paar vragen op Tim invullen.,"And for certainty, fill in a few questions about Tim.",preparation,neutral,neutral
+1900-01-01 00:48:34.800000,1900-01-01 00:48:36.800000,Want je weet me nooit.,Because you never know me.,alienation,sadness,moderate
+1900-01-01 00:48:36.800000,1900-01-01 00:48:38.800000,Mijn verdenkingen zijn als vol.,My suspicions are as follows.,suspicion,fear,mild
+1900-01-01 00:48:38.800000,1900-01-01 00:48:40.800000,Ergens staat Cecile nog in de top drie.,"Somewhere, Cecile is still in the top three.",pride,happiness,mild
+1900-01-01 00:48:40.800000,1900-01-01 00:48:43.800000,Want Cecile brengt altijd nul euro in het laatje.,Because Cecile always brings in zero euros.,resentment,anger,moderate
+1900-01-01 00:48:43.800000,1900-01-01 00:48:46.800000,In datzelfde groepje zou kunnen zitten Marjolein.,Marjolein could be in that same group.,speculation,neutral,neutral
+1900-01-01 00:48:46.800000,1900-01-01 00:48:50.800000,Want Marjolein brengt over het algemeen ook nul euro binnen.,Because Marjolein generally also brings in zero euros.,resentment,anger,moderate
+1900-01-01 00:48:50.800000,1900-01-01 00:48:53.800000,En Klaas doet z'n best om ook te blenden.,And Klaas is doing his best to blend in as well.,effort,neutral,mild
+1900-01-01 00:48:53.800000,1900-01-01 00:48:55.800000,En dan heeft hij weer een goed verhaal.,And then he has a good story again.,appreciation,happiness,mild
+1900-01-01 00:48:55.800000,1900-01-01 00:48:58.800000,En hij brengt ook wel euro's in de pot.,And he also brings some euros into the pot.,appreciation,happiness,mild
+1900-01-01 00:48:58.800000,1900-01-01 00:49:00.800000,"Maar hij fixte er ook wel weer uit, hoor.","But he did manage to fix it again, you know.",reassurance,happiness,mild
+1900-01-01 00:49:00.800000,1900-01-01 00:49:03.800000,Ik heb tot nu toe over drie A4 gespreid.,I have spread it over three A4 pages so far.,progress,neutral,neutral
+1900-01-01 00:49:03.800000,1900-01-01 00:49:06.800000,Durf ik het aan om te gaan spreiden over twee?,Do I dare to spread it over two?,uncertainty,fear,moderate
+1900-01-01 00:49:06.800000,1900-01-01 00:49:11.800000,"Nou, in deze aflevering ben ik eigenlijk niet veel wijziger geworden.","Well, in this episode I haven't really become much wiser.",disappointment,sadness,mild
+1900-01-01 00:49:11.800000,1900-01-01 00:49:17.800000,Het is mij in ieder geval gelukt om bij mijn mollen in de buurt te zijn.,"In any case, I managed to be near my moles.",satisfaction,happiness,mild
+1900-01-01 00:49:21.800000,1900-01-01 00:49:23.800000,Op dit moment denk ik dat ik goed zit.,At this moment I think I'm in a good place.,confidence,happiness,mild
+1900-01-01 00:49:23.800000,1900-01-01 00:49:25.800000,Dus ik haal mijn joker nog vast.,So I'm still holding on to my joker.,caution,fear,mild
+1900-01-01 00:49:36.800000,1900-01-01 00:49:40.800000,Ik kan me voorstellen dat jullie met een trots gevoel tegenover me zitten.,I can imagine that you are sitting across from me with a feeling of pride.,pride,happiness,mild
+1900-01-01 00:49:40.800000,1900-01-01 00:49:42.800000,We zijn over de helft van onze reis.,We are over halfway through our journey.,reflection,neutral,neutral
+1900-01-01 00:49:42.800000,1900-01-01 00:49:45.800000,"Dat je hier nog bent, is dus een felicitatie waard.",That you are still here is therefore worth a congratulation.,appreciation,happiness,mild
+1900-01-01 00:49:45.800000,1900-01-01 00:49:47.800000,Een mijlpaal.,A milestone.,pride,happiness,mild
+1900-01-01 00:49:48.800000,1900-01-01 00:49:53.800000,"Aan de andere kant, er zijn nog maar drie kandidaten afgevallen tot nu toe.","On the other hand, only three candidates have been eliminated so far.",acceptance,neutral,neutral
+1900-01-01 00:49:53.800000,1900-01-01 00:49:55.800000,Zo knap is het dus ook weer niet.,So it's not that impressive after all.,dismissiveness,disgust,mild
+1900-01-01 00:49:56.800000,1900-01-01 00:50:00.800000,Misschien hebben jullie vooral geluk gehad tot nu toe.,Maybe you have mostly been lucky so far.,doubt,neutral,mild
+1900-01-01 00:50:00.800000,1900-01-01 00:50:03.800000,En dat houdt op een gegeven moment op.,"And at a certain point, that stops.",resignation,sadness,mild
+1900-01-01 00:50:06.800000,1900-01-01 00:50:08.800000,Zeker in Wie is de Mol?,Certainly in Who is the Mole?,certainty,neutral,mild
+1900-01-01 00:50:13.800000,1900-01-01 00:50:15.800000,Misschien nu wel.,Maybe now yes.,uncertainty,neutral,mild
+1900-01-01 00:50:15.800000,1900-01-01 00:50:18.800000,"Klaas, ga het zien.","Klaas, go see it.",encouragement,happiness,mild
+1900-01-01 00:50:37.800000,1900-01-01 00:50:38.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:50:48.800000,1900-01-01 00:50:50.800000,Aan de meekant.,On the meek side.,uncertainty,neutral,neutral
+1900-01-01 00:50:55.800000,1900-01-01 00:50:56.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:51:06.800000,1900-01-01 00:51:07.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:51:26.800000,1900-01-01 00:51:27.800000,Cecile.,Cecile.,neutrality,neutral,neutral
+1900-01-01 00:51:27.800000,1900-01-01 00:51:28.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:51:37.800000,1900-01-01 00:51:38.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:51:46.800000,1900-01-01 00:51:47.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:51:48.800000,1900-01-01 00:51:50.800000,Heel veel plezier.,Have lots of fun.,cheerfulness,happiness,mild
+1900-01-01 00:51:50.800000,1900-01-01 00:51:52.800000,Good for you girl.,Good for you girl.,encouragement,happiness,mild
+1900-01-01 00:51:57.800000,1900-01-01 00:51:58.800000,Rob.,Rob.,neutrality,neutral,neutral
+1900-01-01 00:51:59.800000,1900-01-01 00:52:00.800000,Ja.,Yes.,agreement,neutral,neutral
+1900-01-01 00:52:07.800000,1900-01-01 00:52:08.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:52:18.800000,1900-01-01 00:52:19.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:52:20.800000,1900-01-01 00:52:21.800000,Goed man!,Good man!,approval,happiness,mild
+1900-01-01 00:52:24.800000,1900-01-01 00:52:25.800000,Lekker!,Tasty!,enjoyment,happiness,mild
+1900-01-01 00:52:25.800000,1900-01-01 00:52:26.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:52:30.800000,1900-01-01 00:52:32.800000,Twee mannen en één vrouw.,Two men and one woman.,neutrality,neutral,neutral
+1900-01-01 00:52:33.800000,1900-01-01 00:52:35.800000,Dames eerst toch?,"Ladies first, right?",courtesy,neutral,mild
+1900-01-01 00:52:36.800000,1900-01-01 00:52:37.800000,Ga je lang?,Are you going for long?,curiosity,neutral,mild
+1900-01-01 00:52:38.800000,1900-01-01 00:52:39.800000,MUZIEK.,MUSIC.,neutrality,neutral,neutral
+1900-01-01 00:52:58.800000,1900-01-01 00:52:59.800000,"Ah, kut!","Ah, shit!",frustration,anger,mild
+1900-01-01 00:53:02.800000,1900-01-01 00:53:03.800000,Shit.,Shit.,frustration,anger,mild
+1900-01-01 00:53:04.800000,1900-01-01 00:53:05.800000,Goodbye.,Goodbye.,finality,sadness,mild
+1900-01-01 00:53:06.800000,1900-01-01 00:53:07.800000,Oeh!,Oeh!,excitement,surprise,mild
+1900-01-01 00:53:08.800000,1900-01-01 00:53:10.800000,Is er ook iets gebeurd?,Did something happen?,curiosity,neutral,mild
+1900-01-01 00:53:12.800000,1900-01-01 00:53:14.800000,Je mag afscheid nemen.,You may say goodbye.,resignation,sadness,mild
+1900-01-01 00:53:17.800000,1900-01-01 00:53:18.800000,Dag lieverd.,Hello darling.,affection,happiness,mild
+1900-01-01 00:53:22.800000,1900-01-01 00:53:26.800000,Ik had de avond voor de test nog even met Marleen gesproken.,I had spoken with Marleen the evening before the test.,reminiscence,neutral,neutral
+1900-01-01 00:53:26.800000,1900-01-01 00:53:29.800000,Ze dacht dat ze op de goede weg zat.,She thought she was on the right track.,hope,happiness,mild
+1900-01-01 00:53:30.800000,1900-01-01 00:53:34.800000,Dus daaruit leid ik nu af dat ze iets te veel op één is gaan zitten.,So from that I now deduce that she has focused a bit too much on one thing.,judgment,neutral,mild
+1900-01-01 00:53:34.800000,1900-01-01 00:53:37.800000,En dat is schijnbaar niet de juiste mol.,And apparently that is not the right mole.,disappointment,sadness,mild
+1900-01-01 00:53:38.800000,1900-01-01 00:53:40.800000,Veel plezier hè? Dank je wel.,"Have fun, okay? Thank you.",gratitude,happiness,mild
+1900-01-01 00:53:40.800000,1900-01-01 00:53:45.800000,"Best wel onverwacht eigenlijk, omdat Marjolein iemand was die alles goed bijhield.","Quite unexpected actually, because Marjolein was someone who kept everything well organized.",bewilderment,surprise,moderate
+1900-01-01 00:53:45.800000,1900-01-01 00:53:49.800000,Ik denk dat iedereen de meeste kennis had van anderen.,I think everyone had the most knowledge about others.,reflection,neutral,neutral
+1900-01-01 00:53:50.800000,1900-01-01 00:53:52.800000,"Marjolein, ga je mee? Ja.","Marjolein, are you coming along? Yes.",invitation,neutral,neutral
+1900-01-01 00:53:52.800000,1900-01-01 00:53:56.800000,Op de een of andere manier is het gewoon misgegaan in de test.,Somehow it just went wrong in the test.,disappointment,sadness,moderate
+1900-01-01 00:53:56.800000,1900-01-01 00:53:59.800000,En in één keer stonden we afscheid te nemen van elkaar.,And all of a sudden we were saying goodbye to each other.,parting,sadness,moderate
+1900-01-01 00:53:59.800000,1900-01-01 00:54:03.800000,"Marjolein, je leek onbewogen toen je een rood scherm kreeg.","Marjolein, you seemed unmoved when you got a red screen.",detachment,neutral,mild
+1900-01-01 00:54:03.800000,1900-01-01 00:54:06.800000,"Ja, je houdt er altijd rekening mee.","Yes, you always take it into account.",consideration,neutral,mild
+1900-01-01 00:54:06.800000,1900-01-01 00:54:09.800000,Maar je hebt een joker niet ingezet.,But you didn't use a joker.,disappointment,sadness,mild
+1900-01-01 00:54:09.800000,1900-01-01 00:54:13.800000,Eén joker maakt het nog niet in deze fase van het spel.,One joker is not enough at this stage of the game.,resignation,sadness,mild
+1900-01-01 00:54:13.800000,1900-01-01 00:54:16.800000,Ik vraag me af of dat het grote verschil gemaakt heeft.,I wonder if that made the big difference.,curiosity,neutral,mild
+1900-01-01 00:54:18.800000,1900-01-01 00:54:20.800000,Weet iemand op wie zij zat?,Does anyone know who she was sitting on?,curiosity,neutral,mild
+1900-01-01 00:54:20.800000,1900-01-01 00:54:22.800000,Ze was heel erg stil daarover.,She was very quiet about it.,reticence,neutral,mild
+1900-01-01 00:54:22.800000,1900-01-01 00:54:26.800000,"Ik heb niks gezegd. Ook niet tegen jou, Cecile.","I didn't say anything. Not even to you, Cecile.",defensiveness,fear,mild
+1900-01-01 00:54:26.800000,1900-01-01 00:54:28.800000,"Wat denk je, Cecile? Ook niet tegen mij.","What do you think, Cecile? Not even to me.",exclusion,sadness,mild
+1900-01-01 00:54:28.800000,1900-01-01 00:54:30.800000,"Jammer, Cecile.","Too bad, Cecile.",disappointment,sadness,mild
+1900-01-01 00:54:30.800000,1900-01-01 00:54:32.800000,Waar was je op aan het wachten?,What were you waiting for?,curiosity,neutral,mild
+1900-01-01 00:54:32.800000,1900-01-01 00:54:34.800000,Op de finale.,At the final.,anticipation,happiness,mild
+1900-01-01 00:54:34.800000,1900-01-01 00:54:38.800000,"Dan zou je hem inzetten, vlak voor de finale, om hem zeker te halen.","Then you would use him, right before the final, to make sure you get there.",calculation,neutral,neutral
+1900-01-01 00:54:38.800000,1900-01-01 00:54:43.800000,Het lijkt alsof je dan zeker bent van je zaak als je tot dan durft te wachten.,It seems as if you are confident in your case if you dare to wait until then.,confidence,happiness,mild
+1900-01-01 00:54:43.800000,1900-01-01 00:54:46.800000,Ik denk dat ik ook wel zeker was van mijn zaak.,I think I was also quite sure of my case.,confidence,happiness,mild
+1900-01-01 00:54:46.800000,1900-01-01 00:54:48.800000,Gefeliciteerd.,Congratulations.,appreciation,happiness,mild
+1900-01-01 00:54:49.800000,1900-01-01 00:54:52.800000,We zijn er nog. We zijn er nog.,We are still here. We are still here.,reassurance,happiness,mild
+1900-01-01 00:54:52.800000,1900-01-01 00:54:55.800000,Ik vond het fantastisch. Het was ontzettend leuk.,I thought it was fantastic. It was incredibly fun.,enthusiasm,happiness,intense
+1900-01-01 00:54:55.800000,1900-01-01 00:54:57.800000,"Ja, ik vond het mooi.","Yes, I thought it was beautiful.",appreciation,happiness,mild
+1900-01-01 00:54:57.800000,1900-01-01 00:54:59.800000,Dank je wel. Dank je wel.,Thank you. Thank you.,gratitude,happiness,mild
+1900-01-01 00:54:59.800000,1900-01-01 00:55:01.800000,En een goede reis.,And a good journey.,well-wishing,happiness,mild
+1900-01-01 00:55:11.800000,1900-01-01 00:55:15.800000,Vanmiddag gaan jullie aan de slag als decorbouwer.,This afternoon you will get to work as set builders.,expectation,neutral,neutral
+1900-01-01 00:55:16.800000,1900-01-01 00:55:21.800000,Wij moesten ervoor zorgen dat zowel links als rechts identiek zouden worden ingericht.,We had to make sure that both the left and right sides would be arranged identically.,determination,neutral,neutral
+1900-01-01 00:55:24.800000,1900-01-01 00:55:27.800000,"Als iedereen naar elkaar heen leutert, dan verstaan we elkaar niet.","If everyone babbles over each other, then we don't understand each other.",frustration,anger,mild
+1900-01-01 00:55:27.800000,1900-01-01 00:55:30.800000,C-U-C-U.,C-U-C-U.,playfulness,happiness,mild
+1900-01-01 00:55:30.800000,1900-01-01 00:55:32.800000,C-C-U-U.,C-C-U-U.,neutrality,neutral,neutral
+1900-01-01 00:55:32.800000,1900-01-01 00:55:34.800000,"Nee, C-U-C.","No, C-U-C.",correction,neutral,neutral
+1900-01-01 00:55:34.800000,1900-01-01 00:55:35.800000,C-U-U-C.,C-U-U-C.,neutrality,neutral,neutral
+1900-01-01 00:55:35.800000,1900-01-01 00:55:38.800000,Ton de Hop geeft mij die telefoon. Ik ga het zelf opdoen.,Ton de Hop gives me that phone. I will do it myself.,determination,anger,moderate
+1900-01-01 00:55:38.800000,1900-01-01 00:55:41.800000,In de achterkant uitgelegd. Wat zie je dan?,Explained in the back. What do you see then?,curiosity,neutral,mild
+1900-01-01 00:55:41.800000,1900-01-01 00:55:43.800000,Dan zie je wat je moet zien.,Then you see what you need to see.,acceptance,neutral,neutral
+1900-01-01 00:55:43.800000,1900-01-01 00:55:45.800000,Zoek toch naar jezelf. Die begint hier.,Search for yourself. It starts here.,encouragement,happiness,mild
+1900-01-01 00:55:45.800000,1900-01-01 00:55:47.800000,Ik had er wel zin in.,I was looking forward to it.,anticipation,happiness,mild
+1900-01-01 00:55:47.800000,1900-01-01 00:55:51.800000,We konden heel nonchalant als drie mooie mannen rondrijden door de stad.,We could drive around the city very nonchalantly as three handsome men.,confidence,happiness,mild
+1900-01-01 00:55:51.800000,1900-01-01 00:55:53.800000,In een hele vette auto.,In a really cool car.,admiration,happiness,mild
+1900-01-01 00:55:53.800000,1900-01-01 00:55:55.800000,Hier ben ik! Ja! Stoppen!,Here I am! Yes! Stop!,urgency,surprise,intense
+1900-01-01 00:55:55.800000,1900-01-01 00:55:58.800000,En ik zie op ware grootte mezelf staan.,And I see myself standing in full size.,wonder,surprise,mild
+1900-01-01 00:55:58.800000,1900-01-01 00:56:00.800000,"Hé, moppie!","Hey, sweetheart!",affection,happiness,mild
+1900-01-01 00:56:00.800000,1900-01-01 00:56:02.800000,De auto is stuk!,The car is broken!,frustration,anger,moderate
