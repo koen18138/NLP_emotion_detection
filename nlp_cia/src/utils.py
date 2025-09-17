@@ -161,7 +161,7 @@ def load_model_and_tokenizer(model_dir: str):
         tuple: A tuple containing the loaded tokenizer and model.
     """
     print(f"Loading model and tokenizer from: {model_dir}")
-    tokenizer = BertTokenizer.from_pretrained(model_dir)
+    tokenizer = BertTokenizer.from_pretrained(model_dir, local_files_only=True)
     model = BertForSequenceClassification.from_pretrained(model_dir)
     return tokenizer, model
 
@@ -174,14 +174,42 @@ def load_inference_data(tokenizer, inference_data: pd.DataFrame=None, file_path:
 	Returns:
 		list: A list of sentences for inference.
 	"""
+	print(os.getcwd())
 	if inference_data is not None:
 		df = inference_data
 	else:
 		df = pd.read_csv(file_path)
-	sentences = df['sentence'].apply(text_cleaning).tolist()
+	sentences = df['Sentence'].apply(text_cleaning).tolist()
 	encoded_sentences = encode_data(sentences, tokenizer)
 	return encoded_sentences, df
 
+def url_to_mp3(url: str, output_dir: str = r"data\\audio") -> None:
+	# importing packages
+	from pytubefix import YouTube
+	import os
+
+	if not os.path.exists(output_dir):
+		os.makedirs(output_dir)
+	
+	# url input from youtube
+	yt = YouTube(url)
+
+	# extract only audio
+	video = yt.streams.filter(only_audio=True).first()
+
+	# download the file
+	out_file = video.download(output_path=output_dir, filename="output.mp4")
+	print(f"Downloaded to {out_file}")
+
+	# save as mp3
+	base, ext = os.path.splitext(out_file)
+	new_file = base + '.mp3'
+	try:
+		os.rename(out_file, new_file)
+	except FileExistsError:
+		os.remove(new_file)
+		os.rename(out_file, new_file)
+
 if __name__ == "__main__":
-	split_mp4("data\\video\\")
+	pass
 

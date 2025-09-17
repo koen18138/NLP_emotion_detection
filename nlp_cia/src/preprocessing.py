@@ -92,9 +92,9 @@ def parse_sentences_from_chunks(json_data: dict, output_dir: str = "data\\transc
             sentence_text = re.sub(r'\s+', ' ', sentence_text).strip()
             
             result.append({
-                "sentence": sentence_text,
-                "start_time": start_time,
-                "end_time": timestamp[1]
+                "Sentence": sentence_text,
+                "Start_time": start_time,
+                "End_time": timestamp[1]
             })
             
             # Reset for the next sentence
@@ -108,9 +108,9 @@ def parse_sentences_from_chunks(json_data: dict, output_dir: str = "data\\transc
         sentence_text = re.sub(r'\s+', ' ', sentence_text).strip()
         
         result.append({
-            "sentence": sentence_text,
-            "start_time": start_time,
-            "end_time": chunks[-1]["timestamp"][1]
+            "Sentence": sentence_text,
+            "Start_time": start_time,
+            "End_time": chunks[-1]["timestamp"][1]
         })
 
     # Save to CSV
@@ -118,7 +118,7 @@ def parse_sentences_from_chunks(json_data: dict, output_dir: str = "data\\transc
     os.makedirs(output_dir, exist_ok=True)
     
     with open(output_filepath, "w", newline="", encoding="utf-8") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=["sentence", "start_time", "end_time"])
+        writer = csv.DictWriter(csvfile, fieldnames=["Sentence", "Start_time", "End_time"])
         writer.writeheader()
         writer.writerows(result)
     
@@ -203,6 +203,8 @@ def transcribe_and_process_audio_directory(audio_directory: str="data\\audio", o
         os.makedirs(output_dir)
     if not os.path.exists(os.path.join(output_dir, "json")):
         os.makedirs(os.path.join(output_dir, "json"))
+    if not os.path.exists(audio_directory):
+        os.makedirs(audio_directory)
 
     for file_name in os.listdir(audio_directory):
         if file_name.endswith("mp3"):
