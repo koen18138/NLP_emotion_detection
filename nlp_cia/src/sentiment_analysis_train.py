@@ -130,8 +130,8 @@ if __name__ == "__main__":
     run_id = str(uuid.uuid4())[:8]
     save_dir = f'models\\model_{run_id}'
 
-    train_df = pd.read_csv(f"data/train_data_Sp1786.csv").dropna()
-    test_df = pd.read_csv(f"data/test_data_Sp1786.csv").dropna()
+    train_df = pd.read_csv(f"data/train_data_Sp1786_features_output.csv").dropna()
+    test_df = pd.read_csv(f"data/test_data_Sp1786_features_output.csv").dropna()
     # Shuffle the full dataframes to ensure labels are mixed
     train_df = train_df.sample(frac=1, random_state=42).reset_index(drop=True)
     test_df = test_df.sample(frac=1, random_state=42).reset_index(drop=True)
@@ -139,12 +139,12 @@ if __name__ == "__main__":
     print(f"Test data shape: {test_df.shape}")
 
     # Training data
-    Reviews = train_df['sentence'].tolist()
-    Target = train_df['sentiment'].tolist()
+    Reviews = train_df['Sentence'].tolist()
+    Target = train_df['Sentiment'].tolist()
 
     # Test data
-    test_reviews = test_df['sentence'].tolist()
-    test_targets = test_df['sentiment'].tolist()
+    test_reviews = test_df['Sentence'].tolist()
+    test_targets = test_df['Sentiment'].tolist()
     unique_types = set(type(x).__name__ for x in Reviews + Target + test_reviews + test_targets)
     print(unique_types)
 
@@ -162,7 +162,7 @@ if __name__ == "__main__":
     val_ds = SentimentDataset(val_dataset)
     test_ds = SentimentDataset(test_dataset)
 
-    num_labels = train_df['sentiment'].nunique()
+    num_labels = train_df['Sentiment'].nunique()
     model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=num_labels)
 
     training_args = TrainingArguments(
