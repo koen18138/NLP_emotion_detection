@@ -181,8 +181,7 @@ if __name__ == "__main__":
     print(f"Val data shape: {x_val = } - {y_val = }")
 
     run_id = str(uuid.uuid4())[:8]
-    # save_dir = f'models\\model_{run_id}'
-    save_dir = f'models\\model_d19f2a7b'
+    save_dir = f'models\\model_{run_id}'
     print(f"Model will be saved to: {save_dir}")
 
     unique_types = df['Emotion_encoded'].nunique()
@@ -226,13 +225,13 @@ if __name__ == "__main__":
     
     print(f"Test results: {eval_results}")
 
-    # run_id = str(uuid.uuid4())[:8]
-    # save_dir = f'models\\model_{run_id}'
-    # os.makedirs(save_dir, exist_ok=True)
-    # model.save_pretrained(save_dir)
-    # tokenizer.save_pretrained(save_dir)
-    # with open(os.path.join(save_dir, 'eval_results.json'), 'w') as f:
-    #     json.dump(eval_results, f, indent=2)
-    # if hasattr(trainer, 'state') and hasattr(trainer.state, 'log_history'):
-    #     with open(os.path.join(save_dir, 'train_history.json'), 'w') as f:
-    #         json.dump(trainer.state.log_history, f, indent=2)
+    run_id = str(uuid.uuid4())[:8]
+    save_dir = f'models\\model_{run_id}'
+    os.makedirs(save_dir, exist_ok=True)
+    model.save_pretrained(save_dir)
+    tokenizer.save_pretrained(save_dir)
+    with open(os.path.join(save_dir, 'eval_results.json'), 'w') as f:
+        json.dump(eval_results, f, indent=2)
+    if hasattr(trainer, 'state') and hasattr(trainer.state, 'log_history'):
+        with open(os.path.join(save_dir, 'train_history.json'), 'w') as f:
+            json.dump(trainer.state.log_history, f, indent=2)
