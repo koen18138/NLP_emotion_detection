@@ -74,10 +74,11 @@ def encode_data(texts, tokenizer, labels=None, max_len=128):
     # Convert string labels to integers
     labels = [label_map[label] for label in labels]
 
+    # Ensure labels are integers (not one-hot encoded)
     return {
         'input_ids': torch.tensor(encodings['input_ids']),
         'attention_mask': torch.tensor(encodings['attention_mask']),
-        'labels': torch.tensor(labels, dtype=torch.float)
+        'labels': torch.tensor(labels, dtype=torch.long)  # Change dtype to torch.long
     }
 
 class SentimentDataset(torch.utils.data.Dataset):
@@ -153,43 +154,37 @@ def get_predictions(model: BertForSequenceClassification, encodings: Dict[str, t
     
     return predictions
 
-if __name__ == "__main__":
+def run_experiment(model_name: str, dataset_path: str, output_dir: str):
+    """
+    Runs an experiment with the specified model and dataset.
 
-    # Get the current working directory
-    current_folder = os.getcwd()
-    print(current_folder)
-
-    # Dataset path
-    dataset_path = 'data\\dataset\\processed\\go_emotion_dutch.csv'  # Adjust this path as necessary
+    Args:
+        model_name (str): The name of the model to use (e.g., 'bert-base-uncased').
+        dataset_path (str): The path to the dataset file.
+        output_dir (str): The directory to save the results.
+    """
+    print(f"Running experiment with model: {model_name} and dataset: {dataset_path}")
 
     # Load the dataset
     df = pd.read_csv(dataset_path)
-    df = df[:500]
     df_test = pd.read_csv('data\\group_4_url_1_transcript.csv')
 
     # Shuffle the full dataframes to ensure labels are mixed
     df_subset = df.sample(frac=1, random_state=42).reset_index(drop=True)
-    df_selected = df_subset
-    print(df_subset.head())
+    df_subset = df_subset.head(10_000)  # Limit to first 500 rows for testing purposes
 
     # Training data
-    x_data = df['Sentence'].tolist()
-    y_data = df['Emotion_core'].tolist()
+    x_data = df_subset['Sentence'].tolist()
+    y_data = df_subset['Emotion_core'].tolist()
 
     x_train, x_val, y_train, y_val = train_test_split(x_data, y_data, test_size=0.3)
     print(f"Train data shape: {x_train = } - {y_train = }")
     print(f"Val data shape: {x_val = } - {y_val = }")
 
-    run_id = str(uuid.uuid4())[:8]
-    save_dir = f'models\\model_{run_id}'
-    print(f"Model will be saved to: {save_dir}")
-
     unique_types = df['Emotion_encoded'].nunique()
-    print(unique_types)
+    print(f"Number of unique emotion types: {unique_types}")
 
-    
-
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
+    tokenizer = BertTokenizer.from_pretrained(model_name, do_lower_case=True)
     max_len = 128
 
     train_dataset = encode_data(x_train, tokenizer, y_train)
@@ -200,14 +195,14 @@ if __name__ == "__main__":
     val_ds = SentimentDataset(val_dataset)
     test_ds = SentimentDataset(test_dataset)
 
-    model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=unique_types)
+    model = BertForSequenceClassification.from_pretrained(model_name, num_labels=unique_types)
 
     training_args = TrainingArguments(
-        output_dir=f'{save_dir}\\results',
-        num_train_epochs=5,
+        output_dir=f'{output_dir}\\results',
+        num_train_epochs=3,
         per_device_train_batch_size=32,
         per_device_eval_batch_size=32,
-        logging_dir=f'{save_dir}\\logs',
+        logging_dir=f'{output_dir}\\logs',
         logging_steps=10,
     )
 
@@ -219,19 +214,34 @@ if __name__ == "__main__":
         compute_metrics=compute_metrics,
     )
 
-    # trainer.train()
+    # Train and evaluate the model
+    trainer.train()
     eval_results = trainer.evaluate(test_ds)
-    evaluate_model(model, tokenizer, df_test, save_dir)
-    
+    evaluate_model(model, tokenizer, df_test, output_dir)
+
     print(f"Test results: {eval_results}")
 
-    run_id = str(uuid.uuid4())[:8]
-    save_dir = f'models\\model_{run_id}'
-    os.makedirs(save_dir, exist_ok=True)
-    model.save_pretrained(save_dir)
-    tokenizer.save_pretrained(save_dir)
-    with open(os.path.join(save_dir, 'eval_results.json'), 'w') as f:
+    # Save the model and results
+    os.makedirs(output_dir, exist_ok=True)
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
+    with open(os.path.join(output_dir, 'eval_results.json'), 'w') as f:
         json.dump(eval_results, f, indent=2)
     if hasattr(trainer, 'state') and hasattr(trainer.state, 'log_history'):
-        with open(os.path.join(save_dir, 'train_history.json'), 'w') as f:
+        with open(os.path.join(output_dir, 'train_history.json'), 'w') as f:
             json.dump(trainer.state.log_history, f, indent=2)
+
+if __name__ == "__main__":
+    # Define experiments
+    experiments = [
+        # {"model_name": "GroNLP/bert-base-dutch-cased", "dataset_path": "data\\dataset\\processed\\go_emotion_dutch.csv"},
+        # {"model_name": "bert-base-uncased", "dataset_path": "data\\dataset\\processed\\go_emotion_dutch.csv"},
+        {"model_name": "GroNLP/bert-base-dutch-cased", "dataset_path": "data\\features\\NLP_features.csv"},
+        {"model_name": "bert-base-uncased", "dataset_path": "data\\features\\NLP_features.csv"},
+    ]
+
+    # Run each experiment
+    for i, experiment in enumerate(experiments):
+        run_id = str(uuid.uuid4())[:8]
+        output_dir = f'models\\experiment_{i + 1}_{run_id}'
+        run_experiment(experiment["model_name"], experiment["dataset_path"], output_dir)
