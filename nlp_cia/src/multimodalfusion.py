@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader, Dataset
 from typing import List, Dict
 from sklearn.metrics import classification_report
 import os
+from tqdm import tqdm
 tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
 
 class EmotionDataset(Dataset):
@@ -17,6 +18,7 @@ class EmotionDataset(Dataset):
         if not all(isinstance(lbl, (int, np.integer)) for lbl in self.labels):
             unique_labels = sorted(set(self.labels))
             self.label2id = {label: i for i, label in enumerate(unique_labels)}
+            self.labels = [self.label2id[label] for label in self.labels]
         else:
             self.label2id = None
     def __len__(self):
@@ -32,7 +34,7 @@ class EmotionDataset(Dataset):
             max_length=128
         )
 
-        # B. Process Numeric Features (The main change)
+        # B. Process Numeric Features
         # Helper function to map categorical tags to numeric indices
         def get_mapping(df_col: pd.Series):
             # if df_col is a pandas series
@@ -64,11 +66,11 @@ class EmotionDataset(Dataset):
         # Process the list features
         pos_features = process_list_feature(self.numeric_df.iloc[idx]['POS_Tags'], is_categorical=True)
         tfidf_features = process_list_feature(self.numeric_df.iloc[idx]['TF_IDF'], is_categorical=False)
-        ner_features = process_list_feature(self.numeric_df.iloc[idx]['NER_Tags'], is_categorical=True)
+        # ner_features = process_list_feature(self.numeric_df.iloc[idx]['doc_entities'], is_categorical=True)
         
         # Flatten the features (This creates the fixed-size vector)
         # We assume 'Embedding' is already a flat list/array of fixed length E (e.g., 100)
-        numeric_list = tfidf_features + pos_features + ner_features + \
+        numeric_list = tfidf_features + pos_features + \
                        [self.numeric_df.iloc[idx]['Sentiment_Score']] + \
                        self.numeric_df.iloc[idx]['Embedding'].tolist() # Convert array/series to list
         numeric_tensor = torch.tensor(numeric_list, dtype=torch.float)
@@ -214,7 +216,7 @@ def str_eval(df):
     df['TF_IDF'] = df['TF_IDF'].apply(literal_eval)
     df['Embedding'] = df['Embedding'].apply(lambda x: np.fromstring(x.strip("[]"), sep=" "))
     df['POS_Tags'] = df['POS_Tags'].apply(literal_eval)
-    df['NER_Tags'] = df['NER_Tags'].apply(literal_eval)
+    # df['doc_entities'] = df['doc_entities'].apply(literal_eval)
     return df
 def data_split(df):
     try:
@@ -228,7 +230,7 @@ def data_split(df):
             'TF_IDF', 
             'Sentiment_Score', 
             'Embedding', 
-            'NER_Tags'
+            # 'doc_entities'
         ]]
 
  
@@ -244,31 +246,54 @@ if __name__ == "__main__":
 
     print(getcwd())
 
-    df = pd.read_csv('data/features/NLP_features.csv')
-    df_test = pd.read_csv('data/features/NLP_features copy 2.csv')
+    df = pd.read_csv('data/features/NLP_features_go_emotion_dutch.csv')
+    df_test = pd.read_csv('data/features/NLP_features_group_4_url_1_transcript.csv')
     # Shuffle the full dataframes to ensure labels are mixed
     df_subset = df.sample(frac=1, random_state=42).reset_index(drop=True)
-    df_subset = df_subset.head(500)  # Limit to first 500 rows for testing purposes
-
-    df = str_eval(df)
+    df_subset = df_subset.head(3500)  # Limit to first 500 rows for testing purposes
+    print(df[[
+            'POS_Tags',
+            'TF_IDF', 
+            'Sentiment_Score', 
+            'Embedding', 
+            # 'doc_entities'
+        ]].head()
+)
+    print(df[[
+            'POS_Tags',
+            'TF_IDF', 
+            'Sentiment_Score', 
+            'Embedding', 
+            # 'doc_entities'
+        ]].isna().count())
+    df = str_eval(df_subset)
     df_test = str_eval(df_test)
 
-    print(df['Embedding'])
-    print(df.head())
-    print(df.columns)
     y_train, text_train, numeric_train = data_split(df)
     y_test, text_test, numeric_test = data_split(df_test)
-
+    # y, text, numeric = data_split(df)
+    import random
+    rand_int = random.randint(0, len(df))
+    # print(f"{y = }\n{text = }\n{numeric = }")
+    # train_texts, val_texts, \
+    # train_numeric, val_numeric, \
+    # train_labels, val_labels = train_test_split(
+    #     text_train,       # X1 (Text data)
+    #     numeric_train,    # X2 (Numeric data)
+    #     y_train,          # y (Labels)
+    #     test_size=0.2, 
+    #     random_state=42
+    # )
     
-    train_texts, val_texts, \
-    train_numeric, val_numeric, \
-    train_labels, val_labels = train_test_split(
-        text_train,       # X1 (Text data)
-        numeric_train,    # X2 (Numeric data)
-        y_train,          # y (Labels)
-        test_size=0.2, 
-        random_state=42
-    )
+    # train_texts, val_texts, \
+    # train_numeric, val_numeric, \
+    # train_labels, val_labels = train_test_split(
+    #     text_train,       # X1 (Text data)
+    #     numeric_train,    # X2 (Numeric data)
+    #     y_train,          # y (Labels)
+    #     test_size=0.2, 
+    #     random_state=42
+    # )
     
     MAX_SEQ_LEN = 128 # Max length for POS/TF-IDF lists
     PAD_TOKEN_ID = 0 # ID for padding POS/NER tags
@@ -276,7 +301,7 @@ if __name__ == "__main__":
     # Assuming E=100 for the 'Embedding' feature
     EMBEDDING_DIM = 300 
 
-    FINAL_INPUT_DIM = (3 * MAX_SEQ_LEN) + 1 + EMBEDDING_DIM 
+    FINAL_INPUT_DIM = (2 * MAX_SEQ_LEN) + 1 + EMBEDDING_DIM 
     
     # --- Model Initialization ---
     BERT_DIM = 768 
@@ -291,7 +316,7 @@ if __name__ == "__main__":
     )
 
     # --- Create Data Loaders ---
-    train_dataset = EmotionDataset(train_texts, train_numeric, train_labels)
+    train_dataset = EmotionDataset(text_train, numeric_train, y_train)
     train_dataloader = DataLoader(train_dataset, batch_size=16, shuffle=True)
 
     # --- Training Loop Example ---
@@ -302,7 +327,7 @@ if __name__ == "__main__":
 
     for epoch in range(3): # Simple example for 3 epochs
         model.train()
-        for batch in train_dataloader:
+        for batch in tqdm(train_dataloader, desc="Batch"):
             optimizer.zero_grad()
             
             # Move data to device
@@ -321,7 +346,7 @@ if __name__ == "__main__":
         
         print(f"Epoch {epoch+1} done. Loss: {loss.item():.4f}")
 
-    test_dataset = EmotionDataset(val_texts, val_numeric, val_labels)
+    test_dataset = EmotionDataset(text_test, numeric_test, y_test)
     test_dataloader = DataLoader(test_dataset, batch_size=16, shuffle=False) 
 
     OUTPUT_DIR = "model_evaluation_results"
@@ -331,7 +356,7 @@ if __name__ == "__main__":
     evaluate_model(
         model=model, 
         test_dataloader=test_dataloader, 
-        test_labels=val_labels, # The true labels for the validation set
+        test_labels=test_dataset.labels,
         output_dir=OUTPUT_DIR,
         device=device
     ) 
