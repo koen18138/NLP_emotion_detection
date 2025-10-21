@@ -372,22 +372,114 @@ def add_sentiment_scores(df: pd.DataFrame, model_dir: str):
 #     token_dependancy = list_to_string(full_df['token_dependancy'])
 # )
 
-
+# Function to map labels to emotion
+def map_labels(labels_list):
+    if len(labels_list) == 0:
+        return 'neutral'
+    return emotion_mapping[labels_list[0]]
 
 if __name__ == "__main__":
-    from os import path
+    # Fine-grain emotion map to simple emotion
+    emotion_mapping = {
+        0: 'happiness',  # admiration
+        1: 'happiness',  # amusement
+        2: 'anger',      # anger
+        3: 'anger',      # annoyance
+        4: 'happiness',  # approval
+        5: 'happiness',  # caring
+        6: 'surprise',   # confusion
+        7: 'neutral',    # curiosity
+        8: 'neutral',    # desire
+        9: 'sadness',    # disappointment
+        10: 'anger',     # disapproval
+        11: 'disgust',   # disgust
+        12: 'sadness',   # embarrassment
+        13: 'happiness', # excitement
+        14: 'fear',      # fear
+        15: 'happiness', # gratitude
+        16: 'sadness',   # grief
+        17: 'happiness', # joy
+        18: 'happiness', # love
+        19: 'fear',      # nervousness
+        20: 'happiness', # optimism
+        21: 'happiness', # pride
+        22: 'surprise',  # realization
+        23: 'happiness', # relief
+        24: 'sadness',   # remorse
+        25: 'sadness',   # sadness
+        26: 'surprise',  # surprise
+        27: 'neutral'    # neutral
+    }
+    splits: Dict[str, str] = {
+        'train': 'simplified/train-00000-of-00001.parquet',
+        'validation': 'simplified/validation-00000-of-00001.parquet',
+        'test': 'simplified/test-00000-of-00001.parquet'
+    }
+    # Base URL for the Hugging Face dataset
+    HF_DATASET_BASE_URL: str = "hf://datasets/google-research-datasets/go_emotions/"
     # Load the merged data
-    filepath_2 = 'data/dataset/processed/go_emotion_dutch.csv'
-    filepath_1 = 'data/group_4_url_1_transcript.csv'
-    for filepath in [filepath_1, filepath_2]:
-        basefilename = path.basename(filepath).split('.')[0]
-        df = pd.read_csv(filepath)
-        df['Embedding'] = df['Sentence'].apply(sent_embedding_spacy)
-        df = create_tfidf_dataframe(df)
-        # embeddings_array = np.stack(df['Embedding'].values)
-        full_df = get_nlp_features_spacy(df, nlp)    
-        add_sentiment_scores(full_df, 'models/Model_14e03c00')
-        print('Saving Dataframe')
-        full_df.to_csv(f'data/features/NLP_features_{basefilename}.csv', index=False)
+    train_path = r'data/features/go_emotion_eng.csv'
+    test_path = r"task 6/test_improved.xlsx"
 
+    for filepath in [train_path, test_path]:
+        # Extract the base filename (without extension) and the extension
+        basefilename, ext = os.path.basename(filepath).split('.')
         
+        # Define the output path for the processed features CSV
+        output_filepath = f'data/features/{basefilename}_features.parquet'
+        
+        # Check if the feature file already exists to avoid re-extraction
+        if os.path.exists(output_filepath):
+            # If the file exists, skip feature extraction for this file
+            print(f"Features already extracted: {output_filepath}. Skipping.")
+            continue
+        else:
+            print(f"Starting feature extraction for: {filepath}")
+            
+            # Read the input file based on its extension
+            if ext == "xlsx":
+                df = pd.read_excel(filepath)
+                df = df.drop('Sentence', axis=1)
+                df = df.rename(columns={'Translation':'Sentence'})
+            else:
+                # Default to reading as CSV
+                df = pd.read_parquet(HF_DATASET_BASE_URL + splits["train"])
+                df = df.rename(columns={
+                    'text':'Sentence',
+                    'labels':"Emotion_core"
+                })
+                        # Map simple emotions to fine-grain emotion labels
+                df['Emotion_core'] = df['Emotion_core'].apply(map_labels)
+                df = df.sample(frac=1, random_state=42).reset_index(drop=True) # Shuffle training data
+                df = df.head(5_000) # Get small subset for testing
+
+            
+            # 1. Generate dense sentence embeddings (using spaCy's built-in vectors)
+            df['Embedding'] = df['Sentence'].apply(sent_embedding_spacy)
+            
+            # 2. Generate TF-IDF features for the text data
+            df = create_tfidf_dataframe(df)
+            
+            # 3. Extract NLP features using spaCy
+            full_df = get_nlp_features_spacy(df, nlp)
+            
+            # 4. Add sentiment scores using a pre-trained model
+            add_sentiment_scores(full_df, 'models/Model_14e03c00')
+
+            
+            # Convert string representations of arrays/lists back to actual Python objects
+            # df = str_eval(df)
+
+            # Save the augmented DataFrame with all extracted features
+            print(f'Saving Dataframe with features to: {output_filepath}')
+            full_df = full_df[[
+                'Sentence', 
+                'Emotion_core', 
+                'Embedding', 
+                'TF_IDF',
+                'POS_Tags',
+                'Sentiment_Score'
+            ]]
+            print(full_df.columns)
+
+            full_df.to_parquet(output_filepath.replace('.csv', '.parquet'), index=False)
