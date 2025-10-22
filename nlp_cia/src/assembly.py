@@ -1,21 +1,40 @@
 import assemblyai as aai
-import re
 import pandas as pd
 import os
 from preprocessing import split_into_sentences
+
+from datetime import timedelta
+
+def format_timestamp(seconds):
+    """Convert seconds to HH:MM:SS format"""
+    if seconds is None or seconds == '' or pd.isna(seconds):
+        return None
+    td = timedelta(seconds=float(seconds))
+    # Convert to string and remove days if present
+    time_str = str(td)
+    if 'days' in time_str:
+        time_str = time_str.split(', ')[1]
+    return time_str
+
 
 def transcribe_and_create_excel(
         api_key: str, 
         output_filepath: str = "data\\transcription\\csv\\transcription.csv", 
         audio_filepath: str = "data\\audio\\output.mp3", 
-        output_text_path=None
+        output_text_path=None,
+        get_speaker: bool = False,
+        debug: bool = False
 ):
     """Complete pipeline: transcribe audio with speaker diarization and create Excel."""
     
     # Set up AssemblyAI
     aai.settings.api_key = api_key
     
-    print("Starting transcription with speaker detection...")
+    if get_speaker:
+        print("Starting transcription with speaker detection...")
+    if not get_speaker:
+        print("Starting transcription without speaker detection...")
+
 
     # Check if output dir exist
     if not os.path.exists(os.path.dirname(output_filepath)):
@@ -45,32 +64,24 @@ def transcribe_and_create_excel(
     print(f"Confidence: {transcript.confidence}")
     
     # Process utterances with speaker labels
-    sentences_with_speakers = []
+    data = []
     
-    if transcript.utterances:  # Check if speaker diarization worked
+    if transcript.utterances:
         print(f"Detected {len(set(u.speaker for u in transcript.utterances))} different speakers")
-        
         for utterance in transcript.utterances:
             # Split each utterance into sentences but keep speaker info
             utterance_sentences = split_into_sentences(utterance.text)
             for sentence in utterance_sentences:
-                sentences_with_speakers.append({
-                    'text': sentence,
-                    'speaker': utterance.speaker,
-                    'start_time': utterance.start / 1000,  # Convert to seconds
-                    'end_time': utterance.end / 1000
+                data.append({
+                    'Sentence': sentence,
+                    'Speaker': utterance.speaker,
+                    'Start Time': utterance.start / 1000,  # Convert ms to s
+                    'End Time': utterance.end / 1000       # Convert ms to s
                 })
+                
     else:
-        # Fallback if no speaker diarization available
-        print("No speaker diarization available, processing as single speaker")
-        sentences = split_into_sentences(transcript.text)
-        for sentence in sentences:
-            sentences_with_speakers.append({
-                'text': sentence,
-                'speaker': 'Speaker A',
-                'start_time': '',
-                'end_time': ''
-            })
+        print('Failed to detect utterances')
+
     
     # Save full transcription with speakers to text file if requested
     if output_text_path:
@@ -88,39 +99,47 @@ def transcribe_and_create_excel(
             else:
                 f.write(transcript.text)
         print(f"Full transcription saved to: {output_text_path}")
-    
-    # Create DataFrame with speaker information
-    df = pd.DataFrame({
-        'Sentence_Number': range(1, len(sentences_with_speakers) + 1),
-        'Speaker': [s['speaker'] for s in sentences_with_speakers],
-        'Sentence': [s['text'] for s in sentences_with_speakers],
-        'Start_Time': [f"{s['start_time']:.1f}s" if s['start_time'] else '' for s in sentences_with_speakers],
-        'End_Time': [f"{s['end_time']:.1f}s" if s['end_time'] else '' for s in sentences_with_speakers],
-        'Notes': [''] * len(sentences_with_speakers)
-    })
+    if not get_speaker:
+        # Create DataFrame without speaker information
+        df = pd.DataFrame({
+            'Start Time': [format_timestamp(s['Start Time']) for s in data],
+            'End Time': [format_timestamp(s['End Time']) for s in data],
+            'Sentence': [s['Sentence'] for s in data],
+        })
+    if get_speaker:
+        # Create DataFrame with speaker information
+        df = pd.DataFrame({
+            'Start Time': [format_timestamp(s['Start Time']) for s in data],
+            'End Time': [format_timestamp(s['End Time']) for s in data],
+            'Sentence': [s['Sentence'] for s in data],
+            'Speaker': [s['Speaker'] for s in data],
+        })
     
     if output_filepath.endswith('.xlsx'):
         # Save to Excel
         df.to_excel(output_filepath, index=False, engine='openpyxl')
     else:
         # Save to CSV
-        df.to_csv(output_filepath, index=False)
+        df.to_csv(
+            output_filepath, 
+            index=False, 
+        )   
         
     print(f"\nExcel file created: {output_filepath}")
-    print(f"Total sentences: {len(sentences_with_speakers)}")
-    
-    # Show speaker distribution
-    if transcript.utterances:
-        speaker_counts = df['Speaker'].value_counts()
-        print(f"\nSentences per speaker:")
-        for speaker, count in speaker_counts.items():
-            print(f"  {speaker}: {count} sentences")
-    
-    # Show first few sentences as preview
-    print(f"\nFirst 3 sentences:")
-    for i in range(min(3, len(sentences_with_speakers))):
-        s = sentences_with_speakers[i]
-        print(f"{i+1} [{s['speaker']}]: {s['text'][:80]}...")
+    print(f"Total sentences: {len(data)}")
+    if debug:
+        # Show speaker distribution
+        if transcript.utterances:
+            speaker_counts = df['Speaker'].value_counts()
+            print(f"\nSentences per speaker:")
+            for speaker, count in speaker_counts.items():
+                print(f"  {speaker}: {count} sentences")
+        
+        # Show first few sentences as preview
+        print(f"\nFirst 3 sentences:")
+        for i in range(min(3, len(data))):
+            s = data[i]
+            print(f"{i+1} [{s['speaker']}]: {s['text'][:80]}...")
     
     return transcript, df
 
