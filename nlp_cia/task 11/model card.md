@@ -136,3 +136,9 @@ work in progress
 The environmental impact of this model is negligible. during multiple iterations on a single GPU (RTX 4070) over 15 hours my laptop used around 4.5KWH based on some simple calculations. However if the client were to retrain our model on more data it could be a lot more.
 
 The client could opt for investing in different environmentally friendly solutions like solar infrastructure the combat the high energie demands of AI training. Other less invasive solutions could be using a pre trained model instead of training from scratch.
+
+#### Sustainable Design Choices
+
+- Chose fine-tuning over training from scratch (100x less energy)
+- Limited to 3 epochs to reduce computational burden
+- Leveraged pretrained multilingual model instead of language-specific training
