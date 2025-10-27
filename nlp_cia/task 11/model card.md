@@ -105,6 +105,8 @@ Performance varies significantly due to class imbalance.
 - Common causes of errors include ambiguous wording, non-specific/general language, overlapping emotions (happiness vs neutral), and the loss of context in short texts or due to truncation.
 - Class imbalance is the biggest factor of the performance differences. Small classes (disgust, fear) are unreliable and predictions are strongly biased toward neutral.
 
+![Error Analysis](https://github.com/BredaUniversityADSAI/fae2-nlpr-group-group-4-1/blob/main/nlp_cia/task_9/error_analysis_fine_tuned_pretrained_transformer_model.md)
+
 ## Explainability and Transparency
 work in progress
 
