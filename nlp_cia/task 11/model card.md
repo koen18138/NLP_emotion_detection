@@ -108,7 +108,25 @@ Performance varies significantly due to class imbalance.
 ![Error Analysis](https://github.com/BredaUniversityADSAI/fae2-nlpr-group-group-4-1/blob/main/nlp_cia/task_9/error_analysis_fine_tuned_pretrained_transformer_model.md)
 
 ## Explainability and Transparency
-work in progress
+
+We conducted comprehensive XAI analysis using three techniques from Ali et al. (2022) to understand how our model makes predictions:
+
+**Key Findings:**
+- **Gradient × Input analysis** shows the model correctly focuses on emotionally charged words (e.g., "fantastic", "terrible", "shit") but also assigns high relevance to structural tokens like `<s>` and `</s>`, which may be a gradient artifact.
+- **Conservative Layer-wise Relevance Propagation (LRP)** reveals more distributed importance patterns. The `<s>` token consistently scores highest because RoBERTa's classifier uses it as an aggregation point for sentence-level information, not because it contains emotional content.
+- **Token perturbation testing** exposes model fragility: removing just 1-2 key tokens causes confidence to crash from 50-60% to near zero for short sentences, indicating heavy reliance on specific keywords rather than robust understanding.
+
+**Model Behavior by Emotion:**
+- Disgust and anger predictions depend heavily on 1-2 strong words
+- Sadness predictions are more distributed across multiple tokens
+- The model uses attention mechanisms to consider context, not just keyword matching
+
+**Limitations Identified:**
+- Predictions are fragile and would likely fail with typos or paraphrasing
+- Special token handling shows architectural quirks
+- Different behavior on short vs. long sentences
+
+**Full XAI Analysis:** [Link to Task 10 XAI Analysis Report](https://github.com/BredaUniversityADSAI/fae2-nlpr-group-group-4-1/blob/main/nlp_cia/Task%2010/XAI_Analysis.md)
 
 ## Recommendations for Use
 
