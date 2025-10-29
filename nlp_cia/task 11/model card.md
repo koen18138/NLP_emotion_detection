@@ -3,20 +3,20 @@
 #### Architecture
 Our model employs a RobertaForSequenceClassification architecture, leveraging the multilingual capabilities of RoBERTa-base. Key technical specifications include:
 
-- Base Model: RoBERTa-base (125M parameters) pretrained on GoEmotions
-- Classification Head: Custom linear layer mapping 768-dimensional hidden states to 7 emotion classes
+- Base Model: RoBERTa-base (125M parameters) pretrained on GoEmotions. GoEmotions was trained on 58000 reddit comments. It had 27 fine grained emotions that we mapped to just 7 and the language is English (we leveraged transfer learning for Dutch)
+- Classification Head: Custom linear layer mapping 768-dimensional hidden states to 7 emotion classes (neutral, sadness, fear, happiness, anger, surprise, disgust, )
 - Input Processing: WordPiece tokenization with 50,265 vocabulary size
 - Maximum Sequence Length: 256 tokens
 - Attention Mechanism: 12-layer, 12-head self-attention with 768 hidden dimensions
 
 #### Design Choices
 
-We preserved the pretrained encoder weights to maintain multilingual understanding while reinitializing the classification head for our 7-class problem. We did this because it would be less effecient to keep the amount of heads the same. We selected RoBERTa over BERT for superior performance on sentiment tasks and chose 256 token length to balance computational efficiency with capturing emotional context
+We preserved the pretrained encoder weights to maintain multilingual understanding while reinitializing the classification head for our classification problem. We did this because it would be less effecient to keep the amount of heads the same. We selected RoBERTa over BERT for superior performance on sentiment tasks and chose 256 token length to balance computational efficiency with capturing emotional context
 
 #### Purpose
-This model was developed to enable automated emotion detection in Dutch media content. We did this for our client CIA (content intelligence agency). Our client did not want to rely on expensive and time consuming API,s
+- This model was developed to enable automated emotion detection in Dutch media content. We did this for our client CIA (content intelligence agency). Our client did not want to rely on expensive and time consuming API,s
 
-We wanted to provide the CIA with automated content analysis capabilities
+- We wanted to provide the CIA with automated content analysis capabilities
 Supporting research on emotional expression in Dutch digital media
 Enabling emotion monitoring for possibly audience engagement metrics or emotional profiling 
 
@@ -33,7 +33,7 @@ Key Assumptions:
 - Computational resources restricted to single GPU training
 - Time constraint of 3 training epochs due to academic project timeline
 - Class imbalance in available Dutch emotion datasets
-- Short sentences generally perform worse due to lack of context and resulting ambiguity. 
+- Short sentences generally perform worse due to lack of context and resulting ambiguity
 
 
 ## intended use cases
@@ -127,15 +127,15 @@ work in progress
 - Consider tuning decision thresholds per class to increase recall for underrepresented classes like fear.
 
 #### Media Industry Applications
-- Act like a content moderator for flagging emotionally charged content for review.
-- Track user engagement during different emotional peaks for example different tv shows.
-- Use it for ad placement to match the emotional tone of the content.
+- Act like a content moderator for flagging emotionally charged content for review. This could help the content creator with identifying key problems in there content. For instance certain actions spark big negative emotions he maybe could remove this part
+- Track user engagement during different emotional peaks for example different tv shows. This could lead to new insights for the creators like how emotional they could make an episode without losing viewers
+- Use it for ad placement to match the emotional tone of the content. This could ensure that the emotional tone is not too one sided leading to less viewer engagement
 
 ## Sustainability Considerations
 
-The environmental impact of this model is negligible. during multiple iterations on a single GPU (RTX 4070) over 15 hours my laptop used around 4.5KWH based on some simple calculations. However if the client were to retrain our model on more data it could be a lot more.
+The environmental impact of this model is negligible. During multiple iterations on a single GPU (RTX 4070) over 15 hours my laptop used around 4.5KWH based on some simple calculations. However if the client were to retrain our model on more data it could be a lot more. There are also costs involved in deploying and using this model. Dependent on the use scenario this models power consumption could have an higher impact on the environment. 
 
-The client could opt for investing in different environmentally friendly solutions like solar infrastructure the combat the high energie demands of AI training. Other less invasive solutions could be using a pre trained model instead of training from scratch.
+The client could opt for investing in different environmentally friendly solutions like solar infrastructure the combat the high energie demands of AI training. Other less invasive solutions could be using a pre trained model instead of training from scratch. This greatly reduces the computational costs of re training the model. 
 
 #### Sustainable Design Choices
 
