@@ -285,7 +285,6 @@ def safe_literal_eval(value: Any) -> Any:
             return []
             
     # 2. If it's already a list, np.ndarray, float (like NaN), or other non-string, return it
-    # Note: Checking for np.ndarray is crucial based on your traceback
     return value
 
 
@@ -296,7 +295,6 @@ def str_eval(df: pd.DataFrame) -> pd.DataFrame:
     # Use the column names that typically get saved as string representations of arrays
     for col in ['Embedding', 'POS_Tags', 'TF_IDF']:
         if col in df.columns:
-            # Apply the safer, type-checking parser
             df[col] = df[col].apply(safe_literal_eval)
     return df
     
@@ -562,8 +560,7 @@ if __name__ == "__main__":
     criterion: nn.Module = nn.CrossEntropyLoss()
     optimizer: optim.Optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
-    # --- Training and Validation Loop (Updated) ---
-    # ... (Training loop logic updated to handle 5 inputs and 1 target) ...
+    # --- Training and Validation Loop ---
     print("\n--- Starting Training Loop (Multi-Feature) ---")
     best_val_loss: float = float('inf')
     patience_counter: int = 0
