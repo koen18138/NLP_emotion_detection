@@ -12,11 +12,10 @@ The model's performance exhibits a clear pattern: it is reliable for majority cl
 
 The overall model **Accuracy is 0.7975**, this value is largely driven by strong performance on the most frequent emotional states, which provides a baseline for general content analysis.
 
-* **Neutral:** The model performs very well on **Neutral** sentences, achieving an **F1-score of 0.8779** due to its large **support (711 samples)**, **Recall of 0.9255** and **Precision of 0.835** (Table A1). Tells us that most non-emotional or objective text segments in media content are correctly classified.
+* **Neutral:** The model performs very well on **Neutral** sentences, achieving an **F1-score of 0.8779** due to its large **support (711 samples)**, **Recall of 0.9255** and **Precision of 0.835** (Table 1). Tells us that most non-emotional or objective text segments in media content are correctly classified.
 
 * **Happiness:** Performance is also strong for **Happiness (F1-score = 0.7179)**, benefiting from its relatively high frequency (**145 samples**) and a generally clearer semantic boundary.
 
-### Table A1 — Classification report (test set)
 | Label      | Precision | Recall | F1-score | Support |
 |------------|-----------|--------|----------|---------|
 | anger      | 0.6316    | 0.7059 | 0.6667   | 34      |
@@ -29,6 +28,7 @@ The overall model **Accuracy is 0.7975**, this value is largely driven by strong
 | **accuracy**   |           |        | **0.7975** | 1042    |
 | **macro avg**  | 0.7491    | 0.5011 | 0.5353   | 1042    |
 | **weighted avg** | 0.7964    | 0.7975 | 0.7726   | 1042    |
+*Table 1: This table shows the classification report on the test set*
 
 ### Weaknesses: Failure on Minority and Subtle Emotions
 
@@ -66,6 +66,7 @@ The misclassification analysis (Table A3 and Confusion Matrix 1) clearly shows t
 
 ### Confusion Matrix 1 Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model
 ![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/Fine-tuned-confmatrix.png)
+**
 ---
 
 
@@ -106,10 +107,10 @@ By focusing on class balance and data integrity first, we can transform the mode
 
 
 ### Wordcloud misclassified
-![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20preds%20stopword%20misclassified.png)
+![Wordcloud misclassified](images/fine-tuned%20preds%20stopword%20misclassified.png)  
+*Figure 1: Wordcloud of misclassified examples. This image shows the most common words for all misclassified classes*
 ### Wordcloud correctly classified
-![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20preds%20stopword.png)
-### F1 Score and support
-![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20f1%20per%20class%20with%20support.png)
+![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20preds%20stopword.png)*Figure *Figure 1: Wordcloud of test set. This image shows the most common words for all classes in the test set*
+
 
 
