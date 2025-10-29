@@ -23,7 +23,7 @@ def main():
         _, df = transcribe_and_create_excel(
             api_key=API_KEY,
             audio_filepath=filepath_mp3,
-            get_speaker=True
+            get_speaker=False
         ) 
     except Exception as e:
         print(f"Error during transcription: {e}")
