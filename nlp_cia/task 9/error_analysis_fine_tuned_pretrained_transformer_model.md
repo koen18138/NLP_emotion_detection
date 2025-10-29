@@ -108,8 +108,8 @@ The model achieves solid accuracy on majority classes but underperforms on minor
 |   3   |    0.371500   |     0.939642    | 0.764875 | 0.756729 | 0.773386  | 0.764875 |
 
 ### Wordcloud misclassified
-![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](/nlp_cia/task_9/images/fine-tuned%20preds%20stopword%20misclassified.png)
+![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20preds%20stopword%20misclassified.png)
 ### Wordcloud correctly classified
-![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](/nlp_cia/task_9/images/fine-tuned%20preds%20stopword.png)
+![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20preds%20stopword.png)
 ### F1 Score and support
-![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](/nlp_cia/task_9/images/fine-tuned%20f1%20per%20class%20with%20support.png)
+![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20f1%20per%20class%20with%20support.png)
