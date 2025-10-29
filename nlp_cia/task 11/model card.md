@@ -14,7 +14,7 @@ Our model employs a RobertaForSequenceClassification architecture, leveraging th
 We preserved the pretrained encoder weights to maintain multilingual understanding while reinitializing the classification head for our classification problem. We did this because it would be less effecient to keep the amount of heads the same. We selected RoBERTa over BERT for superior performance on sentiment tasks and chose 256 token length to balance computational efficiency with capturing emotional context
 
 #### Purpose
-- This model was developed to enable automated emotion detection in Dutch media content. We did this for our client CIA (content intelligence agency). Our client did not want to rely on expensive and time consuming API,s
+- This model was developed to enable automated emotion detection in Dutch media content. We did this for our client CIA (content intelligence agency). Our client did not want to rely on expensive and time consuming API`s
 
 - We wanted to provide the CIA with automated content analysis capabilities
 Supporting research on emotional expression in Dutch digital media
