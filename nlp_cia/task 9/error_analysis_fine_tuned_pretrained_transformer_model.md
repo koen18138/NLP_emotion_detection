@@ -44,7 +44,6 @@ Despite the high overall accuracy, the low **macro-averaged F1-score of 0.535** 
 The misclassification analysis (Table A3 and Confusion Matrix 1) clearly shows the model's tendency to **overpredict Neutral (130 false predictions)** and **Happiness (55 errors)**.  This means that negative or subtle emotional moments are being misclassified which, which would limit the CIA's ability to perform effective emotional classification using this model on subtle or negative emotions.
 
 ---
-### Table A2 — Errors per True Label
 | True Label | Errors |
 |------------|--------|
 | neutral    | 53     |
@@ -54,6 +53,7 @@ The misclassification analysis (Table A3 and Confusion Matrix 1) clearly shows t
 | fear       | 23     |
 | anger      | 10     |
 | disgust    | 2      |
+*Table 2: This table shows the errors per True Label
 ### Table A3 — Errors per Predicted Label
 | Predicted Label | Errors |
 |-----------------|--------|
