@@ -10,8 +10,6 @@ from sklearn.model_selection import train_test_split
 from collections import Counter
 from itertools import chain
 
-# --- Data Preparation (similar to your Keras code) ---
-
 MAX_VOCAB_SIZE = 5000
 MAX_LENGTH = 30
 BATCH_SIZE = 32
