@@ -62,25 +62,6 @@ def text_cleaning(text):
     text = re.sub(pattern, '', text)
     return text
 
-# def compute_metrics(p):
-#     """
-#     Computes accuracy, f1 score, precision, and recall for evaluation.
-#     """
-#     preds = np.argmax(p.predictions, axis=1)
-    
-#     # Calculate metrics
-#     accuracy = accuracy_score(p.label_ids, preds)
-#     f1 = f1_score(p.label_ids, preds, average='weighted')
-#     precision = precision_score(p.label_ids, preds, average='weighted')
-#     recall = recall_score(p.label_ids, preds, average='weighted')
-    
-#     return {
-#         'accuracy': accuracy,
-#         'f1': f1,
-#         'precision': precision,
-#         'recall': recall
-#     }
-
 def encode_data(texts, tokenizer, labels=None, max_len=128):
     """
     Encode texts and labels using a tokenizer.
