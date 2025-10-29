@@ -1,66 +1,20 @@
-# Error analysis
+## Error Analysis for fine-tuned roberta-base-go_emotions
 
-## Dataset & labels
-- The label mapping is not perfect since we are mapping the 28 fine-grained emotions from GoEmotions labels to 7 classes. This mapping is not a standard, so it can lead to systematic errors if a different mapping is used later on. 
-- During translation some words get mistranslated from dutch to english (e.g., mistranslations like "one"/"een"). This has the chance to change the meaning of a sentence.
-- Neutral, surprise, sadness are the largest contributors to errors (notably neutral ≈ 53, surprise ≈ 47, sadness ≈ 43 on the test set). See Appendix Tables A2 and A3 for errors per true/predicted label.
-- Errors correlate with class imbalance (neutral dominates with 711 samples). See Appendix Table A1, 
-- Short sentences generally perform worse since there is not a lot of context which creates ambiguity.
-- There is a strong imbalance biases predictions toward neutral; small classes (disgust, fear) are unreliable.
+This report details a error analysis of our fine-tuned roberta-base-go_emotions, evaluating its performance, identifying core weaknesses, and linking these findings directly to the project's objectives for the **Content Intelligence Agency (CIA)**. The CIA’s core mission is to use AI to analyze media content—such as films and TV shows—in detail, and the model's ability to accurately classify the emotional tone of text is a key component of this pipeline.
 
-### Per-class performance
-- Neutral: the model performs well on neutral (F1 = 0.8779) driven by its large support (711 samples).
-- Happiness: strong performance (F1 = 0.7179), likely helped by being the second-most frequent class and clearer semantic boundary.
-- Fear: very low recall (0.0800) despite precision = 1.0, indicating the model rarely predicts this class; low support (25) is a factor.
-- Surprise: poor performance (F1 = 0.2703) even with moderate support; likely confused with neutral/happiness.
-- Disgust: unreliable estimate due to very small support (4).
-- Summary: class imbalance is a principal driver of per-class performance differences; minority classes need targeted intervention.
+---
 
-## Model performance breakdown
-- The model overpredicts neutral and happiness. See Confusion Matrix 1 in Appendix and the classification report in Appendix Table A1. See Appendix Tables A2–A3 for errors per true and predicted label.
-### General observations
-- Overall accuracy is 0.7975, but the macro-averaged F1 is only 0.535, indicating poor performance on several classes despite high overall accuracy driven by the dominant neutral class.
-- The class imbalance (neutral heavily over-represented) skews metrics: weighted averages look reasonable while macro averages reveal weak minority-class performance.
-- Misclassification patterns: neutral is the most common error target (130 false predictions as neutral). Happiness is the largest confounder for neutral. A word-cloud analysis suggests many misclassified examples contain general, non-specific language; mistranslations (e.g., "one" vs "een") introduce additional ambiguity.
-- The training loss steadily decreases (0.614 -> 0.459 -> 0.371) while validation loss increases (0.744 -> 0.896 -> 0.94) as seen in Fine-Tuning results 1. Validation F1 drops from 0.7726 to 0.7486 and only partially recovers to 0.7567, with accuracy and recall following similar declines. This pattern indicates overfitting beginning after epoch 1. The notebook uses load_best_model_at_end and per‑epoch eval; confirm it restores the epoch with the highest validation F1 (epoch 1). Recommended mitigations: lower learning rate, stronger regularization/dropout, data augmentation or more training data, and class-aware reweighting.
+### Model Strengths and Principal Weaknesses
 
-## Error types and qualitative patterns
-- Common causes of errors are ambiguous wording, mistranslation, non-specific/general language, overlapping emotions (happiness vs neutral).
-- Missing context and short texts cause many errors.
+The model's performance exhibits a clear pattern: it is reliable for majority classes but critically unreliable for minority and nuanced emotion categories.
 
-## Tokenization and preprocessing
-- Truncating sentences can remove important context.
+#### Strengths: Reliability on Dominant Classes
 
-## Attribution and interpretability
-- Run token-level attributions (Integrated Gradients, LIME, SHAP) and attention inspection to find spurious correlations (common words driving neutral predictions).
-- Use these to create targeted rules or features.
+The overall model **Accuracy is 0.7975**, this value is largely driven by strong performance on the most frequent emotional states, which provides a baseline for general content analysis.
 
-## Human annotation & disagreement
-- Some misclassifications are likely annotation errors or ambiguous examples. 
-- Where disagreement about the label is high or the sentence is ambiguous, consider multi-label or "ambiguous" labels.
+* **Neutral:** The model performs very well on **Neutral** sentences, achieving an **F1-score of 0.8779** due to its large **support (711 samples)**, **Recall of 0.9255** and **Precision of 0.835** (Table A1). Tells us that most non-emotional or objective text segments in media content are correctly classified.
 
-## Experiments  to run
-- Highest-impact, low-effort first:
-1. Rebalance classes: class-weighted loss or oversampling minority classes.
-2. Clean/repair labels: audit mislabeled examples and problematic translation mappings (correct "one"/"een" issues).
-
-
-### Additional recommended experiments (WIP)
-3. Use additional features: incorporate simple lexical or syntactic features (sentiment score, POS tags, word embeddings) to help distinguish neutral vs. happiness and other subtle distinctions.
-4. Error-specific analysis: extract frequent tokens/spans in misclassified examples (See Wordcloud misclassified) and create targeted preprocessing or rules to reduce noise from non-specific language.
-5. Threshold tuning: tune decision thresholds per class (or apply class-specific temperature scaling) to increase recall for underrepresented classes without large precision loss.
-6. Data augmentation: back-translation or paraphrasing for minority classes; targeted annotation to increase support for fear/surprise/sadness.
-7. Ensembling and post-processing: small ensembles or simple rule-based overrides for high-impact confusions (e.g., if model predicts neutral but strong positive sentiment signals exist, re-evaluate).
-
-## Prioritization
-- Priority 1 (high gain, low effort): class rebalancing, label cleanup, threshold tuning for recall on fear/surprise.
-- Priority 2 (medium effort): data augmentation for minority classes, targeted annotation to increase support.
-- Priority 3 (higher effort): architecture changes, ensembling, or expensive re-annotation.
-
-# Conclusion
-The model achieves solid accuracy on majority classes but underperforms on minority and subtle emotion classes (fear, surprise, sadness). Focused efforts on class balance, label quality, simple feature augmentation and calibration/threshold tuning should yield the largest improvements with moderate effort.
-
-# Appendix
+* **Happiness:** Performance is also strong for **Happiness (F1-score = 0.7179)**, benefiting from its relatively high frequency (**145 samples**) and a generally clearer semantic boundary.
 
 ### Table A1 — Classification report (test set)
 | Label      | Precision | Recall | F1-score | Support |
@@ -76,6 +30,20 @@ The model achieves solid accuracy on majority classes but underperforms on minor
 | **macro avg**  | 0.7491    | 0.5011 | 0.5353   | 1042    |
 | **weighted avg** | 0.7964    | 0.7975 | 0.7726   | 1042    |
 
+### Weaknesses: Failure on Minority and Subtle Emotions
+
+Despite the high overall accuracy, the low **macro-averaged F1-score of 0.535** reveals poor performance across multiple classes, a major weakness for a client needing emotional detail.
+
+* **Impact of Class Imbalance:** The large number of **Neutral** sentences biases predictions. Minority classes are largely neglected:
+    * **Fear** shows a near-total detection failure with **Recall of only 0.0800** (Table A1). The model rarely predicts this class, which is detrimental for analyzing high-tension or dramatic content. **23 errors** were attributed to the True Label of Fear (Table A2).
+    * **Disgust** is statistically unreliable due to its minimal support (**4 samples**).
+* **Confusion in Subtle Emotions:** The model struggles with emotions that overlap semantically:
+    * **Surprise** performs poorly (**F1-score = 0.2703**), likely confused with Neutral or Happiness. This is a significant error source, accounting for **47 errors** for the *True Label* of Surprise (Table A2).
+    * **Sadness** has a low **Recall of 0.3485** (**43 errors**), indicating that it is often missed or misclassified as another emotion, hindering accurate analysis of a scene’s dramatic arc.
+
+The misclassification analysis (Table A3 and Confusion Matrix 1) clearly shows the model's tendency to **overpredict Neutral (130 false predictions)** and **Happiness (55 errors)**.  This means that negative or subtle emotional moments are being misclassified which, which would limit the CIA's ability to perform effective emotional classification using this model on subtle or negative emotions.
+
+---
 ### Table A2 — Errors per True Label
 | True Label | Errors |
 |------------|--------|
@@ -86,7 +54,6 @@ The model achieves solid accuracy on majority classes but underperforms on minor
 | fear       | 23     |
 | anger      | 10     |
 | disgust    | 2      |
-
 ### Table A3 — Errors per Predicted Label
 | Predicted Label | Errors |
 |-----------------|--------|
@@ -98,7 +65,22 @@ The model achieves solid accuracy on majority classes but underperforms on minor
 | disgust         | 1      |
 
 ### Confusion Matrix 1 Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model
-![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](/nlp_cia/task_9/images/Fine-tuned-confmatrix.png)
+![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/Fine-tuned-confmatrix.png)
+---
+
+
+---
+
+### Linguistic, Data, and Algorithmic Error Patterns
+
+Specific data issues and model training behavior introduce systematic errors that compound the class imbalance problem.
+
+* **Data Quality: Ambiguity and Mistranslation:**
+    * The non-standard reduction from **28 fine-grained GoEmotions labels to 7 broad classes** creates artificially ambiguous boundaries, forcing subtle emotions into coarse, overlapping categories (e.g., differentiating between different kinds of "positive" emotions now mapped to "Happiness").
+    * **Systematic mistranslations** (e.g., "one" for the Dutch word "een") introduce **linguistic noise and ambiguity**, altering sentence meaning and leading to misclassifications.
+* **Missing Context and Short Texts:** Errors frequently correlate with **short sentences** and the use of **non-specific/general language**. The model defaults to its majority-class bias (Neutral or Happiness) when meaningful context is truncated or missing, as suggested by the generic language observed in the Wordcloud of misclassified examples. The model fails to extract emotion from sparse text inputs.
+* **Overfitting:** The fine-tuning results (Fine-Tuning results 1) show classic signs of **overfitting**: Training Loss steadily decreases (0.614 $\rightarrow$ 0.371) while Validation Loss **increases** after Epoch 1 (0.744 $\rightarrow$ 0.94). This indicates the model is memorizing the training data but losing the ability to generalize to new, unseen text. The model needs stronger regularization and a lower learning rate to help the models ability to generalizability on the client's diverse content.
+
 
 ### Fine-Tuning results 1
 | Epoch | Training Loss | Validation Loss | Accuracy |    F1    | Precision | Recall |
@@ -107,9 +89,27 @@ The model achieves solid accuracy on majority classes but underperforms on minor
 |   2   |    0.459200   |     0.896016    | 0.753359 | 0.748641 | 0.771063  | 0.753359 |
 |   3   |    0.371500   |     0.939642    | 0.764875 | 0.756729 | 0.773386  | 0.764875 |
 
+---
+
+### Conclusion and Prioritized Interventions
+
+The current model provides a foundation for analyzing majority emotional states but is not able to be used for providing the insights into subtle and minority emotions required by the Content Intelligence Agency. The weaknesses are caused by class imbalance, data quality issues, and model overfitting. Addressing these issues will contribute to delivering a high-quality and reliable emotion classification model.
+
+The highest-impact, low-effort interventions are prioritized to maximize return for the client:
+
+1.  **Priority 1: Class Rebalancing & Label Quality (High Gain, Low Effort):** Implement **class-weighted loss** or **oversampling** for minority classes (Fear, Sadness, Surprise) to mitigate the bias toward Neutral. In addition to checking and correct label issues and translation errors (like "one"/"een") to clean the data.
+2.  **Priority 2: Model Calibration and Augmentation (Medium Effort):** Employ **threshold tuning** per class to specifically boost the recall of underrepresented classes (e.g., Fear, Surprise). Additionally, apply **data augmentation** (e.g., back-translation) to create more training examples for these crucial, sparse emotional categories.
+
+By focusing on class balance and data integrity first, we can transform the model from one that achieves high overall accuracy by correctly classifying Neutral, into one that provides reliable emotional classification across all classes, which would meet the requirements of the Content Intelligence Agency.
+
+# Appendix
+
+
 ### Wordcloud misclassified
 ![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20preds%20stopword%20misclassified.png)
 ### Wordcloud correctly classified
 ![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20preds%20stopword.png)
 ### F1 Score and support
 ![Confusion Matrix fine-tuned pretrained roberta-base-go_emotions model](images/fine-tuned%20f1%20per%20class%20with%20support.png)
+
+
