@@ -45,23 +45,49 @@ One thing that stood out across multiple sentences: punctuation marks sometimes 
 
 ## Part 2: Conservative Propagation Analysis
 
-![Figure 4](Figures/figure4_attention_heatmap.png)
-*Figure 4: Attention scores heatmap showing how tokens attend to each other in the first attention layer*
+![Figure 4](figures/figure4_lrp_happiness.png)
+*Figure 4: Conservative LRP visualization for happiness sentence. Darker green means more important.*
 
-For the Conservative Propagation analysis, we visualize the attention mechanism directly through a heatmap rather than another bar graph. This is because the key improvement of Conservative LRP for transformers is how it handles attention weights and layer normalization. The heatmap gives us a different perspective on what's happening inside the model, showing not just individual token importance but how tokens interact through attention. The strong diagonal line shows that tokens are mostly paying attention to themselves, which is pretty standard for transformers. But there are also some interesting off-diagonal patterns.
+![Figure 5](figures/figure5_lrp_anger.png)
+*Figure 5: Conservative LRP visualization for anger sentence. Notice how importance is spread across multiple tokens.*
 
-Looking at the heatmap, we can see some tokens have stronger attention connections to specific other tokens in the sentence. For example, "Ah" shows relatively high attention to itself and some surrounding tokens, while "Gshit" (the profanity token) has notable attention weights with other parts of the sentence. The special tokens `<s>` and `</s>` show more uniform attention patterns across all tokens, which suggests they might be aggregating information from the whole sentence.
+![Figure 6](figures/figure6_lrp_disgust.png)
+*Figure 6: Conservative LRP visualization for disgust sentence showing concentrated importance on emotion words.*
 
-Compared to the basic Gradient × Input method, the conservative propagation approach seems to distribute relevance a bit more evenly. With the basic method, we sometimes saw one or two tokens dominating the explanation, but the LRP approach shows more of how different tokens work together to produce the final prediction.
+For the Conservative Propagation analysis, we switched to gradient coloring (light to dark green) instead of the red/green bars from Part 1. Darker green means a token is more important. This is different from Gradient × Input because LRP scores are always positive. They measure how much each token contributes, not whether it pushes the prediction up or down. The main improvement of Conservative LRP for transformers is how it handles attention weights and layer normalization. It redistributes relevance more carefully through the network so you get more stable explanations.
 
-The heatmap also reveals something about how the model processes sentence structure. The special tokens `<s>` and `</s>` have relatively uniform attention across all other tokens, which suggests they might be acting as some kind of "aggregation" points where information gets pooled before the final classification.
+Looking at the happiness sentence (Figure 4), "fantastic" and "fun" both show up as dark green, so they're clearly the most important tokens. But what's interesting is the importance spreads out more compared to the Gradient × Input method. Tokens like "incredibly" and "was" show moderate importance (medium green), which suggests the model isn't just looking at individual emotion words but considering how they work together with context.
 
-One thing we noticed is that the model doesn't always attend most strongly to the most obvious emotion words. Sometimes neutral words that provide context get high attention scores too. This suggests the model is doing more than just keyword matching - it's actually considering the relationships between words to understand the emotion.
+For the anger sentence (Figure 5), the relevance spreads across multiple tokens including "dirty" and "sneak", but also some of the words around them. This makes sense because anger expressions usually involve multi-word phrases rather than single words. The Conservative LRP method seems to capture this better than the basic gradient approach because it accounts for how information flows through the attention mechanism.
+
+The disgust sentence (Figure 6) shows a more concentrated pattern. "Ah" and "shit" both show up as dark green and basically dominate the prediction. Makes sense because disgust is usually triggered by specific words or concepts rather than overall context. The punctuation mark also shows some importance, which lines up with what we saw in the Gradient × Input analysis.
+
+Compared to the basic Gradient × Input method, Conservative LRP spreads the relevance out more evenly. With the basic method, we sometimes saw one or two tokens with huge spikes, but the LRP approach shows more of how different tokens work together.
+
+Something really interesting we noticed: the `<s>` (start) token consistently shows up as one of the highest scoring tokens across basically all sentences in the Conservative LRP analysis. This is kind of weird at first because it's just a structural marker that shouldn't carry emotional meaning. But there's actually a reasonable explanation. In RoBERTa and similar transformers, the classifier sits on top of the `<s>` token's final representation. So all the information from the entire sentence gets pooled into that position through the attention mechanism before making the final prediction. The Conservative LRP method traces relevance backwards through this process, which means a lot of relevance naturally accumulates at `<s>` since it's the direct input to the classification layer. It's not that `<s>` itself is important, it's that it acts as an aggregation point for information from all the other tokens. The `</s>` (end) token shows some relevance too but usually less than `<s>`, which makes sense given how the model architecture works.
+
+One pattern that showed up for all emotions: Conservative LRP shows the model isn't just doing keyword matching. Even for super obvious cases like "Yuck" for disgust, the surrounding tokens get non-zero importance scores. This suggests the model architecture forces it to consider context through attention, even when a single word would be enough for a human to recognize the emotion.
+
+The gradient coloring is way easier to read at a glance compared to binary red/green. You can immediately see which tokens dominate (dark green), which contribute a bit (medium green), and which barely matter (light green). Makes it clearer how relevance scores work in LRP since they're continuous values.
+
+### Comparing Methods: Gradient × Input vs Conservative LRP
+
+![Figure 7](figures/figure7_method_comparison.png)
+*Figure 7: Side by side comparison of Gradient × Input (left) and Conservative LRP (right) for the same sentence. Notice the different color schemes and how relevance gets distributed.*
+
+When you put them side by side, the differences are pretty clear. Gradient × Input shows both positive (green) and negative (red) contributions, while Conservative LRP only shows varying shades of green. For this sentence, Gradient × Input has stronger peaks on specific tokens, while Conservative LRP spreads the relevance more evenly across related tokens. Neither method is necessarily better, they just show different things. Gradient × Input is good for seeing which tokens push the prediction in a certain direction. Conservative LRP is better for seeing the overall importance ranking while accounting for how transformers actually process sequences through attention.
+
+### Attention Mechanism Visualization
+
+![Figure 8](figures/figure8_attention_heatmap.png)
+*Figure 8: Attention scores heatmap showing how tokens attend to each other in the first attention layer. Darker colors mean stronger attention.*
+
+The attention heatmap gives another way to look at what's happening inside the model. The strong diagonal line shows tokens mostly pay attention to themselves, which is normal for transformers. But there are also some interesting patterns off the diagonal. The special tokens `<s>` and `</s>` have pretty uniform attention across all other tokens, which suggests they might be acting as some kind of aggregation points where information gets pooled before the final classification. Some of the content tokens show stronger attention connections to specific other tokens, which is how the model builds up an understanding of context by relating words to each other. This visualization is useful alongside the relevance scores because it shows the pathways information flows through in the model.
 
 ## Part 3: Token Perturbation and Model Robustness
 
-![Figure 5](Figures/figure5_perturbation_comparison.png)
-*Figure 5: Comparison of token removal strategies - removing most relevant tokens (left) versus least relevant tokens (right)*
+![Figure 9](figures/figure9_perturbation_comparison.png)
+*Figure 9: Comparison of token removal strategies - removing most relevant tokens (left) versus least relevant tokens (right)*
 
 The perturbation analysis shows how the model's confidence changes when we remove tokens one by one. While the task suggested removing only the least relevant tokens, we found it much more insightful to show both strategies side-by-side. This comparison clearly demonstrates which tokens actually matter for the model's predictions. We tested two different removal strategies: removing the most relevant tokens first (based on relevance scores) versus removing the least relevant tokens first.
 
