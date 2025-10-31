@@ -167,99 +167,74 @@ class TextFeatureDataset(Dataset):
 
 class MultiFeatureLSTMClassifier(nn.Module):
     """
-    A Bidirectional LSTM-based classifier incorporating multiple NLP features.
+    A stacked Bidirectional LSTM-based classifier that integrates multiple NLP features.
     """
     def __init__(self, vocab_size: int, embed_dim: int, hidden_dim: int, num_classes: int,
                  pos_vocab_size: int, pos_embed_dim: int,
-                 tfidf_dim: int, static_embed_dim: int):
-        """
-        Initializes the multi-feature LSTM classifier.
-
-        Args:
-            vocab_size: Size of the word vocabulary.
-            embed_dim: Dimension of word embeddings.
-            hidden_dim: LSTM hidden state dimension.
-            num_classes: Number of output classes.
-            pos_vocab_size: Size of the POS tag vocabulary.
-            pos_embed_dim: Dimension of POS tag embeddings.
-            tfidf_dim: Dimension of the TF-IDF vector.
-            static_embed_dim: Dimension of the static sentence embedding.
-        """
+                 tfidf_dim: int, static_embed_dim: int, num_lstm_layers: int = 2):
         super().__init__()
-        # 1. Word Sequence Processing (LSTM)
-        self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
-        self.lstm1 = nn.LSTM(embed_dim, hidden_dim, batch_first=True, bidirectional=True)
-        self.lstm2 = nn.LSTM(hidden_dim * 2, hidden_dim, batch_first=True, bidirectional=True)
 
-        # 2. POS Tag Processing (Embedding + Pooling)
-        self.pos_embedding = nn.Embedding(pos_vocab_size, pos_embed_dim, padding_idx=0)
-        # Using a simple mean pooling for POS tags
-        
-        # 3. Final Classification Layer
-        lstm_output_dim = hidden_dim * 2
-        
-        # Determine the total dimension after concatenation:
-        # LSTM output + POS Mean Pooling + TFIDF + Sentiment + Static Embedding
-        self.final_input_dim = (
-            lstm_output_dim +      # Final LSTM hidden state (h_n[-2:] concat)
-            pos_embed_dim +        # Mean-pooled POS embedding
-            tfidf_dim +            # TFIDF vector
-            1 +                    # Sentiment score (scalar)
-            static_embed_dim       # Static sentence embedding
+        # 1. Word Embedding + Stacked BiLSTM
+        self.embedding = nn.Embedding(vocab_size, embed_dim, padding_idx=0)
+        self.lstm = nn.LSTM(
+            input_size=embed_dim,
+            hidden_size=hidden_dim,
+            num_layers=num_lstm_layers,
+            batch_first=True,
+            bidirectional=True,
+            dropout=0.3 if num_lstm_layers > 1 else 0.0
         )
-        
+
+        # 2. POS Tag Embedding (mean pooled)
+        self.pos_embedding = nn.Embedding(pos_vocab_size, pos_embed_dim, padding_idx=0)
+
+        # 3. Compute total feature dimension
+        lstm_output_dim = hidden_dim * 2  # bidirectional
+        self.final_input_dim = lstm_output_dim + pos_embed_dim + tfidf_dim + 1 + static_embed_dim
+
+        # 4. Fully Connected Classifier
         self.fc = nn.Sequential(
-            nn.Linear(self.final_input_dim, hidden_dim), # Additional dense layer for feature mixing
+            nn.Linear(self.final_input_dim, hidden_dim),
             nn.ReLU(),
             nn.Dropout(0.5),
             nn.Linear(hidden_dim, num_classes)
         )
+
         print(f"Total input dimension to FC layers: {self.final_input_dim}")
 
-    def forward(self, 
-                text_x: torch.Tensor, 
-                pos_x: torch.Tensor, 
-                tfidf_x: torch.Tensor, 
-                sentiment_x: torch.Tensor, 
-                embed_x: torch.Tensor) -> torch.Tensor:
-        """
-        Performs the forward pass using all feature inputs.
-        """
+    def forward(self, text_x, pos_x, tfidf_x, sentiment_x, embed_x):
         batch_size = text_x.size(0)
 
-        # 1. Word Sequence (LSTM)
+        # 1. Word Sequence → Stacked BiLSTM
         text_embedded = self.embedding(text_x)
-        lstm_out1, _ = self.lstm1(text_embedded)
-        lstm_out2, (h_n, _) = self.lstm2(lstm_out1)
-        # Concatenate final hidden states: (batch_size, hidden_dim * 2)
-        lstm_out = torch.cat((h_n[-2,:,:], h_n[-1,:,:]), dim=1)
+        lstm_out, (h_n, _) = self.lstm(text_embedded)
 
-        # 2. POS Tags (Embedding + Mean Pooling)
+        # Take the last hidden state from both directions of the top layer
+        h_forward = h_n[-2, :, :]  # last layer, forward
+        h_backward = h_n[-1, :, :]  # last layer, backward
+        lstm_out_final = torch.cat((h_forward, h_backward), dim=1)  # (batch_size, hidden_dim * 2)
+
+        # 2. POS Tags → Mean Pooled Embedding
         pos_embedded = self.pos_embedding(pos_x)
-        # Mask padded elements (where pos_x != 0)
         mask = (pos_x != 0).unsqueeze(-1).float()
-        pos_embedded_masked = pos_embedded * mask
-        # Sum non-padded embeddings, divide by count (mean pooling)
-        pos_sum = pos_embedded_masked.sum(dim=1)
-        # Calculate sequence length (non-padded tokens)
-        seq_len = mask.sum(dim=1).clamp(min=1) # clamp min=1 to avoid division by zero
-        pos_mean_pooled = pos_sum / seq_len.float()
-        
-        # 3. Global Features (Concatenation)
-        # sentiment_x is (batch_size), needs to be (batch_size, 1)
-        sentiment_x_reshaped = sentiment_x.float().unsqueeze(1) 
+        pos_sum = (pos_embedded * mask).sum(dim=1)
+        seq_len = mask.sum(dim=1).clamp(min=1)
+        pos_mean_pooled = pos_sum / seq_len
 
-        # Concatenate all features
-        combined_features = torch.cat([
-            lstm_out,               # LSTM output (batch_size, hidden_dim * 2)
-            pos_mean_pooled,        # Mean-pooled POS (batch_size, pos_embed_dim)
-            tfidf_x.float(),        # TFIDF (batch_size, tfidf_dim)
-            sentiment_x_reshaped,   # Sentiment (batch_size, 1)
-            embed_x.float()         # Static Embedding (batch_size, static_embed_dim)
+        # 3. Other Features
+        sentiment_x = sentiment_x.float().unsqueeze(1)
+
+        # 4. Concatenate all features
+        combined = torch.cat([
+            lstm_out_final,
+            pos_mean_pooled,
+            tfidf_x.float(),
+            sentiment_x,
+            embed_x.float()
         ], dim=1)
 
-        # Final classification
-        return self.fc(combined_features)
+        # 5. Classification
+        return self.fc(combined)
     
 def safe_literal_eval(value: Any) -> Any:
     """
@@ -302,7 +277,7 @@ def pos_to_sequences(pos_lists: List[List[str]], pos_word2idx: Dict[str, int]) -
     oov_idx = pos_word2idx["<OOV>"]
     return [[pos_word2idx.get(tag, oov_idx) for tag in pos_list] for pos_list in pos_lists]   
 
-def pad_feature_vectors(vectors: np.ndarray, max_len: int = 128) -> np.ndarray:
+def pad_feature_vectors(vectors, max_len: int = 128) -> np.ndarray:
     """
     Pads a list/array of 1D NumPy arrays to the length of max_len.
     
@@ -614,7 +589,7 @@ if __name__ == "__main__":
                 loss: torch.Tensor = criterion(outputs, y_batch)
                 val_loss += loss.item() * text_X.size(0)
                 
-                preds: np.ndarray = outputs.argmax(dim=1).cpu().numpy()
+                preds = outputs.argmax(dim=1).cpu().numpy()
                 all_preds.extend(preds)
                 all_targets.extend(y_batch.cpu().numpy())
                 
@@ -655,12 +630,12 @@ if __name__ == "__main__":
             # Forward pass with 5 inputs
             outputs: torch.Tensor = model(text_X, pos_X, tfidf_X, sentiment_X, embed_X)
             
-            preds: np.ndarray = outputs.argmax(dim=1).cpu().numpy()
+            preds = outputs.argmax(dim=1).cpu().numpy()
             all_preds_test.extend(preds)
 
     # Calculate final metrics
-    test_targets_np: np.ndarray = test_labels.numpy()
-    all_preds_test_np: np.ndarray = np.array(all_preds_test)
+    test_targets_np = test_labels.numpy()
+    all_preds_test_np = np.array(all_preds_test)
 
     accuracy: float = accuracy_score(test_targets_np, all_preds_test_np)
     f1: float = f1_score(test_targets_np, all_preds_test_np, average='weighted')
