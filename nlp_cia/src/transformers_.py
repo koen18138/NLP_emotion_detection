@@ -62,25 +62,6 @@ def text_cleaning(text):
     text = re.sub(pattern, '', text)
     return text
 
-# def compute_metrics(p):
-#     """
-#     Computes accuracy, f1 score, precision, and recall for evaluation.
-#     """
-#     preds = np.argmax(p.predictions, axis=1)
-    
-#     # Calculate metrics
-#     accuracy = accuracy_score(p.label_ids, preds)
-#     f1 = f1_score(p.label_ids, preds, average='weighted')
-#     precision = precision_score(p.label_ids, preds, average='weighted')
-#     recall = recall_score(p.label_ids, preds, average='weighted')
-    
-#     return {
-#         'accuracy': accuracy,
-#         'f1': f1,
-#         'precision': precision,
-#         'recall': recall
-#     }
-
 def encode_data(texts, tokenizer, labels=None, max_len=128):
     """
     Encode texts and labels using a tokenizer.
@@ -109,60 +90,9 @@ def encode_data(texts, tokenizer, labels=None, max_len=128):
     return {
         'input_ids': torch.tensor(encodings['input_ids']),
         'attention_mask': torch.tensor(encodings['attention_mask']),
-        'labels': torch.tensor(labels, dtype=torch.long)  # Change dtype to torch.long
+        'labels': torch.tensor(labels, dtype=torch.long) 
     }
 
-# class SentimentDataset(torch.utils.data.Dataset):
-#     def __init__(self, encodings):
-#         self.encodings = {
-#             'input_ids': encodings['input_ids'],
-#             'attention_mask': encodings['attention_mask'],
-#             'labels': encodings['labels']
-#         }
-
-#     def __len__(self):
-#         return len(self.encodings['input_ids'])
-
-#     def __getitem__(self, idx):
-#         return {
-#             'input_ids': self.encodings['input_ids'][idx],
-#             'attention_mask': self.encodings['attention_mask'][idx],
-#             'labels': self.encodings['labels'][idx]
-#         }
-    
-# def evaluate_model(model, tokenizer, test_df: pd.DataFrame, output_dir: str):
-#     """
-#     Evaluates a loaded model on a test dataset, prints a classification report,
-#     and saves the report to a file.
-
-#     Args:
-#         model (BertForSequenceClassification): The loaded fine-tuned model.
-#         tokenizer (BertTokenizer): The loaded tokenizer.
-#         test_df (pd.DataFrame): The test dataset containing 'sentence' and 'sentiment' columns.
-#         output_file_path (str): Path to save the classification report.
-#     """
-
-#     y = encode_data(test_df['Sentence'].tolist(), tokenizer, test_df['Emotion_core'].tolist())
-#     inference_data = test_df['Sentence'].tolist()
-#     x = encode_data(inference_data, tokenizer)
-#     # Use the new get_predictions function to get the model's output
-#     predictions = get_predictions(model, x)
-
-#     # Generate and save the classification report
-#     report_string = classification_report(
-#         y['labels'],
-#         predictions,
-#         target_names=['happiness', 'anger', 'surprise', 'sadness', 'disgust', 'fear', 'neutral'],
-#         zero_division=0
-#     )
-
-#     print("\n--- Classification Report ---")
-#     print(report_string)
-
-#     with open(os.path.join(output_dir,  "classification_report.txt"), "w") as f:
-#         f.write(report_string)
-
-#     print(f"\nClassification report saved to {output_dir}/classification_report.txt")
 
 def get_predictions(model: AutoModelForSequenceClassification, encodings: Dict[str, torch.Tensor]) -> List[str]:
     """
