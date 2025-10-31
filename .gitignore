@@ -1,0 +1,8 @@
+/nlp_cia/models
+*.pyc
+/nlp_cia/src/datasets
+/nlp_cia/src/models
+/nlp_cia/Task 7/mt
+/nlp_cia/tests
+/data_models
+/nlp_cia/data
