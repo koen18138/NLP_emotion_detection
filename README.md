@@ -7,7 +7,7 @@ This file explains, in very simple terms, what the pieces in this project do and
 ## High-level flow (pipeline.py -> main)
 1. Ask the user for a YouTube URL.
 2. Download the video's audio and convert it to `mp3` (utils.url_to_mp3).
-3. Transcribe the audio with AssemblyAI and split into sentences (assembly.transcribe_and_create_excel).
+3. Transcribe the audio with AssemblyAI (speaker optional) or Whisper and split into sentences (assembly.transcribe_and_create_excel).
 4. Translate each sentence from Dutch to English (machine_translation.translate_sentences).
 5. Load a fine-tuned transformer model + tokenizer (transformers_.load_model_and_tokenizer).
 6. Encode the translated sentences for the model (transformers_.load_inference_data / encode_data).
