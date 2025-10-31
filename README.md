@@ -94,6 +94,10 @@ poetry run python src/pipeline.py
 ```
 cd nlp_cia
 ```
+## **install requirements using poetry**
+```
+poetry install
+```
 ## **Install ipykernel if not installed**
 if ipykernel not installed do
 ```
