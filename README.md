@@ -28,7 +28,11 @@ Errors at each step are printed and stop the pipeline.
   - Function: `url_to_mp3(url, output_dir="data\\audio")`
   - Uses pytubefix (YouTube) to download audio from a YouTube URL and rename to `.mp3`.
   - Returns the mp3 file path.
-
+- whisper.py
+  - Function: `transcribe_to_df(pipe, audio_path: str, return_timestamps: str = "sentence", **pipeline_kwargs), create_asr_pipeline()`.
+  - Uses Whisper "openai/whisper-large-v3" to transcribe audio.
+  - Creates a ASR pipeline using and returns a Dataframe with `Start time`, `End time` and `Sentence`.
+  - Note: Whisper pipeline is not able to get start and end time.
 - assembly.py
   - Function: `transcribe_and_create_excel(api_key, audio_filepath=..., get_speaker=True, ...)`
   - Uses AssemblyAI to transcribe audio.
